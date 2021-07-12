@@ -57,7 +57,7 @@ Windowsの作法に則ってインストールします。Windowsの管理者権
 
 - [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
 
-![vcxsrv.png](./images/vcxserv.png)
+![vcxsrv.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv.png)
 
 - [MobaXterm](https://mobaxterm.mobatek.net)
 
