@@ -202,7 +202,7 @@ $ export DISPLAY=localohst:0
 ```sh
 $ export DISPLAY=`hostname`.mshome.net:0
 ```
-（参考情報）Qiita: [WSL2 での DISPLAY 設定](https://qiita.com/taichi-ishitani/items/b627e31a97fef24c6ee4)
+（参考）Qiita: [WSL2 での DISPLAY 設定](https://qiita.com/taichi-ishitani/items/b627e31a97fef24c6ee4)
 
 Xサーバーの動作を確認します。
 
@@ -336,9 +336,8 @@ $ mpiexec -np 2 ../../bin/phase
 
 # 付録A：Windows（WSL Ubuntu）以外の計算機
 
-コンパイラ（C, Fortran）、MPI（並列計算ライブラリ）、FFTW3（高速フーリエ変換ライブラリ）
-Python3, gnuplot
-emacs
+コンパイラ（C, Fortran）、MPI（並列計算ライブラリ）、FFTW3（高速フーリエ変換ライブラリ）を用意すると何とかなる場合が多いです。
+その他 Python3, gnuplot, Emacsなどお好みで追加してください。
 
 ## WSLのUbuntu以外のディストリビューション
 
