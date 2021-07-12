@@ -202,6 +202,7 @@ $ export DISPLAY=localohst:0
 ```sh
 $ export DISPLAY=`hostname`.mshome.net:0
 ```
+（参考情報）Qiita: [WSL2 での DISPLAY 設定](https://qiita.com/taichi-ishitani/items/b627e31a97fef24c6ee4)
 
 Xサーバーの動作を確認します。
 
@@ -348,9 +349,9 @@ emacs
 
 ## Mac
 
-homebrewで環境を構築する
+[M1 Macへのインストール手順](https://github.com/Materials-Science-Software-Consortium/phase0_install/blob/main/Mac_M1/README.md)を参照してください。
 
-Xサーバーのインストール
+[XQuartz](https://www.xquartz.org)は、Macで動作する代表的なXサーバーです。インストールしてください。
 
 Macのターミナルは、UNIX的に利用できます。仮想計算機ではありませんので、`DISPLAY`環境変数を意識する必要はありません。
 
@@ -364,7 +365,7 @@ Macのターミナルは、UNIX的に利用できます。仮想計算機では�
 ## Linux：AlmaLinux
 
 PCクラスターなど常時稼働している実機には、Red Hat Enterprise Linux（以下RHELと記す）もしくはその互換OSが利用されることが多いです。RHEL互換OSの筆頭格であったCentOS 8のEOLが2021年末に変更（短縮）されました。（CentOS 7のEOLは2024年6月です。）
-AlmaLinuxは2022年以降も引き続き利用可能なRHEL互換OSの有力候補です。
+[AlmaLinux](https://almalinux.org)は2022年以降も引き続き利用可能なRHEL互換OSの有力候補です。
 
 RHEL互換OSでは、`dnf`コマンドでソフトウェア（ライブラリ）を導入します。
 ```
