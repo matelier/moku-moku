@@ -61,7 +61,7 @@ Windowsの作法に則ってインストールします。Windowsの管理者権
 
 - [MobaXterm](https://mobaxterm.mobatek.net)
 
-![mobaX.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/edaeaba5.png)
+![mobaX.png](https://github.com/matelier/moku-moku/blob/master/images/mobaX.png)
 
 ### ポータブル版
 
@@ -71,17 +71,17 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 
 - [MobaXterm](https://mobaxterm.mobatek.net)
 
-![moba_file.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/7d815437.png)
+![moba_file.png](https://github.com/matelier/moku-moku/blob/master/images/moba_file.png)
 
 - [VESTA](http://jp-minerals.org/vesta/jp/)
 
 64bit版の利用をお勧めします。
 
-![VESTA_download.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/64461eab.png)
+![VESTA_download.png](https://github.com/matelier/moku-moku/blob/master/images/VESTA_download.png)
 
 ダウンロードしたZIPファイルを展開します。
 
-![VESTA_file.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/8a469b95.png)
+![VESTA_file.png](https://github.com/matelier/moku-moku/blob/master/images/VESTA_file.png)
 
 
 ## WSL実行基盤の設定
@@ -92,9 +92,9 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 
 管理者でサインインして、コントロールパネルから、`プログラムと機能`を選び、ウィンドウ左に並んでいる`Windowsの機能の有効化または無効化`を選ぶと、下に図示するウィンドウが開きます。機能名の左にチェックボックスがありますので、`Linux用Windowsサブシステム`と`仮想マシンプラットフォーム`にチェックを入れてください。`OK`を押すとしばらくして再起動を促されますので、再起動してください。
 
-![top.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/82b3a66a.png)
+![top.png](https://github.com/matelier/moku-moku/blob/master/images/top.png)
 
-![bottom.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/8f4c477e.png)
+![bottom.png](https://github.com/matelier/moku-moku/blob/master/images/bottom.png)
 
 続けて、`Linuxカーネル更新プログラムパッケージ`をインストールします。ダウンロードして、ダブルクリックするとインストーラーが起動します。
 
@@ -117,7 +117,7 @@ wsl --set-default-version 2
 WSL上では複数のLinuxディストリビューションが利用できます。ここでは、Ubuntuを利用することを前提に説明します。
 Linuxディストリビューションは、Microsoft Storeから入手します。WindowsでMicrosoft Storeを起動した後、検索窓に`Ubuntu`と入力してください。いくつか候補が表示される中から`Ubuntu 20.04LTS`を選び、表示される画面で`入手`もしくは`インストール`を押すとインストールされます。
 
-![store.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/26bd5291.png)
+![store.png](https://github.com/matelier/moku-moku/blob/master/images/store.png)
 
 インストールするとスタートメニューに`Ubuntu 20.04 LTS`が現れるので、選択してください。ここから、Linuxの世界が始まります。初回起動時に、ユーザー名とパスワードを設定します。ユーザー名は、Windowsのアカウント名とは関係なく設定できます。同じでも良いですが、全角文字の使用はお勧めしません。パスワードにも全角文字を使用しないでください。
 
@@ -159,27 +159,27 @@ Xサーバー（VcXsrvもしくはMobaXterm；これらはWindowsのアプリケ
 
 スタートメニューから、`VcXsrv` - `XLaunch`を選択します。幾つか設定項目があります。最初の二つは「次へ」を押してください。
 
-![vcxservinit1.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/14488e59.png)
+![vcxsrvinit1.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit1.png)
 
-![vcxservinit2.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/470fcd8f.png)
+![vcxsrvinit2.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit2.png)
 
 `Disable access control`にチェックを入れてください。
 
-![vcxservinit3.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/0c35e045.png)
+![vcxsrvinit3.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit3.png)
 
 以上を毎回設定するのは面倒なので、`Save configuration`を押してください。
 
-![vcxservinit4.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/a5b45d23.png)
+![vcxsrvinit4.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit4.png)
 
 例えば設定ファイルをデスクトップに配置すると、以下のアイコンが表示されます。これをダブルクリックすると、保存した設定のXサーバーが起動します。
 
-![icon.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/6aa56408.png)
+![icon.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/icon.png)
 
 - MobaXterm
 
 インストール版はスタートメニューから、ポータブル版はZIP展開したファイルを選択して起動します。
 
-![moba_exec.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/10354a43.png)
+![moba_exec.png](https://github.com/matelier/moku-moku/blob/master/images/moba_exec.png)
 
 
 今回はXサーバー（VcXsrvもしくはMobaXterm）とXクライアント（WSLで動作するUbuntu）を単一のWindows PCで動作させますが、WSLは仮想計算機として、Windowsとは別の計算機であるかのように振る舞います。また、大規模な計算機を利用する場合も、その計算機（Xクライアント；PCクラスター、スパコンなど）で描画コマンドを発行し、ネットワークを介して、手元のPC（WindowsのXサーバー）で表示させる使い方が一般的です。その際、Xクライアントに、Xサーバーの画面が（ネットワーク上の）どこにあるのか指示するために、`DISPLAY`環境変数を設定します。
@@ -319,7 +319,7 @@ $ mpiexec -np 2 ../../bin/phase
 ```
 選択可能なファイルとして`nfchr.cube`ファイルが表示されますので、これを選択するとVESTAで描画されます。
 
-![chargeSi8half.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/2041d5c7.png)
+![chargeSi8half.png](https://github.com/matelier/moku-moku/blob/master/images/chargeSi8half.png)
 
 この意味にご興味ある方は、PHASE利用講習会に参加してください。
 
