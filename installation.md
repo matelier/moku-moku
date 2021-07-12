@@ -132,10 +132,9 @@ Retype new password:
 ```sh
 $ sudo apt update
 $ sudo apt upgrade
-$ sudo apt install -y make gnuplot-x11 gfortran libopenmpi-dev \
-> libfftw3-dev evince
+$ sudo apt install -y make gnuplot-x11 gfortran libopenmpi-dev libfftw3-dev evince
 ```
-3, 4行目は、紙面横幅の都合で改行しました。「\」を入力後に`Enter`を押すと、次の行に「>」が表示されるので続きを入力してください。「\」と「>」を省いて、続けて一行で入力しても同じ動作です。
+<!--3, 4行目は、紙面横幅の都合で改行しました。「\」を入力後に`Enter`を押すと、次の行に「>」が表示されるので続きを入力してください。「\」と「>」を省いて、続けて一行で入力しても同じ動作です。-->
 
 各コマンドは実行には時間を要します。ネットワーク環境が良いところで実行してください。
 
