@@ -205,7 +205,7 @@ gnuplot> plot sin(x)
 
 sin関数が表示されれば、Xサーバーが正常に動作しています。
 
-![sin_half.png](attachments/1efd57ee-2732-4b2e-899f-d22ae66208ec/d2eb8407.png)
+![sin_half.png](https://github.com/matelier/moku-moku/blob/master/images/sin_half.png)
 
 ### ファイル共有
 
