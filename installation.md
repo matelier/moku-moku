@@ -20,7 +20,7 @@ Windows PCは以下の要件を満たすことを前提とします。
 
 一部の操作では管理者権限が必要です。特に、会社所有のPCをご使用の場合はご注意ください。
 
-Macなど、Windows以外の計算機については、付録Aにて簡潔に説明します。
+Macなど、Windows以外の計算機については、[付録A](https://github.com/matelier/moku-moku/blob/master/installation.md#%E4%BB%98%E9%8C%B2awindowswsl-ubuntu%E4%BB%A5%E5%A4%96%E3%81%AE%E8%A8%88%E7%AE%97%E6%A9%9F)にて簡潔に説明します。
 
 ## PHASE/0利用講習会参加の前提条件
 
@@ -120,7 +120,7 @@ WSL2を利用する場合は、コマンドプロンプト（もしくはPower S
 wsl --set-default-version 2
 ```
 
-導入後のWSL1 <-> WSL2の相互変換は、付録Cを参照してください。
+導入後のWSL1 <-> WSL2の相互変換は、[付録C](https://github.com/matelier/moku-moku/blob/master/installation.md#%E4%BB%98%E9%8C%B2cwsl1%E3%81%A8wsl2%E3%81%AE%E7%9B%B8%E4%BA%92%E5%A4%89%E6%8F%9B)を参照してください。
 
 WSL上では複数のLinuxディストリビューションが利用できます。ここでは、Ubuntuを利用することを前提に説明します。
 Linuxディストリビューションは、Microsoft Storeから入手します。WindowsでMicrosoft Storeを起動した後、検索窓に`Ubuntu`と入力してください。いくつか候補が表示される中から`Ubuntu 20.04LTS`を選び、表示される画面で`入手`もしくは`インストール`を押すとインストールされます。
