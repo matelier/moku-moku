@@ -244,7 +244,7 @@ WSLのファイルシステムは、Windowsからはネットワークドライ�
 
 ## PHASE/0
 
-PHASE/0のソースコードをダウンロード（登録が必要です）し、`phase0_2020.01.tar.gz`と`phase0_2020.01.01.patch`をWindowsのデスクトップに配置します。Ubuntuを起動し、ホームディレクトリにこれらのファイルをコピーします。
+PHASE/0のソースコードを[ダウンロード](https://azuma.nims.go.jp/cms1/downloads/software/)（登録が必要です）し、`phase0_2020.01.tar.gz`と`phase0_2020.01.01.patch`をWindowsのデスクトップに配置します。Ubuntuを起動し、ホームディレクトリにこれらのファイルをコピーします。
 
 ```sh
 $ cd
