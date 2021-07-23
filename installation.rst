@@ -84,6 +84,7 @@ Windowsの作法に則ってインストールします。Windowsの管理者権
 ![mobaX.png](https://github.com/matelier/moku-moku/blob/master/images/mobaX.png)
 
 .. figure:: images/mobaX.png
+  :name: MobaXterm install
 
 ### ポータブル版
 
@@ -96,6 +97,7 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 ![moba_file.png](https://github.com/matelier/moku-moku/blob/master/images/moba_file.png)
 
 .. figure:: images/moba_file.png
+  :name: MobaXterm file
 
 - [VESTA](http://jp-minerals.org/vesta/jp/)
 
