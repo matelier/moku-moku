@@ -196,23 +196,23 @@ Xサーバー（VcXsrvもしくはMobaXterm；これらはWindowsのアプリケ
 
 ![vcxsrvinit1.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit1.png)
 
-.. figure:: images/vcxsev/vcxsrvinit1.png
+.. figure:: images/vcxsrv/vcxsrvinit1.png
 
 ![vcxsrvinit2.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit2.png)
 
-.. figure:: images/vcxsev/vcxsrvinit2.png
+.. figure:: images/vcxsrv/vcxsrvinit2.png
 
 `Disable access control`にチェックを入れてください。
 
 ![vcxsrvinit3.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit3.png)
 
-.. figure:: images/vcxsev/vcxsrvinit3.png
+.. figure:: images/vcxsrv/vcxsrvinit3.png
 
 以上を毎回設定するのは面倒なので、`Save configuration`を押してください。
 
 ![vcxsrvinit4.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit4.png)
 
-.. figure:: images/vcxsev/vcxsrvinit4.png
+.. figure:: images/vcxsrv/vcxsrvinit4.png
 
 例えば設定ファイルをデスクトップに配置すると、以下のアイコンが表示されます。これをダブルクリックすると、保存した設定のXサーバーが起動します。
 
