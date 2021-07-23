@@ -77,9 +77,13 @@ Windowsの作法に則ってインストールします。Windowsの管理者権
 
 ![vcxsrv.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv.png)
 
+.. figure:: images/vcxsrv.png
+
 - [MobaXterm](https://mobaxterm.mobatek.net)
 
 ![mobaX.png](https://github.com/matelier/moku-moku/blob/master/images/mobaX.png)
+
+.. figure:: images/mobaX.png
 
 ### ポータブル版
 
@@ -91,18 +95,16 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 
 ![moba_file.png](https://github.com/matelier/moku-moku/blob/master/images/moba_file.png)
 
+.. figure:: images/moba_file.png
+
 - [VESTA](http://jp-minerals.org/vesta/jp/)
 
 64bit版の利用をお勧めします。
-
-![VESTA_download.png](https://github.com/matelier/moku-moku/blob/master/images/)
 
 .. figure:: images/VESTA_download.png
   :name: VESTA download
 
   ダウンロードしたZIPファイルを展開します。
-
-![VESTA_file.png](https://github.com/matelier/moku-moku/blob/master/images/VESTA_file.png)
 
 .. figure:: images/VESTA_file.png
   :name: VESTA files
@@ -118,7 +120,11 @@ WSL実行基盤の設定
 
 ![top.png](https://github.com/matelier/moku-moku/blob/master/images/top.png)
 
+.. figure:: images/top.png
+
 ![bottom.png](https://github.com/matelier/moku-moku/blob/master/images/bottom.png)
+
+.. figure:: images/bottom.png
 
 続けて、`Linuxカーネル更新プログラムパッケージ`をインストールします。ダウンロードして、ダブルクリックするとインストーラーが起動します。
 
@@ -188,19 +194,29 @@ Xサーバー（VcXsrvもしくはMobaXterm；これらはWindowsのアプリケ
 
 ![vcxsrvinit1.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit1.png)
 
+.. figure:: images/vcxsev/vcxsrvinit1.png
+
 ![vcxsrvinit2.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit2.png)
+
+.. figure:: images/vcxsev/vcxsrvinit2.png
 
 `Disable access control`にチェックを入れてください。
 
 ![vcxsrvinit3.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit3.png)
 
+.. figure:: images/vcxsev/vcxsrvinit3.png
+
 以上を毎回設定するのは面倒なので、`Save configuration`を押してください。
 
 ![vcxsrvinit4.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit4.png)
 
+.. figure:: images/vcxsev/vcxsrvinit4.png
+
 例えば設定ファイルをデスクトップに配置すると、以下のアイコンが表示されます。これをダブルクリックすると、保存した設定のXサーバーが起動します。
 
 ![icon.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/icon.png)
+
+.. figure:: images/vcxsrv/icon.png
 
 - MobaXterm
 
@@ -208,17 +224,22 @@ Xサーバー（VcXsrvもしくはMobaXterm；これらはWindowsのアプリケ
 
 ![moba_exec.png](https://github.com/matelier/moku-moku/blob/master/images/moba_exec.png)
 
+.. figure:: images/vcxsrv/moba_exec.png
 
 今回はXサーバー（VcXsrvもしくはMobaXterm）とXクライアント（WSLで動作するUbuntu）を単一のWindows PCで動作させますが、WSLは仮想計算機として、Windowsとは別の計算機であるかのように振る舞います。また、大規模な計算機を利用する場合も、その計算機（Xクライアント；PCクラスター、スパコンなど）で描画コマンドを発行し、ネットワークを介して、手元のPC（WindowsのXサーバー）で表示させる使い方が一般的です。その際、Xクライアントに、Xサーバーの画面が（ネットワーク上の）どこにあるのか指示するために、`DISPLAY`環境変数を設定します。
 
 - WSL1の場合
+
 ```sh
 $ export DISPLAY=localohst:0
 ```
+
 - WSL2の場合
+
 ```sh
 $ export DISPLAY=`hostname`.mshome.net:0
 ```
+
 （参考）Qiita: [WSL2 での DISPLAY 設定](https://qiita.com/taichi-ishitani/items/b627e31a97fef24c6ee4)
 
 Xサーバーの動作を確認します。
@@ -235,6 +256,8 @@ gnuplot> plot sin(x)
 sin関数が表示されれば、Xサーバーが正常に動作しています。
 
 ![sin.png](https://github.com/matelier/moku-moku/blob/master/images/sin.png)
+
+.. figure:: images/vcxsrv/sin.png
 
 ### ファイル共有
 
@@ -257,7 +280,8 @@ WSLのファイルシステムは、Windowsからはネットワークドライ�
 エクスプローラーを起動してアドレスバーに`\\WSL$`と入力すると、`Ubuntu-20.04`が表示されます。これがWSLのファイルシステムです。
 うかつに操作するとWSL環境を破壊しかねませんので、ご注意ください。
 
-# アプリケーションのコンパイル
+アプリケーションのコンパイル
+-----
 
 PHASE/0
 ~~~~~
@@ -349,9 +373,11 @@ $ mpiexec -np 2 ../../bin/phase
 ~~~~~
 
 上記実行サンプルでは電荷密度分布が出力されていますので、それを描画します。VESTAを起動して、上部メニューから`Files` - `Open...`を選択し、ファイル選択ダイアログからアドレス（フォルダ位置）を以下のように設定します。最初に`\\wsl$`を入力して、マウス操作で選択すると便利です。
+
 ```
 \\wsl$\Ubuntu-20.04\home\[ユーザー名]\phase0_2020.01\samples\Si8
 ```
+
 選択可能なファイルとして`nfchr.cube`ファイルが表示されますので、これを選択するとVESTAで描画されます。
 
 ![chargeSi8half.png](https://github.com/matelier/moku-moku/blob/master/images/chargeSi8half.png)
@@ -396,6 +422,7 @@ PCクラスターなど常時稼働している実機には、Red Hat Enterprise
 [AlmaLinux](https://almalinux.org)は2022年以降も引き続き利用可能なRHEL互換OSの有力候補です。
 
 RHEL互換OSでは、`dnf`コマンドでソフトウェア（ライブラリ）を導入します。
+
 ```
 $ sudo dnf install -y gcc-gfortran fftw-static perl gnuplot make patch
 ```
@@ -426,21 +453,26 @@ Xサーバーは自動的にインストールされ、Xサーバーとクライ
 -----
 
 次のコマンドで、ディストリビューション名とそのバージョンを調べます。
+
 ```
 > wsl -l -v
 ```
+
 実行結果は以下のようになります。
+
 ```
   NAME            STATE           VERSION
 * Ubuntu-20.04    Stopped         2
 ```
 
 ディストリビューション`Ubuntu-20.04`をWSL1に変換するには、以下のコマンドを実行します。
+
 ```
 > wsl --set-version Ubuntu-20.04 1
 ```
 
 ディストリビューション`Ubuntu-20.04`をWSL2に変換するには、以下のコマンドを実行します。
+
 ```
 > wsl --set-version Ubuntu-20.04 2
 ```
