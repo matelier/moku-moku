@@ -95,12 +95,17 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 
 64bit版の利用をお勧めします。
 
-![VESTA_download.png](https://github.com/matelier/moku-moku/blob/master/images/VESTA_download.png)
+![VESTA_download.png](https://github.com/matelier/moku-moku/blob/master/images/)
 
-ダウンロードしたZIPファイルを展開します。
+.. figure:: images/VESTA_download.png
+  :name: VESTA download
+
+  ダウンロードしたZIPファイルを展開します。
 
 ![VESTA_file.png](https://github.com/matelier/moku-moku/blob/master/images/VESTA_file.png)
 
+.. figure:: images/VESTA_file.png
+  :name: VESTA files
 
 WSL実行基盤の設定
 ~~~~~
@@ -315,6 +320,7 @@ $ ../../bin/phase
 ```
 
 ファイル`jobstatus000`（二回目以降の実行では001, 002, ...）に経過時間が出力されます。
+
 ```
  status       =      FINISHED
  iteration    =             14
@@ -322,6 +328,7 @@ $ ../../bin/phase
  iter_elec    =             14
  elapsed_time =        28.4640
 ```
+
 5行目が経過時間（単位：秒）です。
 
 PHASE/0：並列計算
