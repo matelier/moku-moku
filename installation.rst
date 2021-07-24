@@ -1,10 +1,10 @@
 もくもくインストール
-============================
+############################
 
 mokumoku-installation
 
 目的
------
+=========
 
 Windows PCに
 
@@ -23,8 +23,10 @@ Windows PCは以下の要件を満たすことを前提とします。
 
 Macなど、Windows以外の計算機については、[付録A](https://github.com/matelier/moku-moku/blob/master/installation.md#%E4%BB%98%E9%8C%B2awindowswsl-ubuntu%E4%BB%A5%E5%A4%96%E3%81%AE%E8%A8%88%E7%AE%97%E6%A9%9F)にて簡潔に説明します。
 
+Macなど、Windows以外の計算機については、 :ref:`appendixA` にて簡潔に説明します。
+
 PHASE/0利用講習会参加の前提条件
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 PHASE/0利用講習会に参加予定の方は、事前に以下の事柄を満たしてください。
 
@@ -34,24 +36,24 @@ PHASE/0利用講習会に参加予定の方は、事前に以下の事柄を満�
 - テキストエディタの操作に不安がある方は `gedit` をインストールすること
 
 選択肢
--------
+=======
 
 環境設定に際し、選択の自由度があります。どれを選ぶのか決めてから、作業に着手してください。
 
 WSLのバージョン
-~~~~~~~~~~~~~~~~
+-----------------
 
 - WSL1
 - WSL2
 
 WSLには、WSL1とWSL2があります。バージョン2は、バージョン1の完全上位版ではありません。また、インストール後に相互変換可能です。
 
-[WSL 1 と WSL 2 の比較 \| Microsoft Docs](https://docs.microsoft.com/ja-jp/windows/wsl/compare-versions)
+`WSL 1 と WSL 2 の比較 \| Microsoft Docs <https://docs.microsoft.com/ja-jp/windows/wsl/compare-versions>`_
 
 なお、WSL2に対応した実行基盤上でWSL1を動作させることが可能ですので、実行基盤はWSL2対応のみを説明します。
 
 Xサーバーソフトウェア
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 - `MobaXterm <https://mobaxterm.mobatek.net>`_
 - `VcXsrv <https://sourceforge.net/projects/vcxsrv/>`_
@@ -62,14 +64,15 @@ Xサーバーソフトウェア
 
 
 環境設定
------------
+===========
 
 Windows用追加ソフトウェアのインストール
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------
 
 WSLの設定に先立ち、Windowsアプリケーションをインストールします。
 
-### Windowsインストーラー利用
+Windowsインストーラー利用
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Windowsの作法に則ってインストールします。Windowsの管理者権限が必要です。
 
@@ -82,18 +85,19 @@ Windowsの作法に則ってインストールします。Windowsの管理者権
 .. figure:: images/mobaX.png
   :name: MobaXterm install
 
-### ポータブル版
+ポータブル版
+~~~~~~~~~~~~~~
 
 （管理者権限不要です）
 
 ZIPファイルをダウンロードし、展開したものをお好きなディレクトリに配置してください。exeファイルをダブルクリックして実行します。
 
-- [MobaXterm](https://mobaxterm.mobatek.net)
+- `MobaXterm <https://mobaxterm.mobatek.net>`_
 
 .. figure:: images/moba_file.png
   :name: MobaXterm file
 
-- [VESTA](http://jp-minerals.org/vesta/jp/)
+- `VESTA <http://jp-minerals.org/vesta/jp/>`_
 
 64bit版の利用をお勧めします。
 
@@ -106,11 +110,11 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
   :name: VESTA files
 
 WSL実行基盤の設定
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 マイクロソフト社提供のドキュメントから、かいつまんで説明します。
 
-[Windows 10 に WSL をインストールする \| Microsoft Docs](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10#step-6%E2%80%94install-your-linux-distribution-of-choice)
+`Windows 10 に WSL をインストールする \| Microsoft Docs <https://docs.microsoft.com/ja-jp/windows/wsl/install-win10#step-6%E2%80%94install-your-linux-distribution-of-choice>`_
 
 管理者でサインインして、コントロールパネルから、 `プログラムと機能` を選び、ウィンドウ左に並んでいる `Windowsの機能の有効化または無効化` を選ぶと、下に図示するウィンドウが開きます。機能名の左にチェックボックスがありますので、 `Linux用Windowsサブシステム` と `仮想マシンプラットフォーム` にチェックを入れてください。 `OK` を押すとしばらくして再起動を促されますので、再起動してください。
 
@@ -120,20 +124,22 @@ WSL実行基盤の設定
 
 続けて、 `Linuxカーネル更新プログラムパッケージ` をインストールします。ダウンロードして、ダブルクリックするとインストーラーが起動します。
 
-[x64 マシン用 WSL2 Linux カーネル更新プログラム パッケージ](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+`x64 マシン用 WSL2 Linux カーネル更新プログラム パッケージ <https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi>`_
 
 
 WSLの導入と設定（Ubuntu-20.04）
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 ここからは（Windowsの）管理者権限不要です。
 
-### OS本体（仮想計算機）
+OS本体（仮想計算機）
+~~~~~~~~~~~~~~~~~~~~~
 
 WSL2を利用する場合は、コマンドプロンプト（もしくはPower Shell）を起動して、以下のコマンドを入力してください。今後追加するWSL環境がWSL2に自動設定されます。
-```sh
-wsl --set-default-version 2
-```
+
+.. code-block::
+
+  wsl --set-default-version 2
 
 導入後のWSL1 <-> WSL2の相互変換は、[付録C](https://github.com/matelier/moku-moku/blob/master/installation.md#%E4%BB%98%E9%8C%B2cwsl1%E3%81%A8wsl2%E3%81%AE%E7%9B%B8%E4%BA%92%E5%A4%89%E6%8F%9B)を参照してください。
 
@@ -173,7 +179,8 @@ Linux上での作業では、テキストエディタを使用します。標準
 ※PHASE/0利用講習会参加時の注意事項：
 いずれのエディタにも不慣れな方向けに、講習会では `gedit` の操作方法を簡潔に説明します。該当する方は `gedit` をインストールしてください。
 
-### X Windows Systemの設定
+X Windows Systemの設定
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 WSL環境からグラフィックスをWindowsの画面に表示するための設定です。
 
@@ -219,13 +226,13 @@ Xサーバー（VcXsrvもしくはMobaXterm；これらはWindowsのアプリケ
 
   $ export DISPLAY=`hostname`.mshome.net:0
 
-（参考）Qiita: [WSL2 での DISPLAY 設定](https://qiita.com/taichi-ishitani/items/b627e31a97fef24c6ee4)
+（参考）Qiita: `WSL2 での DISPLAY 設定 <https://qiita.com/taichi-ishitani/items/b627e31a97fef24c6ee4?>`_
 
 Xサーバーの動作を確認します。
 
-```sh
-$ gnuplot
-```
+.. code-block::
+
+  $ gnuplot
 
 .. code-block::
 
@@ -236,54 +243,57 @@ sin関数が表示されれば、Xサーバーが正常に動作しています�
 
 .. figure:: images/sin.png
 
-### ファイル共有
+ファイル共有
+~~~~~~~~~~~~~~~~
 
 WSLは、Windowsから独立した計算機であるかのように動作しますが、ファイルを共有するための仕組みが用意されています。
 
-#### WSLから、Windowsのファイルを読み書きする
+WSLから、Windowsのファイルを読み書きする
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-WindowsのCドライブは、WSLの`/mnt/c`にマウントされます。例えばWindowsのデスクトップに配置されたファイルは、Cドライブ以下`Users\[ユーザー名]\Desktop\`にあります。
+WindowsのCドライブは、WSLの `/mnt/c` にマウントされます。例えばWindowsのデスクトップに配置されたファイルは、Cドライブ以下 `Users\\\[ユーザー名\]\\Desktop\\` にあります。
 
-```sh
-$ cd /mnt/c/Users/[ユーザー名]/Desktop
-$ ls
-```
+.. code-block::
+
+  $ cd /mnt/c/Users/[ユーザー名]/Desktop
+  $ ls
 
 `[ユーザー名]` は、Windowsのユーザー名です。
 
-#### Windowsから、WSLのファイルを読み書きする
+Windowsから、WSLのファイルを読み書きする
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 WSLのファイルシステムは、Windowsからはネットワークドライブの様に見えます。
 エクスプローラーを起動してアドレスバーに `\\WSL$` と入力すると、 `Ubuntu-20.04` が表示されます。これがWSLのファイルシステムです。
 うかつに操作するとWSL環境を破壊しかねませんので、ご注意ください。
 
 アプリケーションのコンパイル
-----------------------------
+============================
 
 PHASE/0
-~~~~~~~~~
+----------
 
-PHASE/0のソースコードを[ダウンロード](https://azuma.nims.go.jp/cms1/downloads/software/)（登録が必要です）し、 `phase0_2020.01.tar.gz` と `phase0_2020.01.01.patch` をWindowsのデスクトップに配置します。Ubuntuを起動し、ホームディレクトリにこれらのファイルをコピーします。
+PHASE/0のソースコードを `ダウンロード <https://azuma.nims.go.jp/cms1/downloads/software/>`_ （登録が必要です）し、 `phase0_2020.01.tar.gz` と `phase0_2020.01.01.patch` をWindowsのデスクトップに配置します。Ubuntuを起動し、ホームディレクトリにこれらのファイルをコピーします。
 
-```sh
-$ cd
-$ cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2020.01.tar.gz ~
-$ cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2020.01.01.patch ~
-```
+.. code-block::
+
+  $ cd
+  $ cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2020.01.tar.gz ~
+  $ cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2020.01.01.patch ~
 
 ファイルを伸長し、パッチを当てます。
 
-```sh
-$ tar zxf phase0_2020.01.tar.gz
-$ cd phase0_2020.01
-$ patch -p 1 < ../phase0_2020.01.01.patch
-```
+.. code-block::
+
+  $ tar zxf phase0_2020.01.tar.gz
+  $ cd phase0_2020.01
+  $ patch -p 1 < ../phase0_2020.01.01.patch
 
 インストールスクリプトを起動します。
 
-```sh
-$ ./install.sh
-```
+.. code-block::
+
+  $ ./install.sh
 
 入力を促されますので、順に以下の通り入力してください。
 
@@ -303,22 +313,22 @@ $ ./install.sh
 テスト計算まで実行されます。縦に並んだ二組の数値が、それぞれほぼ同じであれば良好です。
 
 動作検証
-----------
+==========
 
 続けて、付属サンプル `samples/Si8` で動作を検証します。
 
-```sh
-$ cd samples/Si8
-```
+.. code-block::
+
+  $ cd samples/Si8
 
 PHASE/0：電子状態計算
-~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 まず、1コアだけ利用して計算します（非並列）。
 
-```sh
-$ ../../bin/phase
-```
+.. code-block::
+
+  $ ../../bin/phase
 
 ファイル `jobstatus000` （二回目以降の実行では001, 002, ...）に経過時間が出力されます。
 
@@ -333,13 +343,13 @@ $ ../../bin/phase
 5行目が経過時間（単位：秒）です。
 
 PHASE/0：並列計算
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 次に並列計算をテストします。 `-np 2` で2並列で実行することを指示します。WSL1では並列実行時にWarningが出力されますが、計算結果に悪影響はありません。
 
-```sh
-$ mpiexec -np 2 ../../bin/phase
-```
+.. code-block::
+
+  $ mpiexec -np 2 ../../bin/phase
 
 実行時間が概ね半分になっていれば（半分より少し多くて）正常です。物理コア数以上の並列は実行時間の短縮になりません。
 
@@ -347,7 +357,7 @@ $ mpiexec -np 2 ../../bin/phase
 上記計算の実行時間が概ね20秒以下であることを想定したペースで進行します。極端に計算が遅い（実行に長い時間を要する）場合は、前もってご相談ください。
 
 電荷密度分布の可視化（VESTA）
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 上記実行サンプルでは電荷密度分布が出力されていますので、それを描画します。VESTAを起動して、上部メニューから `Files` - `Open...` を選択し、ファイル選択ダイアログからアドレス（フォルダ位置）を以下のように設定します。最初に `\\wsl$` を入力して、マウス操作で選択すると便利です。
 
@@ -359,67 +369,71 @@ $ mpiexec -np 2 ../../bin/phase
 
 ![chargeSi8half.png](https://github.com/matelier/moku-moku/blob/master/images/chargeSi8half.png)
 
+.. figure:: images/chargeSi8half.png
+
 この意味にご興味ある方は、PHASE利用講習会に参加してください。
 
+.. _appendixA:
+
 付録A：Windows（WSL Ubuntu）以外の計算機
-------------------------------------------
+==========================================
 
 コンパイラ（C, Fortran）、MPI（並列計算ライブラリ）、FFTW3（高速フーリエ変換ライブラリ）を用意すると何とかなる場合が多いです。
 その他 Python3, gnuplot, Emacsなどお好みで追加してください。
 
-wSLのUbuntu以外のディストリビューション
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WSLのUbuntu以外のディストリビューション
+----------------------------------------
 
 - Microsoft Store
-  - https://aka.ms/wslstore
+    - https://aka.ms/wslstore
 - Microsoft Store以外
-  - [Project List Using wsldl \| Wsldl official documentation](https://wsldl-pg.github.io/docs/Using-wsldl/#distros)
+    - `Project List Using wsldl \| Wsldl official documentation' <https://wsldl-pg.github.io/docs/Using-wsldl/#distros>`_
 
 mac
-~~~~~
+------
 
-[M1 Macへのインストール手順](https://github.com/Materials-Science-Software-Consortium/phase0_install/blob/main/Mac_M1/README.md)を参照してください。
+`M1 Macへのインストール手順 <https://github.com/Materials-Science-Software-Consortium/phase0_install/blob/main/Mac_M1/README.md>`_ を参照してください。
 
-[XQuartz](https://www.xquartz.org)は、Macで動作する代表的なXサーバーです。インストールしてください。
+`XQuartz <https://www.xquartz.org>`_ は、Macで動作する代表的なXサーバーです。インストールしてください。
 
 macのターミナルは、UNIX的に利用できます。仮想計算機ではありませんので、 `DISPLAY` 環境変数を意識する必要はありません。
 
 linux：Ubuntu
-~~~~~~~~~~~~~~~~
+----------------
 
 使わなくなったWindows PCがあれば、Linuxを実機にインストールして利用できます。
-[Ubuntu](https://jp.ubuntu.com)はデスクトップ環境での利用を指向したディストリビューションですが、長期サポート（long-term support; LTS）が提供されていることが魅力です。
+`Ubuntu <https://jp.ubuntu.com>`_ はデスクトップ環境での利用を指向したディストリビューションですが、長期サポート（long-term support; LTS）が提供されていることが魅力です。
 
 `apt` コマンドの引数など、WSLと同じように利用できます。Xサーバーは自動的にインストールされ、Xサーバーとクライアントが正真正銘の同一計算機で動作しますので `DISPLAY` 環境変数の設定は不要です。
 
 Linux：AlmaLinux
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 PCクラスターなど常時稼働している実機には、Red Hat Enterprise Linux（以下RHELと記す）もしくはその互換OSが利用されることが多いです。RHEL互換OSの筆頭格であったCentOS 8のEOLが2021年末に変更（短縮）されました。（CentOS 7のEOLは2024年6月です。）
-[AlmaLinux](https://almalinux.org)は2022年以降も引き続き利用可能なRHEL互換OSの有力候補です。
+`AlmaLinux <https://almalinux.org>`_ は2022年以降も引き続き利用可能なRHEL互換OSの有力候補です。
 
 RHEL互換OSでは、 `dnf` コマンドでソフトウェア（ライブラリ）を導入します。
 
-```
-$ sudo dnf install -y gcc-gfortran fftw-static perl gnuplot make patch
-```
+.. code-block::
+
+  $ sudo dnf install -y gcc-gfortran fftw-static perl gnuplot make patch
 
 Xサーバーは自動的にインストールされ、Xサーバーとクライアントが正真正銘の同一計算機で動作しますので `DISPLAY` 環境変数の設定は不要です。
 
 付録B：Windowsのアカウント制御
--------------------------------
+================================
 
 （まとめ）WSLが利用可能になってさえいれば、その他の項目は管理者権限不要の代替手段があります。
 
 管理者権限が必要な作業
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 - WSLが利用可能になるようにWindowsの設定を変更
 - VcXsrvのインストール
 - MobaXtermのインストール（インストーラー版； `Program Files` 以下にインストールする場合）
 
 管理者権限不要
-~~~~~~~~~~~~~~~~~~~
+--------------------
 
 - MobaXtermのインストール（ポータブル版）
 - VESTAのインストール
@@ -427,13 +441,13 @@ Xサーバーは自動的にインストールされ、Xサーバーとクライ
 
 
 付録C：WSL1とWSL2の相互変換
-----------------------------
+=============================
 
 次のコマンドで、ディストリビューション名とそのバージョンを調べます。
 
-```
-> wsl -l -v
-```
+.. code-block::
+
+  > wsl -l -v
 
 実行結果は以下のようになります。
 
@@ -444,13 +458,13 @@ Xサーバーは自動的にインストールされ、Xサーバーとクライ
 
 ディストリビューション `Ubuntu-20.04` をWSL1に変換するには、以下のコマンドを実行します。
 
-```
-> wsl --set-version Ubuntu-20.04 1
-```
+.. code-block::
+
+  > wsl --set-version Ubuntu-20.04 1
 
 ディストリビューション `Ubuntu-20.04` をWSL2に変換するには、以下のコマンドを実行します。
 
-```
-> wsl --set-version Ubuntu-20.04 2
-```
+.. code-block::
+
+  > wsl --set-version Ubuntu-20.04 2
 
