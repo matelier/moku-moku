@@ -277,12 +277,12 @@ $ ./install.sh
 - `enter` （Netlib BLAS/LAPACK）
 - 1 `enter` （FFTW3 library）
 - /usr/lib `enter`
-- `enter` （yes）
-- `enter` （no）
-- `enter` （yes）
-- yes `enter`
+- `enter` （yes; ESM計算機能を有効にする）
+- `enter` （no; Makefileを修正しない）
+- `enter` （yes; 直ちにコンパイルする）
+- yes `enter`（yes; テスト計算を実行する）
 
-テスト計算まで実行されます。縦に並んだ二組の数値が、それぞれほぼ同じであれば良好です。
+最後に入力した`yes`でテスト計算が実行されます。縦に並んだ二組の数値が、それぞれほぼ同じであれば良好です。
 
 # 動作検証
 
