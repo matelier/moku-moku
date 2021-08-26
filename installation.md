@@ -197,7 +197,7 @@ Xサーバー（VcXsrvもしくはMobaXterm；これらはWindowsのアプリケ
 
 - WSL1の場合
 ```sh
-$ export DISPLAY=localohst:0
+$ export DISPLAY=localhost:0
 ```
 - WSL2の場合
 ```sh
