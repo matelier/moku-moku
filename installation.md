@@ -22,10 +22,11 @@ Windows PCは以下の要件を満たすことを前提とします。
 
 Macなど、Windows以外の計算機については、[付録A](https://github.com/matelier/moku-moku/blob/master/installation.md#%E4%BB%98%E9%8C%B2awindowswsl-ubuntu%E4%BB%A5%E5%A4%96%E3%81%AE%E8%A8%88%E7%AE%97%E6%A9%9F)にて簡潔に説明します。
 
-<details>
-<summary>PHASE/0利用講習会参加の前提条件</summary>
+## PHASE/0利用講習会参加の前提条件
 
-PHASE/0利用講習会に参加予定の方は、事前に以下の事柄を満たしてください。
+<details>
+
+<summary>PHASE/0利用講習会に参加予定の方は、事前に以下の事柄を満たしてください。</summary>
 
 - sin関数のグラフが表示できること
 - VESTAを使って`samples/Si8`の電荷密度分布が描画できること
