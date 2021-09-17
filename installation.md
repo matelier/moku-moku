@@ -171,7 +171,8 @@ WSL環境からグラフィックスをWindowsの画面に表示するための�
 
 Xサーバー（VcXsrvもしくはMobaXterm；これらはWindowsのアプリケーションです）を起動してください。
 
-- VcXsrv
+<details>
+<summary>VcXsrv</summary>
 
 スタートメニューから、`VcXsrv` - `XLaunch`を選択します。幾つか設定項目があります。最初の二つは「次へ」を押してください。
 
@@ -191,12 +192,16 @@ Xサーバー（VcXsrvもしくはMobaXterm；これらはWindowsのアプリケ
 
 ![icon.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/icon.png)
 
-- MobaXterm
+</details>
+
+<details>
+<summary>MobaXterm</summary>
 
 インストール版はスタートメニューから、ポータブル版はZIP展開したファイルを選択して起動します。
 
 ![moba_exec.png](https://github.com/matelier/moku-moku/blob/master/images/moba_exec.png)
 
+</details>
 
 今回はXサーバー（VcXsrvもしくはMobaXterm）とXクライアント（WSLで動作するUbuntu）を単一のWindows PCで動作させますが、WSLは仮想計算機として、Windowsとは別の計算機であるかのように振る舞います。また、大規模な計算機を利用する場合も、その計算機（Xクライアント；PCクラスター、スパコンなど）で描画コマンドを発行し、ネットワークを介して、手元のPC（WindowsのXサーバー）で表示させる使い方が一般的です。その際、Xクライアントに、Xサーバーの画面が（ネットワーク上の）どこにあるのか指示するために、`DISPLAY`環境変数を設定します。
 
