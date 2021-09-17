@@ -22,7 +22,8 @@ Windows PCは以下の要件を満たすことを前提とします。
 
 Macなど、Windows以外の計算機については、[付録A](https://github.com/matelier/moku-moku/blob/master/installation.md#%E4%BB%98%E9%8C%B2awindowswsl-ubuntu%E4%BB%A5%E5%A4%96%E3%81%AE%E8%A8%88%E7%AE%97%E6%A9%9F)にて簡潔に説明します。
 
-## PHASE/0利用講習会参加の前提条件
+<details>
+<summary>PHASE/0利用講習会参加の前提条件</summary>
 
 PHASE/0利用講習会に参加予定の方は、事前に以下の事柄を満たしてください。
 
@@ -30,6 +31,8 @@ PHASE/0利用講習会に参加予定の方は、事前に以下の事柄を満�
 - VESTAを使って`samples/Si8`の電荷密度分布が描画できること
 - `samples/Si8`の2並列での計算実行が20秒程度以内に終了すること
 - テキストエディタの操作に不安がある方は`gedit`をインストールすること
+
+</details>
 
 # 選択肢
 
