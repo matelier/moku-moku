@@ -51,7 +51,9 @@ WSLには、WSL1とWSL2があります。バージョン2は、バージョン1�
 - [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
 
 一般的にLinux環境では、グラフィックス描画にX Window Systemという仕組みを利用します。その仕組みを利用する（表示を担う）ためのソフトウェアが「Xサーバー」です。[VcXsrv](https://sourceforge.net/projects/vcxsrv/)は、代表的なWindows用のXサーバーソフトウェアです。インストールには管理者権限が必要です。
-一方[MobaXterm](https://mobaxterm.mobatek.net)は、Xサーバー付き（他にも盛沢山）の端末ソフトウェアです。WSLで材料シミュレーションを実行する目的にはオーバースペックですが、第一原理計算を本格活用すると手元のパソコンだけでは不十分で、他の（大規模な）計算機を利用するようになります。他の計算機にアクセスする際には、MobaXtermのような端末ソフトウェアが必要ですので、無駄ではありません。MobaXtermには、「インストーラー版」と「ポータブル版」があります。迷った方には後者をお勧めします。
+一方[MobaXterm](https://mobaxterm.mobatek.net)は、Xサーバー付き（他にも盛沢山）の端末ソフトウェアです。WSLで材料シミュレーションを実行する目的にはオーバースペックですが、第一原理計算を本格活用すると手元のパソコンだけでは不十分で、他の（大規模な）計算機を利用するようになります。他の計算機にアクセスする際には、MobaXtermのような端末ソフトウェアが必要になりますので、決して無駄ではありません。MobaXtermには、「インストーラー版」と「ポータブル版」があります。
+
+迷った方には、MobaXtermの「ポータブル版」をお勧めします。
 
 
 # 環境設定
@@ -245,44 +247,26 @@ WSLのファイルシステムは、Windowsからはネットワークドライ�
 
 ## PHASE/0
 
-PHASE/0のソースコードを[ダウンロード](https://azuma.nims.go.jp/cms1/downloads/software/)（登録が必要です）し、`phase0_2020.01.tar.gz`と`phase0_2020.01.01.patch`をWindowsのデスクトップに配置します。Ubuntuを起動し、ホームディレクトリにこれらのファイルをコピーします。
+PHASE/0のソースコードを[ダウンロード](https://azuma.nims.go.jp/cms1/downloads/software/)（登録が必要です）し、`phase0_2021.01.tar.gz`をWindowsのデスクトップに配置します。Ubuntuを起動し、ホームディレクトリにこれらのファイルをコピーします。
 
 ```sh
 $ cd
-$ cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2020.01.tar.gz ~
-$ cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2020.01.01.patch ~
+$ cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2021.01.tar.gz ~
 ```
 
-ファイルを伸長し、パッチを当てます。
+ファイルを伸長します。
 
 ```sh
-$ tar zxf phase0_2020.01.tar.gz
-$ cd phase0_2020.01
-$ patch -p 1 < ../phase0_2020.01.01.patch
+$ tar zxf phase0_2021.01.tar.gz
+$ cd phase0_2021.01
 ```
 
-インストールスクリプトを起動します。
+付属する`Makefile.Linux_generic`でコンパイルできます。
 
 ```sh
-$ ./install.sh
+$ cd src_phase
+$ make -f Makefile.Linux_generic
 ```
-
-入力を促されますので、順に以下の通り入力してください。
-
-- `enter` （yes）
-- 1 `enter` （GNU Linux (EM64T/AMD64)）
-- `enter` （gfortran）
-- 1 `enter` （MPI parallel）
-- `enter` （Open MPI）
-- `enter` （Netlib BLAS/LAPACK）
-- 1 `enter` （FFTW3 library）
-- /usr/lib `enter`
-- `enter` （yes; ESM計算機能を有効にする）
-- `enter` （no; Makefileを修正しない）
-- `enter` （yes; 直ちにコンパイルする）
-- yes `enter`（yes; テスト計算を実行する）
-
-最後に入力した`yes`でテスト計算が実行されます。縦に並んだ二組の数値が、それぞれほぼ同じであれば良好です。
 
 # 動作検証
 
