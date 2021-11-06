@@ -279,7 +279,7 @@ $ make -f Makefile.Linux_generic
 
 # 動作検証
 
-続けて、付属サンプル`samples/Si8`で動作を検証します。
+続けて、付属サンプル`samples/basic/Si8`で動作を検証します。
 
 ```sh
 $ cd samples/basic/Si8
