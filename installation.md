@@ -355,10 +355,10 @@ Macのターミナルは、UNIX的に利用できます。仮想計算機では�
 
 `apt`コマンドの引数など、WSLと同じように利用できます。Xサーバーは自動的にインストールされ、Xサーバーとクライアントが正真正銘の同一計算機で動作しますので`DISPLAY`環境変数の設定は不要です。
 
-## Linux：AlmaLinux
+## Linux：Rocky Linux, AlmaLinux
 
 PCクラスターなど常時稼働している実機には、Red Hat Enterprise Linux（以下RHELと記す）もしくはその互換OSが利用されることが多いです。RHEL互換OSの筆頭格であったCentOS 8のEOLが2021年末に変更（短縮）されました。（CentOS 7のEOLは2024年6月です。）
-[AlmaLinux](https://almalinux.org)は2022年以降も引き続き利用可能なRHEL互換OSの有力候補です。
+[Rocky Linux](https://rockylinux.org/)と[AlmaLinux](https://almalinux.org)は2022年以降も引き続き利用可能なRHEL互換OSの有力候補です。
 
 RHEL互換OSでは、`dnf`コマンドでソフトウェア（ライブラリ）を導入します。
 ```
