@@ -362,7 +362,12 @@ PCクラスターなど常時稼働している実機には、Red Hat Enterprise
 
 RHEL互換OSでは、`dnf`コマンドでソフトウェア（ライブラリ）を導入します。
 ```
-$ sudo dnf install -y gcc-gfortran fftw-static perl gnuplot make patch
+$ sudo dnf install -y gcc-gfortran openmpi-devel fftw-static perl gnuplot make patch
+```
+
+OpenMPI関連のコマンドは`/usr/lib64/openmpi/bin`以下にインストールされます。環境変数`PATH`を設定してください。
+```
+$ export PATH=/usr/lib64/openmpi/bin:$PATH
 ```
 
 Xサーバーは自動的にインストールされ、Xサーバーとクライアントが正真正銘の同一計算機で動作しますので`DISPLAY`環境変数の設定は不要です。
