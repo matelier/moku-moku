@@ -40,6 +40,7 @@ Macなど、Windows以外の計算機については、[付録A](https://github.
 環境設定に際し、選択の自由度があります。どれを選ぶのか決めてから、作業に着手してください。
 
 ## WSLのバージョン
+
 - WSL1
 - WSL2
   
@@ -51,6 +52,7 @@ WSLには、WSL1とWSL2があります。バージョン2は、バージョン1�
 <!--WSL2はHyper-Vと共存できません。-->
 
 ## Xサーバーソフトウェア
+
 - [MobaXterm](https://mobaxterm.mobatek.net)
 - [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
 
@@ -98,7 +100,6 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 
 ![VESTA_file.png](https://github.com/matelier/moku-moku/blob/master/images/VESTA_file.png)
 
-
 ## WSL実行基盤の設定
 
 マイクロソフト社提供のドキュメントから、かいつまんで説明します。
@@ -115,7 +116,6 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 
 [x64 マシン用 WSL2 Linux カーネル更新プログラム パッケージ](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
-
 ## WSLの導入と設定（Ubuntu-20.04）
 
 ここからは（Windowsの）管理者権限不要です。
@@ -123,6 +123,7 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 ### OS本体（仮想計算機）
 
 WSL2を利用する場合は、コマンドプロンプト（もしくはPower Shell）を起動して、以下のコマンドを入力してください。今後追加するWSL環境がWSL2に自動設定されます。
+
 ```sh
 wsl --set-default-version 2
 ```
@@ -207,13 +208,17 @@ Xサーバー（VcXsrvもしくはMobaXterm；これらはWindowsのアプリケ
 今回はXサーバー（VcXsrvもしくはMobaXterm）とXクライアント（WSLで動作するUbuntu）を単一のWindows PCで動作させますが、WSLは仮想計算機として、Windowsとは別の計算機であるかのように振る舞います。また、大規模な計算機を利用する場合も、その計算機（Xクライアント；PCクラスター、スパコンなど）で描画コマンドを発行し、ネットワークを介して、手元のPC（WindowsのXサーバー）で表示させる使い方が一般的です。その際、Xクライアントに、Xサーバーの画面が（ネットワーク上の）どこにあるのか指示するために、`DISPLAY`環境変数を設定します。
 
 - WSL1の場合
+
 ```sh
 $ export DISPLAY=localhost:0
 ```
+
 - WSL2の場合
+
 ```sh
 $ export DISPLAY=`hostname`.mshome.net:0
 ```
+
 （参考）Qiita: [WSL2 での DISPLAY 設定](https://qiita.com/taichi-ishitani/items/b627e31a97fef24c6ee4)
 
 Xサーバーの動作を確認します。
@@ -294,6 +299,7 @@ $ ../../../bin/phase
 ```
 
 ファイル`jobstatus000`（二回目以降の実行では001, 002, ...）に経過時間が出力されます。
+
 ```
  status       =      FINISHED 
  iteration    =             15
@@ -301,6 +307,7 @@ $ ../../../bin/phase
  iter_elec    =             15
  elapsed_time =       201.3720
 ```
+
 5行目が経過時間（単位：秒）です。
 
 ## PHASE/0：並列計算
@@ -319,9 +326,11 @@ $ mpiexec -np 2 ../../../bin/phase
 ## 電荷密度分布の可視化（VESTA）
 
 上記実行サンプルでは電荷密度分布が出力されていますので、それを描画します。VESTAを起動して、上部メニューから`Files` - `Open...`を選択し、ファイル選択ダイアログからアドレス（フォルダ位置）を以下のように設定します。最初に`\\wsl$`を入力して、マウス操作で選択すると便利です。
+
 ```
 \\wsl$\Ubuntu-20.04\home\[ユーザー名]\phase0_2021.01\samples\basic\Si8
 ```
+
 選択可能なファイルとして`nfchr.cube`ファイルが表示されますので、これを選択するとVESTAで描画されます。
 
 ![chargeSi8half.png](https://github.com/matelier/moku-moku/blob/master/images/chargeSi8half.png)
@@ -361,11 +370,13 @@ PCクラスターなど常時稼働している実機には、Red Hat Enterprise
 [Rocky Linux](https://rockylinux.org/)と[AlmaLinux](https://almalinux.org)は2022年以降も引き続き利用可能なRHEL互換OSの有力候補です。
 
 RHEL互換OSでは、`dnf`コマンドでソフトウェア（ライブラリ）を導入します。
+
 ```
 $ sudo dnf install -y gcc-gfortran openmpi-devel fftw-static perl gnuplot make patch
 ```
 
 OpenMPI関連のコマンドは`/usr/lib64/openmpi/bin`以下にインストールされます。環境変数`PATH`を設定してください。
+
 ```
 $ export PATH=/usr/lib64/openmpi/bin:$PATH
 ```
@@ -392,16 +403,20 @@ Xサーバーは自動的にインストールされ、Xサーバーとクライ
 # 付録C：WSL1とWSL2の相互変換
 
 次のコマンドで、ディストリビューション名とそのバージョンを調べます。
+
 ```
 > wsl -l -v
 ```
+
 実行結果は以下のようになります。
+
 ```
   NAME            STATE           VERSION
 * Ubuntu-20.04    Stopped         2
 ```
 
 ディストリビューション`Ubuntu-20.04`をWSL1に変換するには、以下のコマンドを実行します。
+
 ```
 > wsl --set-version Ubuntu-20.04 1
 ```
@@ -410,4 +425,3 @@ Xサーバーは自動的にインストールされ、Xサーバーとクライ
 ```
 > wsl --set-version Ubuntu-20.04 2
 ```
-
