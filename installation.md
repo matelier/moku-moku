@@ -43,7 +43,7 @@ Macなど、Windows以外の計算機については、[付録A](https://github.
 
 - WSL1
 - WSL2
-  
+
 WSLには、WSL1とWSL2があります。バージョン2は、バージョン1の完全上位版ではありません。また、インストール後に相互変換可能です。
 
 [WSL 1 と WSL 2 の比較 \| Microsoft Docs](https://docs.microsoft.com/ja-jp/windows/wsl/compare-versions)
@@ -301,7 +301,7 @@ $ ../../../bin/phase
 ファイル`jobstatus000`（二回目以降の実行では001, 002, ...）に経過時間が出力されます。
 
 ```
- status       =      FINISHED 
+ status       =      FINISHED
  iteration    =             15
  iter_ionic   =              1
  iter_elec    =             15
@@ -366,7 +366,8 @@ Macのターミナルは、UNIX的に利用できます。仮想計算機では�
 
 ## Linux：Rocky Linux, AlmaLinux
 
-PCクラスターなど常時稼働している実機には、Red Hat Enterprise Linux（以下RHELと記す）もしくはその互換OSが利用されることが多いです。RHEL互換OSの筆頭格であったCentOS 8のEOLが2021年末に変更（短縮）されました。（CentOS 7のEOLは2024年6月です。）
+PCクラスターなど常時稼働している科学技術計算用の実機には、Red Hat Enterprise Linux（以下RHELと記す）もしくはその互換OSが利用されることが多いです。
+具体的にはCentOS 8がその筆頭でしたが、同OSのEOLが2021年末に変更（短縮）されました（CentOS 7のEOLは2024年6月です）。
 [Rocky Linux](https://rockylinux.org/)と[AlmaLinux](https://almalinux.org)は2022年以降も引き続き利用可能なRHEL互換OSの有力候補です。
 
 RHEL互換OSでは、`dnf`コマンドでソフトウェア（ライブラリ）を導入します。
@@ -375,7 +376,8 @@ RHEL互換OSでは、`dnf`コマンドでソフトウェア（ライブラリ）
 $ sudo dnf install -y gcc-gfortran openmpi-devel fftw-static perl gnuplot make patch
 ```
 
-OpenMPI関連のコマンドは`/usr/lib64/openmpi/bin`以下にインストールされます。環境変数`PATH`を設定してください。
+OpenMPI関連のコマンドは`/usr/lib64/openmpi/bin`以下にインストールされます。
+環境変数`PATH`を設定してください。
 
 ```
 $ export PATH=/usr/lib64/openmpi/bin:$PATH
