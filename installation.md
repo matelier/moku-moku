@@ -261,18 +261,19 @@ WSLのファイルシステムは、Windowsからはネットワークドライ�
 
 ## PHASE/0
 
-PHASE/0のソースコードを[ダウンロード](https://azuma.nims.go.jp/cms1/downloads/software/)（登録が必要です）し、`phase0_2021.01.tar.gz`をWindowsのデスクトップに配置します。Ubuntuを起動し、ホームディレクトリにこれらのファイルをコピーします。
+PHASE/0のソースコードを[ダウンロード](https://azuma.nims.go.jp/cms1/downloads/software/)（登録が必要です）し、`phase0_2021.02.tar.gz`をWindowsのデスクトップに配置します。
+Ubuntuを起動し、ホームディレクトリにこれらのファイルをコピーします。
 
 ```sh
 $ cd
-$ cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2021.01.tar.gz ~
+$ cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2021.02.tar.gz ~
 ```
 
 ファイルを伸長します。
 
 ```sh
-$ tar zxf phase0_2021.01.tar.gz
-$ cd phase0_2021.01
+$ tar zxf phase0_2021.02.tar.gz
+$ cd phase0_2021.02
 ```
 
 付属する`Makefile.Linux_generic`でコンパイルできます。
@@ -328,7 +329,7 @@ $ mpiexec -np 2 ../../../bin/phase
 上記実行サンプルでは電荷密度分布が出力されていますので、それを描画します。VESTAを起動して、上部メニューから`Files` - `Open...`を選択し、ファイル選択ダイアログからアドレス（フォルダ位置）を以下のように設定します。最初に`\\wsl$`を入力して、マウス操作で選択すると便利です。
 
 ```
-\\wsl$\Ubuntu-20.04\home\[ユーザー名]\phase0_2021.01\samples\basic\Si8
+\\wsl$\Ubuntu-20.04\home\[ユーザー名]\phase0_2021.02\samples\basic\Si8
 ```
 
 選択可能なファイルとして`nfchr.cube`ファイルが表示されますので、これを選択するとVESTAで描画されます。
