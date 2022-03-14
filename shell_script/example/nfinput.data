@@ -1,0 +1,49 @@
+!-*- PHASE0 -*-
+control {
+	condition = initial
+	max_scf_iteration = 300
+}
+accuracy {
+	PAW = on
+	cutoff_wf =  30.0 Rydberg
+	cutoff_cd = 270.0 Rydberg
+	ksampling {
+		method = mesh
+		mesh { nx = 12, ny = 12, nz = 12 }
+	}
+	smearing { method = tetrahedral }
+}
+structure {
+	unit_cell_type = Bravais
+	unit_cell {
+	#units angstrom
+		a = $1, b = $1, c = $1
+		alpha = 90.0, beta = 90.0, gamma = 90.0
+	}
+	symmetry {
+		method = automatic
+		sw_inversion = on
+	}
+	atom_list {
+		atoms {
+		#tag element rx ry rz
+			Fe 0.0 0.0 0.0
+			$2 0.5 0.5 0.5
+		}
+	}
+	magnetic_state = ferro
+	element_list {
+	#tag element atomicnumber zeta
+		Fe        26       0.7
+		$2        $3       0.7
+	}
+}
+wavefunction_solver {
+	rmm { edelta_change_to_rmm = 0.0 }
+}
+charge_mixing {
+	method = broyden2
+}
+structure_evolution {
+	stress { sw_stress = on }
+}
