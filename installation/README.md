@@ -74,11 +74,11 @@ Windowsの作法に則ってインストールします。Windowsの管理者権
 
 - [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
 
-![vcxsrv.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv.png)
+![vcxsrv.png](./images/vcxsrv.png)
 
 - [MobaXterm](https://mobaxterm.mobatek.net)
 
-![mobaX.png](https://github.com/matelier/moku-moku/blob/master/images/mobaX.png)
+![mobaX.png](./images/mobaX.png)
 
 ### ポータブル版
 
@@ -88,17 +88,17 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 
 - [MobaXterm](https://mobaxterm.mobatek.net)
 
-![moba_file.png](https://github.com/matelier/moku-moku/blob/master/images/moba_file.png)
+![moba_file.png](./images/moba_file.png)
 
 - [VESTA](http://jp-minerals.org/vesta/jp/)
 
 64bit版の利用をお勧めします。
 
-![VESTA_download.png](https://github.com/matelier/moku-moku/blob/master/images/VESTA_download.png)
+![VESTA_download.png](./images/VESTA_download.png)
 
 ダウンロードしたZIPファイルを展開します。
 
-![VESTA_file.png](https://github.com/matelier/moku-moku/blob/master/images/VESTA_file.png)
+![VESTA_file.png](./images/VESTA_file.png)
 
 ## WSL実行基盤の設定
 
@@ -108,9 +108,9 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 
 管理者でサインインして、コントロールパネルから、`プログラムと機能`を選び、ウィンドウ左に並んでいる`Windowsの機能の有効化または無効化`を選ぶと、下に図示するウィンドウが開きます。機能名の左にチェックボックスがありますので、`Linux用Windowsサブシステム`と`仮想マシンプラットフォーム`にチェックを入れてください。`OK`を押すとしばらくして再起動を促されますので、再起動してください。
 
-![top.png](https://github.com/matelier/moku-moku/blob/master/images/top.png)
+![top.png](./images/top.png)
 
-![bottom.png](https://github.com/matelier/moku-moku/blob/master/images/bottom.png)
+![bottom.png](./images/bottom.png)
 
 続けて、`Linuxカーネル更新プログラムパッケージ`をインストールします。ダウンロードして、ダブルクリックするとインストーラーが起動します。
 
@@ -133,7 +133,7 @@ wsl --set-default-version 2
 WSL上では複数のLinuxディストリビューションが利用できます。ここでは、Ubuntuを利用することを前提に説明します。
 Linuxディストリビューションは、Microsoft Storeから入手します。WindowsでMicrosoft Storeを起動した後、検索窓に`Ubuntu`と入力してください。いくつか候補が表示される中から`Ubuntu 20.04LTS`を選び、表示される画面で`入手`もしくは`インストール`を押すとインストールされます。
 
-![store.png](https://github.com/matelier/moku-moku/blob/master/images/store.png)
+![store.png](./images/store.png)
 
 インストールするとスタートメニューに`Ubuntu 20.04 LTS`が現れるので、選択してください。ここから、Linuxの世界が始まります。初回起動時に、ユーザー名とパスワードを設定します。ユーザー名は、Windowsのアカウント名とは関係なく設定できます。同じでも良いですが、全角文字の使用はお勧めしません。パスワードにも全角文字を使用しないでください。
 
@@ -178,21 +178,21 @@ Xサーバー（VcXsrvもしくはMobaXterm；これらはWindowsのアプリケ
 
 スタートメニューから、`VcXsrv` - `XLaunch`を選択します。幾つか設定項目があります。最初の二つは「次へ」を押してください。
 
-![vcxsrvinit1.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit1.png)
+![vcxsrvinit1.png](./images/vcxsrv/vcxsrvinit1.png)
 
-![vcxsrvinit2.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit2.png)
+![vcxsrvinit2.png](./images/vcxsrv/vcxsrvinit2.png)
 
 `Disable access control`にチェックを入れてください。
 
-![vcxsrvinit3.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit3.png)
+![vcxsrvinit3.png](./images/vcxsrv/vcxsrvinit3.png)
 
 以上を毎回設定するのは面倒なので、`Save configuration`を押してください。
 
-![vcxsrvinit4.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/vcxsrvinit4.png)
+![vcxsrvinit4.png](./images/vcxsrv/vcxsrvinit4.png)
 
 例えば設定ファイルをデスクトップに配置すると、以下のアイコンが表示されます。これをダブルクリックすると、保存した設定のXサーバーが起動します。
 
-![icon.png](https://github.com/matelier/moku-moku/blob/master/images/vcxsrv/icon.png)
+![icon.png](./images/vcxsrv/icon.png)
 
 </details>
 
@@ -201,7 +201,7 @@ Xサーバー（VcXsrvもしくはMobaXterm；これらはWindowsのアプリケ
 
 インストール版はスタートメニューから、ポータブル版はZIP展開したファイルを選択して起動します。
 
-![moba_exec.png](https://github.com/matelier/moku-moku/blob/master/images/moba_exec.png)
+![moba_exec.png](./images/moba_exec.png)
 
 </details>
 
@@ -234,7 +234,7 @@ gnuplot> plot sin(x)
 
 sin関数が表示されれば、Xサーバーが正常に動作しています。
 
-![sin.png](https://github.com/matelier/moku-moku/blob/master/images/sin.png)
+![sin.png](./images/sin.png)
 
 ### ファイル共有
 
@@ -334,7 +334,7 @@ $ mpiexec -np 2 ../../../bin/phase
 
 選択可能なファイルとして`nfchr.cube`ファイルが表示されますので、これを選択するとVESTAで描画されます。
 
-![chargeSi8half.png](https://github.com/matelier/moku-moku/blob/master/images/chargeSi8half.png)
+![chargeSi8half.png](./images/chargeSi8half.png)
 
 この意味にご興味ある方は、PHASE利用講習会に参加してください。
 
