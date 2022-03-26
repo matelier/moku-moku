@@ -128,7 +128,7 @@ WSL2を利用する場合は、コマンドプロンプト（もしくはPower S
 wsl --set-default-version 2
 ```
 
-導入後のWSL1 <-> WSL2の相互変換は、[付録C](https://github.com/matelier/moku-moku/blob/master/installation.md#%E4%BB%98%E9%8C%B2cwsl1%E3%81%A8wsl2%E3%81%AE%E7%9B%B8%E4%BA%92%E5%A4%89%E6%8F%9B)を参照してください。
+導入後のWSL1 <-> WSL2の相互変換は、[付録C](#付録cwsl1とwsl2の相互変換)を参照してください。
 
 WSL上では複数のLinuxディストリビューションが利用できます。ここでは、Ubuntuを利用することを前提に説明します。
 Linuxディストリビューションは、Microsoft Storeから入手します。WindowsでMicrosoft Storeを起動した後、検索窓に`Ubuntu`と入力してください。いくつか候補が表示される中から`Ubuntu 20.04LTS`を選び、表示される画面で`入手`もしくは`インストール`を押すとインストールされます。
