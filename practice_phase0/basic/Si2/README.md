@@ -163,6 +163,7 @@ $ ../../../../bin/dos.pl dos.data -erange=-13,5 -with_fermi -color
 ```
 
 `density_of_states.eps`ファイルが生成されますので、ghostview（Windowsなど）, evince（主にLinux）, プレビュー（mac）などのソフトウェアでご覧ください。
+
 ![四面体法状態密度](images/dos_tetrahedral.svg)
 
 固体物理の教科書に掲載されている状態密度と同様の結果が得られました。
