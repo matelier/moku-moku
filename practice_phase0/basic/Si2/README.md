@@ -1,10 +1,9 @@
-シリコン単結晶（基本格子）
-=
+# シリコン単結晶（基本格子）
 
 一番最初に取り組む課題に適しています。
 4個の実行例を含み、その計算実行手順はサンプル内`basic/Si2/README`に説明されています。
 
-# 概要
+## 概要
 
 最も簡単な計算として、シリコン単結晶を扱います。
 
@@ -28,8 +27,7 @@ Bravais格子内の独立な原子は8個です。
 なおPHASE/0では、空間反転対称性（反転中心は座標原点）を利用すると、計算負荷を削減できます。
 この性質を利用できるように、サンプル入力ファイルでは原子を平行移動させた配置が採用されています。
 
-
-# SCF計算（scf）
+## SCF計算（scf）
 
 安定な原子配置、全エネルギーなどを求める計算です。
 この計算で得られた電荷密度分布を、バンド構造図など後の計算で利用します。
@@ -40,7 +38,8 @@ Bravais格子内の独立な原子は8個です。
 それでは`nfinp.data`の内容を見てみましょう。
 
 繰り返しの単位となる格子は、基本格子が三次元ベクトル表記で与えられています。
-```
+
+```sh
 unit_cell_type = primitive
 unit_cell{
     a_vector =  0.0000000000        5.1300000000        5.1300000000
@@ -48,18 +47,22 @@ unit_cell{
     c_vector =  5.1300000000        5.1300000000        0.0000000000
 }
 ```
+
 長さの単位は、既定値のBohrです。
 
 入力ファイルではBravais格子を与えて、基本格子で計算する設定は[bcc-Fe](../bcc_Fe/)を参照してください。
 
 対称性は`diamond`が指定されています。
-```
+
+```sh
 symmetry{
     crystal_structure = diamond
 }
 ```
+
 この指定は汎用性に乏しいので、ほぼ同じ意味である、以下の記述に変更しても良いでしょう。
-```
+
+```sh
 symmetry {
     method = automatic
     tspace {lattice_system = facecentered }
@@ -71,12 +74,14 @@ symmetry {
 このシリコン単結晶の例題は、極めて収束が容易ですので、詳細を気にする必要はありませんが、電子状態の収束が困難な場合はこれを見直す必要が生じます。
 
 計算は、下記コマンドで実行できます。
-```
+
+```sh
 mpiexec -np 2 ../../../bin/phase
 ```
 
 収束の様子を確認します。
-```ah
+
+```sh
 $ grep TH output000
  TOTAL ENERGY FOR     1 -TH ITER=     -7.843775135159 EDEL =  -0.784378D+01 : SOLVER = MATDIAGON : Charge-Mixing = BROYD2
  TOTAL ENERGY FOR     2 -TH ITER=     -7.851142435790 EDEL =  -0.736730D-02 : SOLVER = SUBMAT + lmMSD : Charge-Mixing = BROYD2
@@ -95,7 +100,7 @@ $
 本計算では、シリコン単結晶の電荷密度分布を得ました。
 続く例題ではこの電荷密度分布を利用して、状態密度図とバンド構造図を作成します。
 
-# 状態密度（dos）
+## 状態密度（dos）
 
 電荷密度分布はSCF計算の結果を用いて、更新しません。
 このような計算を**電荷密度固定計算**と呼びます。
@@ -109,14 +114,14 @@ $
 
 `control`タグ中の
 
-```
+```sh
 condition = fixed_charge
 ```
 
 は、電荷密度固定計算であることを指示しています。
 電荷密度の指定は、`file_names.data`で行います。
 
-```
+```sh
 F_CHGT   = '../scf/nfchgt.data'
 ```
 
@@ -125,7 +130,7 @@ SCF計算の出力ファイル`nfchgt.data`が相対パスで指定されてい�
 k点分割指定がSCF計算から変更されています。
 `mesh`法が指定されると同時に、`smearing`には`tetrahedral`法が指定されています。
 
-```
+```sh
 ksampling{
         method = mesh
         mesh{  nx = 4, ny =  4, nz =  4   }
@@ -137,7 +142,7 @@ smearing{
 
 最後の`postprocessing`ブロックで、状態密度計算を有効にします。
 
-```
+```sh
 dos{
     sw_dos = ON
     method = tetrahedral
@@ -150,16 +155,15 @@ dos{
 
 電荷密度固定計算の実行には、`ekcal`を用います。
 
-```
+```sh
 mpiexec -np 2 ../../../../bin/ekcal ne=2 nk=1
 ```
 
 計算が終了して、`dos.data`ファイルが出力されていれば、正しく実行できています。
 このファイルには状態密度の数値データが記述されていますので、それを画像（状態密度図）に変換します。
 
-
 ```sh
-$ ../../../../bin/dos.pl dos.data -erange=-13,5 -with_fermi -color
+../../../../bin/dos.pl dos.data -erange=-13,5 -with_fermi -color
 ```
 
 `density_of_states.eps`ファイルが生成されますので、ghostview（Windowsなど）, evince（主にLinux）, プレビュー（mac）などのソフトウェアでご覧ください。
@@ -173,7 +177,7 @@ $ ../../../../bin/dos.pl dos.data -erange=-13,5 -with_fermi -color
 なお、四面体法の利用を止めると、spikyな状態密度図が得られます。
 `postprocessing`ブロックで、状態密度計算方法を変更して再度計算します。
 
-```
+```sh
 dos{
     sw_dos = ON
     method = gaussian
@@ -189,7 +193,7 @@ dos{
 なお状態密度図は、Bravais格子で計算しても（全体が定数倍されますが；本質的には）同じ結果が得られます。
 これは、次に述べるバンド構造図の計算と対照的です。
 
-# バンド構造（band）
+## バンド構造（band）
 
 状態密度などの物理量は、ブリルアンゾーン内の状態を積分して最終結果を得ますので、その結果は実格子の取り方に依存しません。
 他方バンド構造図は、ブリルアンゾーン内の指定した対称線に沿ってエネルギー固有値をプロットしたものであり、ブリルアンゾーン内の積分を実行しません。そのため結果は実格子の取り方に依存します。
@@ -206,7 +210,7 @@ dos{
 例えば、(0, 1/2, 1/2)がX点です。
 この例では、X - &Gamma; - L - U - Xと繋げたバンド構造図を描画します。
 
-```
+```sh
 0.02
 -1.0  1.0  1.0
  1.0 -1.0  1.0
@@ -223,14 +227,14 @@ dos{
 このテンプレートから、k点座標ファイルを生成するコマンドは以下の通りです。
 
 ```sh
-$ ../../../../bin/band_kpoint.pl ../../../tools/bandkpt_fcc_xglux.in
+../../../../bin/band_kpoint.pl ../../../tools/bandkpt_fcc_xglux.in
 ```
 
 `kpoint.data`が生成されます。
 
 入力ファイル`input_band_Si.data`では、k点座標をファイルから読み込むように指定しています。
 
-```
+```sh
 ksampling{
     method = file
 }
@@ -238,7 +242,7 @@ ksampling{
 
 計算実行コマンドは、状態密度計算と同じです。
 
-```
+```sh
 mpiexec -np 2 ../../../../bin/ekcal ne=2 nk=1
 ```
 
@@ -246,14 +250,14 @@ mpiexec -np 2 ../../../../bin/ekcal ne=2 nk=1
 計算結果（固有値データ）`nfenergy.data`に加えて、k点生成テンプレートファイル`bandkpt_fcc_xglux.in`も指定します。
 
 ```sh
-$ ../../../../bin/band.pl nfenergy.data ../../../tools/bandkpt_fcc_xglux.in -erange=-13,5 -with_fermi -color
+../../../../bin/band.pl nfenergy.data ../../../tools/bandkpt_fcc_xglux.in -erange=-13,5 -with_fermi -color
 ```
 
 バンド構造図は、`band_structure.eps`に書き出されます。
 
 ![バンド構造図](images/band_structure.svg)
 
-# 構造緩和（relax）
+## 構造緩和（relax）
 
 この計算は、上記の計算とは独立しています。
 
@@ -267,7 +271,7 @@ $ ../../../../bin/band.pl nfenergy.data ../../../tools/bandkpt_fcc_xglux.in -era
 この例では、最安定な配置から意図的に原子を変位させた入力ファイルを用意して、その構造緩和計算でダイヤモンド構造に近づく様子を調べます。
 入力ファイルでは、原子位置が以下のように設定されています。
 
-```
+```sh
 atom_list{
     atoms{
     #tag   rx       ry         rz    element mobile
@@ -281,7 +285,7 @@ atom_list{
 `mobile`属性を`yes`（もしくは`on`、`1`）と指定された原子は、作用する力が収束条件以下になるまで、その位置が更新されます。
 力の収束条件は、accuracyブロックで指定します。
 
-```
+```sh
 force_convergence{
     max_force = 1.0e-3
 }
@@ -293,13 +297,13 @@ force_convergence{
 
 以下コマンドで計算実行します。
 
-```
+```sh
 mpiexec -np 2 ../../../../bin/phase
 ```
 
 構造緩和計算の過程は、`nfefn.data`ファイルに書き出されます。
 
-```
+```sh
   iter_ion, iter_total, etotal, forcmx
      1      14       -7.8735787783        0.0198988473
      2      21       -7.8742910787        0.0158402367

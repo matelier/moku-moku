@@ -1,7 +1,6 @@
-シアル酸（Sialic Acid）
-=
+# シアル酸（Sialic Acid）
 
-# 概要
+## 概要
 
 孤立系の例として、分子を計算します。
 
@@ -16,7 +15,7 @@ C<sub>11</sub>H<sub>19</sub>NO<sub>9</sub>
 
 入力ファイルは`work/geoopt_example/SialicAcid_EF.dat`です。
 
-# 入力ファイル説明
+## 入力ファイル説明
 
 総原子数は`40`、各原子位置はオングストローム単位の直交座標で与えられています。
 
@@ -55,7 +54,6 @@ Atoms.UnitVectors.Unit             Ang #  Ang|AU
 
 基底関数が重ならない大きさの格子が自動的に用意されます。
 
-
 孤立系に対しては`scf.EigenvalueSolver`に`cluster`を指定します。
 
 ```sh
@@ -70,23 +68,23 @@ k点分割`scf.Kgrid`は`1 1 1`で良いでしょう。
 MD.Type                     EF         # Nomd|Opt|NVE|NVT_VS|NVT_NH
 ```
 
-# 計算実行
+## 計算実行
 
 入力ファイルで基底関数のディレクトリを指定しない場合は、既定値`../DFT_DATA19/`が用いられます。
 これに対応するために、`geoopt_example`ディレクトリにある入力ファイルを一階層上にコピーします。
 
 ```sh
-$ cp SialicAcid_EF.dat ..
-$ cd ..
+cp SialicAcid_EF.dat ..
+cd ..
 ```
 
 MPI並列で計算実行します。
 
 ```sh
-$ mpiexec -np 2 ./openmx SialicAcid_EF.dat
+mpiexec -np 2 ./openmx SialicAcid_EF.dat
 ```
 
-# 結果確認
+## 結果確認
 
 計算終了すると、多くのファイルが出力されています。
 

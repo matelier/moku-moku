@@ -1,14 +1,13 @@
-ABINIT
-=
+# ABINITの練習
 
-# インストールと初期設定
+## インストールと初期設定
 
 複数の外部ライブラリに依存していることもあり、ソースからコンパイルする難易度は高めです。
 お手軽な方法として、Linuxで、condaを利用したコンパイル済みバイナリの導入を紹介します。
 MPI並列にも対応しています。
 
 ```sh
-$ conda install -c conda-forge abinit
+conda install -c conda-forge abinit
 ```
 
 サンプル（チュートリアル例題）はインストールされませんので、公式サイトから配布物をダウンロードして展開します。
@@ -23,7 +22,7 @@ $ conda install -c conda-forge abinit
 公式ドキュメントには、以下のように環境変数を設定するように書かれています。
 
 ```sh
-$ source ~$ABINIT/set_abienv.sh
+source ~$ABINIT/set_abienv.sh
 ```
 
 しかしながら以下の理由により、これは有効ではないと思います。
@@ -34,33 +33,33 @@ $ source ~$ABINIT/set_abienv.sh
 </details>
 
 ```sh
-$ export ABI_HOME=$ABINIT
-$ export ABI_TEST=$ABI_HOME/tests/
-$ export ABI_PSPDIR=$ABI_TEST/Psps_for_tests/
-$ export OMP_NUM_THREADS=1
+export ABI_HOME=$ABINIT
+export ABI_TEST=$ABI_HOME/tests/
+export ABI_PSPDIR=$ABI_TEST/Psps_for_tests/
+export OMP_NUM_THREADS=1
 ```
 
 チュートリアル例題は、`$ABINIT/tests/tutorial/Input`にあります。
 [公式サイトの説明](https://docs.abinit.org/tutorial/base1/#computing-the-pseudo-total-energy-and-some-associated-quantities)に沿って、その下に`Work`ディレクトリを作成し、入力ファイルをコピーして使います。
 
 ```sh
-$ cd $ABINIT/tests/tutorial/Input
-$ mkdir Work
-$ cd Work
+cd $ABINIT/tests/tutorial/Input
+mkdir Work
+cd Work
 ```
 
 一つ実行してみます。
 
 ```sh
-$ cp ../tbase1_1.abi .
-$ abinit tbase1_1.abi
+cp ../tbase1_1.abi .
+abinit tbase1_1.abi
 ```
 
 正常に動作すると`tbase1_1.abo`などのファイルが生成されます。
 `tbase1_1.abo`は検証用の実行結果が添付されていますので、比較します。
 
 ```sh
-$ diff tbase1_1.abo ../../Refs/
+diff tbase1_1.abo ../../Refs/
 ```
 
 完全には一致しませんが、よく似た値が出力されていることを確認してください。
