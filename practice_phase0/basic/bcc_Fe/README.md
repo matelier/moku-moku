@@ -1,5 +1,4 @@
-体心立方鉄
-=
+# 体心立方鉄
 
 体心立方格子の鉄の計算です。
 本サンプルの最大の特徴は、磁性、すなわち電子のスピン自由度を考慮していることです。
@@ -8,14 +7,14 @@
 
 入力ファイルではBravais格子を与えますが、電子状態計算は体心立方の基本格子について行います。
 
-# SCF計算（scf）
+## SCF計算（scf）
 
 Si2のSCF計算と対比して説明します。
 
 鉄（体心立方）は強磁性材料であり、計算に際してスピンを考慮するのが適切です。
 スピンを考慮する指定は、
 
-```
+```C
 magnetic_state = ferro
 ```
 
@@ -27,14 +26,14 @@ magnetic_state = ferro
 さらに、初期スピン分極を与えることが好ましいです。
 `zeta`としてこの例では0.275を与えています。
 
-```
+```C
 element_list{ #tag element  atomicnumber     zeta  dev
                          Fe            26    0.275  1.5 }
 ```
 
 入力ファイルで与えている格子は、一辺が2.8Åの立方体のBravais格子です。
 
-```
+```C
 unit_cell{
         #units angstrom
         a = 2.845, b = 2.845, c = 2.845
@@ -45,7 +44,7 @@ unit_cell{
 体心格子にも基本格子があり、その体積はBravais格子の半分です。
 次の指定で、基本格子で計算することを指示します。
 
-```
+```C
 symmetry{
         crystal_structure = bcc
 }
@@ -53,7 +52,7 @@ symmetry{
 
 この指定も汎用性が低いので、以下のように書き換えても良いです。
 
-```
+```C
 symmetry {
     method = automatic
     tspace { lattice_system = basecentered }
@@ -65,7 +64,7 @@ symmetry {
 
 鉄の場合は、基本格子の中の原子は一つだけです。
 
-```
+```C
 atoms{
     #tag  rx       ry         rz      element
         0.000     0.000     0.000          Fe
@@ -76,7 +75,7 @@ atoms{
 また、smearingには四面体法`tetrahedral`が指定されています。
 この指定があると、k点分割手法の既定値が`mesh`に変更されます。
 
-```
+```C
 ksampling{
 !       method = mesh
         mesh{ nx = 10, ny = 10, nz = 10 }
@@ -88,7 +87,7 @@ smearing{
 
 このSCF計算の後処理で四面体法による状態密度をするように、入力ファイルを変更します。
 
-```
+```C
 Postprocessing{
         dos{
                 sw_dos = on
@@ -116,7 +115,7 @@ k点並列で分割可能なのは、この半分の91です。
 並列分割を指定して、（主に）k点並列で実行することをお勧めします。
 
 ```sh
-$ mpiexec -np 4 ../../../../bin/phase ne=1 nk=4
+mpiexec -np 4 ../../../../bin/phase ne=1 nk=4
 ```
 
 ここではスピン分極が収束する様子を確認します。
@@ -150,16 +149,15 @@ $
 状態密度は、アップスピンとダウンスピンに対してそれぞれ計算されます。
 
 ```sh
-$ ../../../../bin/dos.pl dos.data -erange=-10,5 -with_fermi -color
+../../../../bin/dos.pl dos.data -erange=-10,5 -with_fermi -color
 ```
 
 ![状態密度図](images/dos_ferro.svg)
 
-
 さてここで、初期スピン分極の重要性を理解するために、この値をゼロにして再計算してみます。
 初期スピン分極`zeta`の既定値はゼロですので、指定をコメントアウトします。
 
-```
+```C
 element_list{ #tag element  atomicnumber     zeta  dev
                          Fe            26 }  !    0.275  1.5 }
 ```
@@ -196,7 +194,7 @@ element_list{ #tag element  atomicnumber     zeta  dev
 自然は安定な状態を好みますので、全エネルギーが低い状態が実現していると考えます。
 全エネルギー二回分の計算結果が`nfefn.data`ファイルに出力されています。
 
-```
+```C
   iter_ion, iter_total, etotal, forcmx
      1      14      -21.9923339387        0.0000000000
   iter_ion, iter_total, etotal, forcmx
@@ -206,7 +204,7 @@ element_list{ #tag element  atomicnumber     zeta  dev
 先に計算した、スピン分極した状態の方が、エネルギーが低いことがわかります。
 すなわち、鉄が磁石になることが、第一原理電子状態計算で再現できました。
 
-# 状態密度（dos）
+## 状態密度（dos）
 
 SCF計算で求めた状態密度とほぼ同じ結果が得られます。
 
@@ -219,7 +217,7 @@ SCF計算で求めた状態密度とほぼ同じ結果が得られます。
 ごく稀に、SCF計算の後処理として求めた状態密度やバンド構造の非占有状態がおかしな振る舞いを示すことがあります。
 その場合は、非占有準位のエネルギー固有値が収束していないことを疑ってみてください。
 
-# バンド構造図（band）
+## バンド構造図（band）
 
 バンド構造図の作成には、電荷密度固定計算が必須です。
 その手順は、スピンを考慮しない計算と本質的な違いはありません。
@@ -232,19 +230,19 @@ SCF計算が正しく実行されていることが、バンド構造図を正�
 `band_kpoint.pl`を使ってk点ファイル`kpoint.data`を生成します。
 
 ```sh
-$ ../../../../bin/band_kpoint.pl ../../../tools/bandkpt_bcc_ghnpgn.in
+../../../../bin/band_kpoint.pl ../../../tools/bandkpt_bcc_ghnpgn.in
 ```
 
 電荷密度固定計算を実行します。
 
 ```sh
-$ mpiexec -np 2 ../../../../bin/ekcal ne=2 nk=1
+mpiexec -np 2 ../../../../bin/ekcal ne=2 nk=1
 ```
 
 バンド構造図を作成して、描画します。
 
 ```sh
-$ ../../../../bin/band.pl nfenergy.data ../../../tools/bandkpt_bcc_ghnpgn.in -erange=-10,5 -with_fermi -color
+../../../../bin/band.pl nfenergy.data ../../../tools/bandkpt_bcc_ghnpgn.in -erange=-10,5 -with_fermi -color
 ```
 
 ![バンド構造図](images/band_structure.svg)
