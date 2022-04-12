@@ -88,7 +88,7 @@ mpiexec -np 2 ./openmx SialicAcid_EF.dat
 
 計算終了すると、多くのファイルが出力されています。
 
-各ステップの原子位置は、`SialicAcid_EF.md`に書き出されています。OpenMX Viewerで可視化できます。
+各ステップの原子位置は、`SialicAcid_EF.md`に書き出されています。[OpenMX Viewer](http://www.openmx-square.org/viewer/index.html)で可視化できます。
 その他に収束した（最終フレームの）原子配置が、以下のファイルに出力されています。
 
 - SialicAcid_EF.xyz
@@ -96,7 +96,7 @@ mpiexec -np 2 ./openmx SialicAcid_EF.dat
 - SialicAcid_EF.md2
 
 孤立系については、`xyz`をVESTAで可視化するのがわかりやすいでしょう。
-他方、`xyz`フォーマットには格子の情報が含まれないので、結晶の描画には適しません。
+他方、`xyz`フォーマットには格子の情報が含まれないので、結晶（周期系）の描画には適しません。
 
 なお、結晶の原子配置の描画には、格子の情報を含む`cif`が適しています。
 しかしながらこの例では、OpenMX Viewerは、全ての原子を格子内部に収めようとして、座標値が負の原子が格子境界を跨いだ格子の反対側に描画され、分子がバラバラに表示されてしまいます。
