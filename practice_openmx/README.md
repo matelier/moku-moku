@@ -8,7 +8,9 @@ Linuxに[Intel oneAPI](https://www.intel.com/content/www/us/en/developer/tools/o
 
 ### 入力ファイル書式
 
-http://www.openmx-square.org/openmx_man3.9jp/node19.html
+[マニュアル英語](http://www.openmx-square.org/openmx_man3.9/node19.html)
+
+[マニュアル日本語](http://www.openmx-square.org/openmx_man3.9jp/node19.html)
 
 `#`以降はコメントです。
 
@@ -39,6 +41,7 @@ DATA.PATH           /opt/OpenMX/DFT_DATA19
 要求される計算精度（許容される計算負荷）に応じて、推奨される基底関数を選択します。
 
 [マニュアル英語](http://www.openmx-square.org/openmx_man3.9/node27.html)
+
 [マニュアル日本語](http://www.openmx-square.org/openmx_man3.9jp/node27.html)
 
 ### 電荷密度混合法の選択
@@ -48,14 +51,17 @@ DATA.PATH           /opt/OpenMX/DFT_DATA19
 > 我々の経験上、plus $U$法と拘束法には「RMM-DIISH」が適切です。
 
 [マニュアル英語](http://www.openmx-square.org/openmx_man3.9/node40.html)
+
 [マニュアル日本語](http://www.openmx-square.org/openmx_man3.9jp/node40.html)
 
 ### 一部の原子のみを構造最適化の対象とする方法
 
 [マニュアル英語](http://www.openmx-square.org/openmx_man3.9/node51.html)
+
 [マニュアル日本語](http://www.openmx-square.org/openmx_man3.9jp/node51.html)
 
 ### 途中で計算を安全に停止させる
 
 [マニュアル英語](http://www.openmx-square.org/openmx_man3.9/node42.html)
+
 [マニュアル日本語](http://www.openmx-square.org/openmx_man3.9jp/node42.html)
