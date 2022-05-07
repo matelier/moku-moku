@@ -1,0 +1,34 @@
+set encoding iso
+unset key
+set size 0.88,1.0
+set xrange[-3e8:3e8]
+set xlabel font ",22"
+set ylabel font ",22"
+set xlabel "Electric field (V/m)"
+set ylabel "Force (eV/{\305})"
+set xtics offset 0,0.3
+set ytics offset 0.4,0
+set xlabel offset 0,0.6
+set ylabel offset 1.8,0
+f(x) = a*x + b
+
+set term svg enhanced font ",18"
+
+b = 0.0
+fit f(x) 'results.txt' u 1:2 via a,b
+set yrange[-0.07:0.07]
+set out 'force.svg'
+plot 'results.txt' u 1:2 ps 1 pt 7, f(x)
+
+unset yrange
+set ylabel "Polarization (C/m^2)"
+b = 1.617
+fit f(x) 'results.txt' u 1:3 via a,b
+set out 'polarization.svg'
+plot 'results.txt' u 1:3 ps 1 pt 7, f(x)
+
+set ylabel "Stress {\163}_{32} (hartree/bohr^3)"
+b = 0.0
+fit f(x) 'results.txt' u 1:4 via a,b
+set out 'stress.svg'
+plot 'results.txt' u 1:4 ps 1 pt 7, f(x)
