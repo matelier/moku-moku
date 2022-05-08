@@ -154,7 +154,7 @@ mpiexec -np 8 abinit tffield_6.abi > Log
 
 ![polarization](./images/polarization.svg)
 
-直線の傾きから求めた誘電率は6.42です。
+直線の傾きから求めた電気感受率は6.42、すなわち誘電率は7.42です。
 
 ## 応力
 
