@@ -1,0 +1,42 @@
+control {
+	condition = initial
+}
+
+accuracy {
+	xctype = vdwdf2-c09x
+	vdwdf { mode = scf }
+	cutoff_wf = 25 Rydberg
+	cutoff_cd = 225 Rydberg
+	num_bands = 12
+	ksampling {
+		mesh { nx = 12, ny = 12, nz = 4 }
+	}
+	smearing { method = tetrahedral }
+}
+
+structure {
+	unit_cell {
+	#units angstrom
+		a = 2.480, b = 2.480
+		c = $1
+		alpha = 90, beta = 90, gamma = 120
+	}
+	symmetry {
+		method = automatic
+		tspace { lattice_system = hexagonal }
+		sw_inversion = off
+	}
+	atom_list {
+		atoms {
+		#tag element rx ry rz
+			C  0.00             0.00          0.25
+			C  0.00             0.00          0.75
+			C  0.3333333333333  0.6666666667  0.25
+			C  0.6666666666667  0.3333333333  0.75
+		}
+	}
+	element_list {
+	#tag element atomicnumber
+		C  6
+	}
+}
