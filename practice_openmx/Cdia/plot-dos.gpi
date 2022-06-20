@@ -1,0 +1,18 @@
+set style data line
+set xrange[-25:]
+set xtics 10 font ",18"
+set ytics font ",18"
+set xlabel font ",22"
+set ylabel font ",22"
+set xlabel "Energy (eV)"
+set ylabel "DOS"
+unset key
+#set term svg enhanced font ",18"
+#set output 'dos.svg'
+#set xtics offset 0,0.2
+#set ytics offset 0.1,0
+#set xlabel offset 0,1
+#set ylabel offset 1,0
+
+plot 'cdia.Dos.Tetrahedron'
+pause(-1)
