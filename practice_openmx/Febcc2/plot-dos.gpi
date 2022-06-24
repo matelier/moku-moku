@@ -1,0 +1,19 @@
+set style data line
+set xrange[:5]
+set xtics font ",18"
+set ytics font ",18"
+set xlabel font ",22"
+set ylabel font ",22"
+set xlabel "Energy (eV)"
+set ylabel "DOS"
+unset key
+f(x) = 0.0
+#set term svg enhanced font ",18"
+#set output 'dos.svg'
+#set xtics offset 0,0.2
+#set ytics offset 0.1,0
+#set xlabel offset 0,1
+#set ylabel offset 1,0
+
+plot 'fe.DOS.Tetrahedron', 'fe.DOS.Tetrahedron' u 1:3, f(x) w l dt (10,10) lc rgb "black"
+pause(-1)
