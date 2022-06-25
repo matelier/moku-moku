@@ -50,7 +50,7 @@ FermiSurfer.fileout          on
 
 ```sh
 $ gnuplot
-gnuplot > plot 'cdia.Dos.Tetrahedron'
+gnuplot > plot 'cdia.DOS.Tetrahedron'
 ```
 
 ```sh

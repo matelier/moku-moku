@@ -14,5 +14,5 @@ unset key
 #set xlabel offset 0,1
 #set ylabel offset 1,0
 
-plot 'cdia.Dos.Tetrahedron'
+plot 'cdia.DOS.Tetrahedron'
 pause(-1)
