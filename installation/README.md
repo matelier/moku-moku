@@ -104,7 +104,9 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 
 マイクロソフト社提供のドキュメントから、かいつまんで説明します。
 
-[Windows 10 に WSL をインストールする \| Microsoft Docs](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10#step-6%E2%80%94install-your-linux-distribution-of-choice)
+<!-- [Windows 10 に WSL をインストールする \| Microsoft Docs](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10#step-6%E2%80%94install-your-linux-distribution-of-choice) -->
+
+[以前のバージョンの WSL の手動インストール手順](https://docs.microsoft.com/ja-jp/windows/wsl/install-manual)
 
 管理者でサインインして、コントロールパネルから、`プログラムと機能`を選び、ウィンドウ左に並んでいる`Windowsの機能の有効化または無効化`を選ぶと、下に図示するウィンドウが開きます。機能名の左にチェックボックスがありますので、`Linux用Windowsサブシステム`と`仮想マシンプラットフォーム`にチェックを入れてください。`OK`を押すとしばらくして再起動を促されますので、再起動してください。
 
