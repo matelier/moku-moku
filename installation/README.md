@@ -1,9 +1,8 @@
-もくもくインストール
-=
+# もくもくインストール
 
 mokumoku-installation
 
-# 目的
+## 目的
 
 Windows PCに
 
@@ -15,31 +14,32 @@ Windows PCに
 
 Windows PCは以下の要件を満たすことを前提とします。
 
-- Intel系プロセッサを搭載したWindows10 64bit版(HomeもしくはPro)
+- Intel系プロセッサを搭載したWindows10もしくは11の64bit版(HomeもしくはPro)
 - CPUが、仮想化支援機能に対応していること（Intel VT／AMD-V）
 
 一部の操作では管理者権限が必要です。特に、会社所有のPCをご使用の場合はご注意ください。
 
 Macなど、Windows以外の計算機については、[付録A](#付録awindowswsl-ubuntu以外の計算機)にて簡潔に説明します。
 
-## PHASE/0利用講習会参加の前提条件
+### PHASE/0利用講習会参加の前提条件
 
 <details>
 
 <summary>PHASE/0利用講習会に参加予定の方は、事前に以下の事柄を満たしてください。</summary>
 
+- Ubuntu環境 (WSL2推奨) がインストールされていること
 - sin関数のグラフが表示できること
 - VESTAを使って`samples/Si8`の電荷密度分布が描画できること
-- `samples/Si8`の2並列での計算実行が20秒程度以内に終了すること
+- PHASE/0 2021.02のインストールに成功し、`samples/Si8`の2並列での計算実行が20秒程度以内に終了すること
 - テキストエディタの操作に不安がある方は`gedit`をインストールすること
 
 </details>
 
-# 選択肢
+## 選択肢
 
 環境設定に際し、選択の自由度があります。どれを選ぶのか決めてから、作業に着手してください。
 
-## WSLのバージョン
+### WSLのバージョン
 
 - WSL1
 - WSL2
@@ -48,10 +48,10 @@ WSLには、WSL1とWSL2があります。バージョン2は、バージョン1�
 
 [WSL 1 と WSL 2 の比較 \| Microsoft Docs](https://docs.microsoft.com/ja-jp/windows/wsl/compare-versions)
 
-なお、WSL2に対応した実行基盤上でWSL1を動作させることが可能ですので、実行基盤はWSL2対応のみを説明します。
+<!-- なお、WSL2に対応した実行基盤上でWSL1を動作させることが可能ですので、実行基盤はWSL2対応のみを説明します。 -->
 <!--WSL2はHyper-Vと共存できません。-->
 
-## Xサーバーソフトウェア
+### Xサーバーソフトウェア
 
 - [MobaXterm](https://mobaxterm.mobatek.net)
 - [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
@@ -61,14 +61,13 @@ WSLには、WSL1とWSL2があります。バージョン2は、バージョン1�
 
 迷った方には、MobaXtermの「ポータブル版」をお勧めします。
 
+## 環境設定
 
-# 環境設定
-
-## Windows用追加ソフトウェアのインストール
+### Windows用追加ソフトウェアのインストール
 
 WSLの設定に先立ち、Windowsアプリケーションをインストールします。
 
-### Windowsインストーラー利用
+#### Windowsインストーラー利用
 
 Windowsの作法に則ってインストールします。Windowsの管理者権限が必要です。
 
@@ -80,7 +79,7 @@ Windowsの作法に則ってインストールします。Windowsの管理者権
 
 ![mobaX.png](./images/mobaX.png)
 
-### ポータブル版
+#### ポータブル版
 
 （管理者権限不要です）
 
@@ -100,31 +99,39 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 
 ![VESTA_file.png](./images/VESTA_file.png)
 
-## WSL実行基盤の設定（以前のバージョンの手動インストール）
+### WSL実行基盤の設定とUbuntuのインストール
 
-マイクロソフト社提供のドキュメントから、かいつまんで説明します。
+WSLのインストール手順はシンプルです。
 
-<!-- [Windows 10 に WSL をインストールする \| Microsoft Docs](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10#step-6%E2%80%94install-your-linux-distribution-of-choice) -->
+スタートメニューの右クリックから、管理者権限のWidowns PowerShell（もしくはコマンドプロンプト）を起動し、以下コマンドを実行するだけで、Ubuntu（ディストリビューションの規定値）がインストールされます。
 
-[以前のバージョンの WSL の手動インストール手順](https://docs.microsoft.com/ja-jp/windows/wsl/install-manual)
+```sh
+wsl --install
+```
 
-管理者でサインインして、コントロールパネルから、`プログラムと機能`を選び、ウィンドウ左に並んでいる`Windowsの機能の有効化または無効化`を選ぶと、下に図示するウィンドウが開きます。機能名の左にチェックボックスがありますので、`Linux用Windowsサブシステム`と`仮想マシンプラットフォーム`にチェックを入れてください。`OK`を押すとしばらくして再起動を促されますので、再起動してください。
+[WSL を使用して Windows に Linux をインストールする](https://docs.microsoft.com/ja-jp/windows/wsl/install)
 
-![top.png](./images/top.png)
+再起動を促された場合は、指示に従って再起動してください。
+サインインすると[初回起動](#初回起動)が始まります。
 
-![bottom.png](./images/bottom.png)
+このコマンドは、
 
-続けて、`Linuxカーネル更新プログラムパッケージ`をインストールします。ダウンロードして、ダブルクリックするとインストーラーが起動します。
+- WSL実行基盤が整っていない場合は、それを整えてから
+- ディストリビューションをインストール
 
-[x64 マシン用 WSL2 Linux カーネル更新プログラム パッケージ](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+します。
+前者「実行環境を整える」には管理者権限が必要ですが、後者のディストリビューションのインストールに管理者権限は不要です。
+前者のみを実行するコマンドは無いようですので、インストールされるディストリビューションが不要な場合はインストール後に削除するか、[手動で実行環境を整えて](https://github.com/matelier/moku-moku/blob/f373f46d1a4a65810831cd8394f5451433429040/installation/README.md)ください。
+また、`WSL`がすでにインストールされている場合、上記コマンドはヘルプメッセージを表示して終了します。
+次節以降を参照して、[ディストリビューションを指定したオンラインインストール](#規定値以外のディストリビューションのオンラインインストール
+)、もしくは、[Microsoft Storeからインストール](#microsoft-storeからのディストリビューション導入)してください。
 
-## WSLの導入と設定（Ubuntu-20.04）
+普段、管理者権限を持たない一般ユーザーとしてサインインしている方は、管理者としてサインインしてコマンド実行することをお勧めします。
+一般ユーザーとしてサインインして、管管理権限のWidowns PowerShell（もしくはコマンドプロンプト）から上記コマンドを入力した場合は、`Ubuntu`は管理者アカウントにインストールされますのでご注意ください。
 
-ここからは（Windowsの）管理者権限不要です。
-
-### OS本体（仮想計算機）
-
-WSL2を利用する場合は、コマンドプロンプト（もしくはPower Shell）を起動して、以下のコマンドを入力してください。今後追加するWSL環境がWSL2に自動設定されます。
+なお、管理者がディストリビューションをインストールすると、WSL2になるようです。
+管理者として実行基盤を整え、一般ユーザーがディストリビューションをインストールした場合は、WSL1が規定値です。
+一般ユーザーも規定値をWSL2にするためには、以下コマンドを実行します。
 
 ```sh
 wsl --set-default-version 2
@@ -132,12 +139,54 @@ wsl --set-default-version 2
 
 導入後のWSL1 <-> WSL2の相互変換は、[付録C](#付録cwsl1とwsl2の相互変換)を参照してください。
 
-WSL上では複数のLinuxディストリビューションが利用できます。ここでは、Ubuntuを利用することを前提に説明します。
-Linuxディストリビューションは、Microsoft Storeから入手します。WindowsでMicrosoft Storeを起動した後、検索窓に`Ubuntu`と入力してください。いくつか候補が表示される中から`Ubuntu 20.04LTS`を選び、表示される画面で`入手`もしくは`インストール`を押すとインストールされます。
+#### 規定値以外のディストリビューションのオンラインインストール
+
+`wsl --install`コマンドでインストール（オンラインインストール）できるのは`Ubuntu`だけではありません。
+以下のコマンドで、オンラインインストール可能なディストリビューション一覧が表示されます。
+
+```powershell
+PS C:\Users\matelier> wsl -l --online
+The following is a list of valid distributions that can be installed.
+Install using 'wsl --install -d <Distro>'.
+
+NAME            FRIENDLY NAME
+Ubuntu          Ubuntu
+Debian          Debian GNU/Linux
+kali-linux      Kali Linux Rolling
+openSUSE-42     openSUSE Leap 42
+SLES-12         SUSE Linux Enterprise Server v12
+Ubuntu-16.04    Ubuntu 16.04 LTS
+Ubuntu-18.04    Ubuntu 18.04 LTS
+Ubuntu-20.04    Ubuntu 20.04 LTS
+PS C:\Users\matelier>
+```
+
+例えば`Ubuntu 18.04LTS`をオンラインインストールするためには下記コマンドを実行します。
+
+```sh
+wsl --install -d Ubuntu-18.04
+```
+
+#### Microsoft Storeからのディストリビューション導入
+
+オンラインインストールできないけれども、Microsoft Storeから提供されているディストリビューションもあります。
+2022年8月中旬時点では、`Ubuntu 22.04LTS`がMicrosoft Storeから提供されていますが、オンラインインストールの対象外です。
+このインストールを例に説明します。
+
+Microsoft Storeにて、`wsl`で検索してください。
+いくつか候補が表示される中から`Ubuntu 22.04LTS`を選び、表示される画面で`入手`もしくは`インストール`をクリックするとインストールされます。
 
 ![store.png](./images/store.png)
 
-インストールするとスタートメニューに`Ubuntu 20.04 LTS`が現れるので、選択してください。ここから、Linuxの世界が始まります。初回起動時に、ユーザー名とパスワードを設定します。ユーザー名は、Windowsのアカウント名とは関係なく設定できます。同じでも良いですが、全角文字の使用はお勧めしません。パスワードにも全角文字を使用しないでください。
+インストール後、`開く`をクリックすると[初回起動](#初回起動)が始まります。
+
+#### 初回起動
+
+インストールに成功すると、Linuxの世界が始まります。
+初回起動時に、ユーザー名とパスワードを設定します。
+ユーザー名は、Windowsのユーザー名とは関係なく設定できます。
+同じでも良いですが、全角文字の使用はお勧めしません。
+パスワードにも全角文字を使用しないでください。
 
 ```sh
 Enter new UNIX username:
@@ -145,25 +194,33 @@ New password:
 Retype new password:
 ```
 
-以下の三つのコマンドを実行して、必要なソフトウェア（ライブラリ）を導入します。コマンド実行時にパスワード入力を求められたら、先に設定したパスワードを入力します。
+次回以降起動の際は、スタートメニューに`Ubuntu`などの項目が現れるので、それを選択してください（メニュー項目の詳細はインストールしたディストリビューションに依存します）。
+
+### Linux開発環境設定
+
+以下の三つのコマンドを実行して、必要なソフトウェア（ライブラリ）を導入します。
+コマンド実行時にパスワード入力を求められたら、初回起動時に設定したパスワードを入力します。
 
 ```sh
-$ sudo apt update
-$ sudo apt upgrade -y
-$ sudo apt install -y make gnuplot-x11 gfortran libopenmpi-dev libfftw3-dev evince
-```
-<!--3, 4行目は、紙面横幅の都合で改行しました。「\」を入力後に`Enter`を押すと、次の行に「>」が表示されるので続きを入力してください。「\」と「>」を省いて、続けて一行で入力しても同じ動作です。-->
-
-各コマンドは実行には時間を要します。ネットワーク環境が良いところで実行してください。ただし、セキュリティに厳しい組織内で実行すると、ファイヤーウォールで通信が遮断される場合があるそうです。
-
-Linux上での作業では、テキストエディタを使用します。標準で`vim`や`nano`はインストールされています。`Emacs`や`gedit`を使いたい人は、追加インストールしてください。
-
-```sh
-$ sudo apt install -y emacs
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -y make gnuplot-x11 gfortran libopenmpi-dev libfftw3-dev evince
 ```
 
+各コマンドの実行には時間を要します。
+ネットワーク環境が良いところで実行してください。
+ただし、セキュリティに厳しい組織内で実行すると、ファイヤーウォールで通信が遮断される場合があるそうです。
+
+Linux上での作業には、テキストエディタを使用します。
+標準で`vim`や`nano`はインストールされています。
+`Emacs`や`gedit`を使いたい人は、追加インストールしてください。
+
 ```sh
-$ sudo apt install -y gedit
+sudo apt install -y emacs
+```
+
+```sh
+sudo apt install -y gedit
 ```
 
 ※PHASE/0利用講習会参加時の注意事項：
@@ -212,13 +269,13 @@ Xサーバー（VcXsrvもしくはMobaXterm；これらはWindowsのアプリケ
 - WSL1の場合
 
 ```sh
-$ export DISPLAY=localhost:0
+export DISPLAY=localhost:0
 ```
 
 - WSL2の場合
 
 ```sh
-$ export DISPLAY=`hostname`.mshome.net:0
+export DISPLAY=`hostname`.mshome.net:0
 ```
 
 （参考）Qiita: [WSL2 での DISPLAY 設定](https://qiita.com/taichi-ishitani/items/b627e31a97fef24c6ee4)
@@ -226,10 +283,10 @@ $ export DISPLAY=`hostname`.mshome.net:0
 Xサーバーの動作を確認します。
 
 ```sh
-$ gnuplot
+gnuplot
 ```
 
-```
+```gnuplot
 gnuplot> set term x11
 gnuplot> plot sin(x)
 ```
@@ -247,8 +304,8 @@ WSLは、Windowsから独立した計算機であるかのように動作しま�
 WindowsのCドライブは、WSLの`/mnt/c`にマウントされます。例えばWindowsのデスクトップに配置されたファイルは、Cドライブ以下`Users\[ユーザー名]\Desktop\`にあります。
 
 ```sh
-$ cd /mnt/c/Users/[ユーザー名]/Desktop
-$ ls
+cd /mnt/c/Users/[ユーザー名]/Desktop
+ls
 ```
 
 `[ユーザー名]`は、Windowsのユーザー名です。
@@ -256,49 +313,51 @@ $ ls
 #### Windowsから、WSLのファイルを読み書きする
 
 WSLのファイルシステムは、Windowsからはネットワークドライブの様に見えます。
-エクスプローラーを起動してアドレスバーに`\\WSL$`と入力すると、`Ubuntu-20.04`が表示されます。これがWSLのファイルシステムです。
+エクスプローラーを起動してアドレスバーに`\\WSL$`と入力すると、`Ubuntu`などが表示されます。これがWSLのファイルシステムです。
 うかつに操作するとWSL環境を破壊しかねませんので、ご注意ください。
 
-# アプリケーションのコンパイル
+## アプリケーションのコンパイル
 
-## PHASE/0
+### PHASE/0
 
 PHASE/0のソースコードを[ダウンロード](https://azuma.nims.go.jp/cms1/downloads/software/)（登録が必要です）し、`phase0_2021.02.tar.gz`をWindowsのデスクトップに配置します。
 Ubuntuを起動し、ホームディレクトリにこれらのファイルをコピーします。
 
 ```sh
-$ cd
-$ cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2021.02.tar.gz ~
+cd
+cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2021.02.tar.gz ~
 ```
 
 ファイルを伸長します。
 
 ```sh
-$ tar zxf phase0_2021.02.tar.gz
-$ cd phase0_2021.02
+tar zxf phase0_2021.02.tar.gz
+cd phase0_2021.02
 ```
 
 付属する`Makefile.Linux_generic`でコンパイルできます。
 
 ```sh
-$ cd src_phase
-$ make -f Makefile.Linux_generic
+cd src_phase
+make -f Makefile.Linux_generic install
 ```
 
-# 動作検証
+ただし、`Ubuntu 22.04LTS`を使っている場合は、[こちら](https://github.com/Materials-Science-Software-Consortium/phase0_install/blob/main/Ubuntu22LTS/README.md)から`Makefile`を入手してください。
+
+## 動作検証
 
 続けて、付属サンプル`samples/basic/Si8`で動作を検証します。
 
 ```sh
-$ cd samples/basic/Si8
+cd samples/basic/Si8
 ```
 
-## PHASE/0：電子状態計算
+### PHASE/0：電子状態計算
 
 まず、1コアだけ利用して計算します（非並列）。
 
 ```sh
-$ ../../../bin/phase
+../../../bin/phase
 ```
 
 ファイル`jobstatus000`（二回目以降の実行では001, 002, ...）に経過時間が出力されます。
@@ -313,12 +372,12 @@ $ ../../../bin/phase
 
 5行目が経過時間（単位：秒）です。
 
-## PHASE/0：並列計算
+### PHASE/0：並列計算
 
 次に並列計算をテストします。`-np 2`で2並列で実行することを指示します。WSL1では並列実行時にWarningが出力されますが、計算結果に悪影響はありません。
 
 ```sh
-$ mpiexec -np 2 ../../../bin/phase
+mpiexec -np 2 ../../../bin/phase
 ```
 
 実行時間が概ね半分になっていれば（半分より少し多くて）正常です。物理コア数以上の並列は実行時間の短縮になりません。
@@ -326,11 +385,11 @@ $ mpiexec -np 2 ../../../bin/phase
 ※PHASE/0利用講習会参加時の注意事項：
 上記計算の実行時間が3分未満であることを想定したペースで進行します。極端に計算が遅い（実行に長い時間を要する）場合は、前もってご相談ください。
 
-## 電荷密度分布の可視化（VESTA）
+### 電荷密度分布の可視化（VESTA）
 
 上記実行サンプルでは電荷密度分布が出力されていますので、それを描画します。VESTAを起動して、上部メニューから`Files` - `Open...`を選択し、ファイル選択ダイアログからアドレス（フォルダ位置）を以下のように設定します。最初に`\\wsl$`を入力して、マウス操作で選択すると便利です。
 
-```
+```cmd
 \\wsl$\Ubuntu-20.04\home\[ユーザー名]\phase0_2021.02\samples\basic\Si8
 ```
 
@@ -340,93 +399,95 @@ $ mpiexec -np 2 ../../../bin/phase
 
 この意味にご興味ある方は、PHASE利用講習会に参加してください。
 
-# 付録A：Windows（WSL Ubuntu）以外の計算機
+## 付録A：Windows（WSL Ubuntu）以外の計算機
 
 コンパイラ（C, Fortran）、MPI（並列計算ライブラリ）、FFTW3（高速フーリエ変換ライブラリ）を用意すると何とかなる場合が多いです。
 その他 Python3, gnuplot, Emacsなどお好みで追加してください。
 
-## WSLのUbuntu以外のディストリビューション
+### WSLのUbuntu以外のディストリビューション
 
+- オンラインインストール
+  - 「wsl -l --online」コマンドで一覧表示されます。
 - Microsoft Store
-  - https://aka.ms/wslstore
-- Microsoft Store以外
+  - Microsoft Storeを起動し、`wsl`で検索してください。
+- その他
   - [Project List Using wsldl \| Wsldl official documentation](https://wsldl-pg.github.io/docs/Using-wsldl/#distros)
 
-## Mac
+### Mac
 
-[M1 Macへのインストール手順](https://github.com/Materials-Science-Software-Consortium/phase0_install/blob/main/Mac_M1/README.md)を参照してください。
+[Mac (Apple Silicon) へのインストール手順](https://github.com/Materials-Science-Software-Consortium/phase0_install/blob/main/Mac_M1/README.md)を参照してください。
 
 [XQuartz](https://www.xquartz.org)は、Macで動作する代表的なXサーバーです。インストールしてください。
 
 Macのターミナルは、UNIX的に利用できます。仮想計算機ではありませんので、`DISPLAY`環境変数を意識する必要はありません。
 
-## Linux：Ubuntu
+### Linux：Ubuntu
 
 使わなくなったWindows PCがあれば、Linuxを実機にインストールして利用できます。
 [Ubuntu](https://jp.ubuntu.com)はデスクトップ環境での利用を指向したディストリビューションですが、長期サポート（long-term support; LTS）が提供されていることが魅力です。
 
 `apt`コマンドの引数など、WSLと同じように利用できます。Xサーバーは自動的にインストールされ、Xサーバーとクライアントが正真正銘の同一計算機で動作しますので`DISPLAY`環境変数の設定は不要です。
 
-## Linux：Rocky Linux, AlmaLinux
+### Linux：Rocky Linux, AlmaLinux
 
 PCクラスターなど常時稼働している科学技術計算用の実機には、Red Hat Enterprise Linux（以下RHELと記す）もしくはその互換OSが利用されることが多いです。
-具体的にはCentOSがその筆頭でしたが、 CentOS 8のEOLが2021年末に変更（短縮）されました（CentOS 7のEOLは2024年6月です）。
+具体的にはCentOSがその筆頭でしたが、 CentOS 8は2021年末にEOLを迎えました（CentOS 7のEOLは2024年6月です）。
 [Rocky Linux](https://rockylinux.org/)と[AlmaLinux](https://almalinux.org)は2022年以降も引き続き利用可能なRHEL互換OSの有力候補です。
 
 RHEL互換OSでは、`dnf`コマンドでソフトウェア（ライブラリ）を導入します。
 
-```
-$ sudo dnf install -y gcc-gfortran openmpi-devel fftw-static perl gnuplot make patch
+```sh
+sudo dnf install -y gcc-gfortran openmpi-devel fftw-static perl gnuplot make patch
 ```
 
 OpenMPI関連のコマンドは`/usr/lib64/openmpi/bin`以下にインストールされます。
 環境変数`PATH`を設定してください。
 
-```
-$ export PATH=/usr/lib64/openmpi/bin:$PATH
+```sh
+export PATH=/usr/lib64/openmpi/bin:$PATH
 ```
 
 Xサーバーは自動的にインストールされ、Xサーバーとクライアントが正真正銘の同一計算機で動作しますので`DISPLAY`環境変数の設定は不要です。
 
-# 付録B：Windowsのアカウント制御
+## 付録B：Windowsのアカウント制御
 
 （まとめ）WSLが利用可能になってさえいれば、その他の項目は管理者権限不要の代替手段があります。
 
-## 管理者権限が必要な作業
+### 管理者権限が必要な作業
 
 - WSLが利用可能になるようにWindowsの設定を変更
 - VcXsrvのインストール
 - MobaXtermのインストール（インストーラー版；`Program Files`以下にインストールする場合）
 
-## 管理者権限不要
+### 管理者権限不要
 
 - MobaXtermのインストール（ポータブル版）
 - VESTAのインストール
 - （WSLが利用可能であることを前提として）Ubuntuをインストールし、それに各種設定を施す；UbuntuのインストールにはMicrosoftアカウントが必要です。
 
-
-# 付録C：WSL1とWSL2の相互変換
+## 付録C：WSL1とWSL2の相互変換
 
 次のコマンドで、ディストリビューション名とそのバージョンを調べます。
 
-```
+```powershell
 > wsl -l -v
 ```
 
 実行結果は以下のようになります。
 
-```
+```powershell
   NAME            STATE           VERSION
 * Ubuntu-20.04    Stopped         2
 ```
 
 ディストリビューション`Ubuntu-20.04`をWSL1に変換するには、以下のコマンドを実行します。
 
-```
+```powershell
 > wsl --set-version Ubuntu-20.04 1
 ```
 
 ディストリビューション`Ubuntu-20.04`をWSL2に変換するには、以下のコマンドを実行します。
-```
+
+```powershell
 > wsl --set-version Ubuntu-20.04 2
 ```
