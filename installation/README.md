@@ -324,13 +324,13 @@ PHASE/0のソースコードを[ダウンロード](https://azuma.nims.go.jp/cms
 Ubuntuを起動し、ホームディレクトリにこれらのファイルをコピーします。
 
 ```sh
-cd
 cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2021.02.tar.gz ~
 ```
 
 ファイルを伸長します。
 
 ```sh
+cd
 tar zxf phase0_2021.02.tar.gz
 cd phase0_2021.02
 ```
