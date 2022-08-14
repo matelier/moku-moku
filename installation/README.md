@@ -91,6 +91,8 @@ ZIPファイルをダウンロードし、展開したものをお好きなデ�
 
 - [VESTA](http://jp-minerals.org/vesta/jp/)
 
+原子配置や電荷密度分布の可視化に利用するソフトウェアです。
+
 64bit版の利用をお勧めします。
 
 ![VESTA_download.png](./images/VESTA_download.png)
