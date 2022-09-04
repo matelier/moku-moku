@@ -77,6 +77,8 @@ Intel社製高性能コンパイラ[Intel oneAPI Toolkits](https://www.intel.com
 
 を選択して、ダウンロードします。
 
+![oneapidl.png](./images/oneapidl.png)
+
 Rocky Linuxのファイルシステムに移動した後、`sudo`コマンドを付けてインストーラーを起動します。
 
 ```sh
