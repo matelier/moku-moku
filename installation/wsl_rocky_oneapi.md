@@ -77,7 +77,7 @@ Intel社製高性能コンパイラ[Intel oneAPI Toolkits](https://www.intel.com
 
 を選択して、ダウンロードします。
 
-Rocky Linuxのファイルシステムに移動した後、`sudo`コマンドを付けてインストーラーを実行します。
+Rocky Linuxのファイルシステムに移動した後、`sudo`コマンドを付けてインストーラーを起動します。
 
 ```sh
 sudo sh ./l_BaseKit_p_2022.2.0262.sh
