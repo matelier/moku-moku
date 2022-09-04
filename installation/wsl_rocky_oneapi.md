@@ -28,7 +28,11 @@ Ubuntuなどの（標準的な）ディストリビューションは`c:\Users\�
 Rocky9.exe clean
 ```
 
-[Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?gl=jp)の利用をお勧めします。
+ログインには[Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?gl=jp)の利用をお勧めしますが、コマンドプロンプトからコマンド実行でも可能です。
+
+```cmd
+wsl -d Rocky9
+```
 
 初回ログインすると、管理者(`root`)になっています。
 通常作業は一般ユーザーで行うことが推奨されますので、新たにユーザーを作成します。
