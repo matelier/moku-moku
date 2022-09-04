@@ -24,7 +24,7 @@ Ubuntuなどの（標準的な）ディストリビューションは`c:\Users\�
 
 ちなみにアンインストールの際は、以下のコマンドを実行します。
 
-```sh
+```cmd
 Rocky9.exe clean
 ```
 
@@ -46,7 +46,7 @@ usermod -G wheel [user-name]
 
 一旦ログアウトし、コマンドプロンプトから以下のコマンドを実行して、ログイン時のユーザーを変更します。
 
-```sh
+```cmd
 Rocky9.exe config --default-user [user-name]
 ```
 
