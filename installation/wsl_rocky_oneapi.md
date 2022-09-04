@@ -22,11 +22,13 @@ Ubuntuなどの（標準的な）ディストリビューションは`c:\Users\�
 そのフォルダ内の`Rocky9.exe`を実行すれば、インストール完了です。
 `Rocky9.exe`の名前を変えると複数のRocky Linux環境を保持できます。
 
-なおアンインストールの際は、以下のコマンドを実行します。
+ちなみにアンインストールの際は、以下のコマンドを実行します。
 
 ```sh
 Rocky9.exe clean
 ```
+
+[Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?gl=jp)の利用をお勧めします。
 
 初回ログインすると、管理者(`root`)になっています。
 通常作業は一般ユーザーで行うことが推奨されますので、新たにユーザーを作成します。
