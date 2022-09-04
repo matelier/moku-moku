@@ -13,14 +13,14 @@ WSL環境は構築済みとして説明します。
 ## Rocky Linux
 
 RedHat Enterprise Linux (RHEL)互換ディストリビューションとして、長らく[CentOS](https://www.centos.org/)が君臨してきましたが、最新のStreamは、もはや我々が期待する互換ディストリビューション（ダウンストリーム）ではありません。
-新たに複数のRHEL互換ディストリビューションが立ち上げられた中、`Rocky Linux`は、[AlmaLinux](https://almalinux.org/ja/)と共にその中心的な役割を担うことが期待されています。
+新たに複数のRHEL互換ディストリビューションが立ち上げられた中、**Rocky Linux**は、[AlmaLinux](https://almalinux.org/ja/)と共にその中心的な役割を担うことが期待されています。
 
 WSL用のRocky Linuxは[こちら](https://github.com/mishamosher/RL-WSL)で配布されています。
 `RL9.zip`をダウンロードしてください。
-ファイルを展開し、フォルダ内の`Rocky9.exe`を実行すると、その場に`Rocky Linux`がインストール（ファイルが展開）されます。
-`Ubuntu`などの（標準的な）ディストリビューションは`c:\Users\ユーザー名\AppData\Local\Packages\`以下にインストールされますので、それを真似て、RL9フォルダを`c:\Users\ユーザー名\AppData\Local\Packages\RL9`に移動します。
+ファイルを展開し、フォルダ内の`Rocky9.exe`を実行すると、その場にRocky Linuxがインストール（ファイルが展開）されます。
+Ubuntuなどの（標準的な）ディストリビューションは`c:\Users\ユーザー名\AppData\Local\Packages\`以下にインストールされますので、それを真似て、RL9フォルダを`c:\Users\ユーザー名\AppData\Local\Packages\RL9`に移動します。
 そのフォルダ内の`Rocky9.exe`を実行すれば、インストール完了です。
-`Rocky9.exe`の名前を変えると複数の`Rocky Linux`環境を作成できます。
+`Rocky9.exe`の名前を変えると複数のRocky Linux環境を保持できます。
 
 なおアンインストールの際は、以下のコマンドを実行します。
 
@@ -28,7 +28,7 @@ WSL用のRocky Linuxは[こちら](https://github.com/mishamosher/RL-WSL)で配�
 Rocky9.exe clean
 ```
 
-初回ログインすると、管理者(root)になっています。
+初回ログインすると、管理者(`root`)になっています。
 通常作業は一般ユーザーで行うことが推奨されますので、新たにユーザーを作成します。
 `sudo`コマンドで管理作業ができるように、`wheel`グループに追加することをおすすめします。
 
@@ -44,8 +44,8 @@ usermod -G wheel [user-name]
 Rocky9.exe config --default-user [user-name]
 ```
 
-次回以降`Rocky Linux`を起動すると、追加作成した一般ユーザーとしてログインします。
-（一般ユーサーでは実行できない）管理作業には`sudo`コマンドを使います。
+次回以降Rocky Linuxを起動すると、追加作成した一般ユーザーとしてログインします。
+（一般ユーサーが実行できない）管理作業には`sudo`コマンドを使います。
 例えば以下のコマンドでパッケージを更新します。
 
 ```sh
@@ -60,7 +60,7 @@ sudo dnf -y install hoge fuga
 
 ## oneAPI
 
-高性能Intelコンパイラ[Intel oneAPI Toolkits](https://www.intel.com/content/www/us/en/developer/articles/news/free-intel-software-developer-tools.html)、通称Intelコンパイラです。
+Intel社製高性能コンパイラ[Intel oneAPI Toolkits](https://www.intel.com/content/www/us/en/developer/articles/news/free-intel-software-developer-tools.html)、通称Intelコンパイラです。
 [Base Toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html)と[HPC Toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit.html)をそれぞれインストールします。
 
 それぞれダウンロードページから、
@@ -71,7 +71,7 @@ sudo dnf -y install hoge fuga
 
 を選択して、ダウンロードします。
 
-`Rocky9`のファイルシステムに移動した後、`sudo`コマンドを付けてインストーラーを実行します。
+Rocky Linuxのファイルシステムに移動した後、`sudo`コマンドを付けてインストーラーを実行します。
 
 ```sh
 sudo sh ./l_BaseKit_p_2022.2.0262.sh
@@ -82,6 +82,7 @@ sudo sh ./l_HPCKit_p_2022.2.0.191.sh
 
 インストール先の既定値は`/opt/intel/oneapi/`です。
 次のコマンドで環境設定して利用します。
+`.bashrc`などに追加すると良いでしょう。
 
 ```sh
 source /opt/intel/oneapi/setvars.sh
