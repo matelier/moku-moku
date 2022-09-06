@@ -109,7 +109,23 @@ source /opt/intel/oneapi/setvars.sh
 `source`ディレクトリに移動して、`makefile`を以下のように修正します。
 
 ```diff
+--- makefile.org	2021-09-15 08:57:59.000000000 +0900
++++ makefile	2022-09-06 17:38:01.026732600 +0900
+@@ -5,10 +5,10 @@
+ #                                                                 #
+ ###################################################################
 
+-MKLROOT = /opt/intel/mkl
+-CC = mpicc -O3 -xHOST -ip -no-prec-div -qopenmp -I/opt/intel/mkl/include/fftw
+-FC = mpif90 -O3 -xHOST -ip -no-prec-div -qopenmp
+-LIB= -L${MKLROOT}/lib/intel64 -lmkl_scalapack_lp64 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_blacs_openmpi_lp64 -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -liomp5 -lpthread -lm -ldl
++MKLROOT = /opt/intel/oneapi/mkl/latest
++CC = mpiicc -O3 -xHOST -ip -no-prec-div -qopenmp -I${MKLROOT}/include/fftw
++FC = mpiifort -O3 -xHOST -ip -no-prec-div -qopenmp
++LIB= -L${MKLROOT}/lib/intel64 -lmkl_scalapack_lp64 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_blacs_intelmpi_lp64 -lifcore -liomp5 -lpthread -lm -ldl
+
+
+ #
 ```
 
 `make`コマンドでコンパイルします。
