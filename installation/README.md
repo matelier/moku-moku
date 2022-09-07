@@ -303,11 +303,15 @@ WSLは、Windowsから独立した計算機であるかのように動作しま�
 
 #### WSLから、Windowsのファイルを読み書きする
 
-WindowsのCドライブは、WSLの`/mnt/c`にマウントされます。例えばWindowsのデスクトップに配置されたファイルは、Cドライブ以下`Users\[ユーザー名]\Desktop\`にあります。
+WindowsのCドライブは、WSLの`/mnt/c`にマウントされます。
+例えばWindowsのデスクトップに配置されたファイルは、Cドライブ以下`Users\[ユーザー名]\Desktop\`にあります。
+
+WSLのホームディレクトリにWindowsデスクトップへのリンクを作成すると、デスクトップを介してのファイル共有に便利です。
 
 ```sh
-cd /mnt/c/Users/[ユーザー名]/Desktop
-ls
+cd
+ln -s /mnt/c/Users/[ユーザー名]/Desktop
+ls Desktop
 ```
 
 `[ユーザー名]`は、Windowsのユーザー名です。
