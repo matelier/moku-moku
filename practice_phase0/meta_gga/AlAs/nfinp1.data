@@ -1,0 +1,54 @@
+!-*- PHASE0 -*-
+control {
+	condition = initial
+}
+
+accuracy {
+	xctype = tb09
+	cutoff_wf = 25.0 Rydberg
+	cutoff_cd = 100.0 Rydberg
+	num_bands = 12
+	ksampling {
+		mesh { nx = 8, ny = 8, nz = 8 }
+	}
+	smearing { method = tetrahedral }
+	scf_convergence { delta_total_energy = 1.0E-9 }
+	initial_charge_density = atomic_charge_density
+	initial_wavefunctions = atomic_orbitals
+}
+
+structure {
+	unit_cell_type = Bravais
+	unit_cell {
+		a = 10.8132170376, b = 10.8132170376, c = 10.8132170376
+		alpha = 90, beta = 90, gamma = 90
+	}
+	symmetry {
+		method = automatic
+		tspace { lattice_system = facecentered }
+	}
+	atom_list {
+		atoms {
+		#tag  element  rx  ry  rz
+			Al  0.00  0.00  0.00
+			As  0.25  0.25  0.25
+		}
+	}
+	element_list {
+	#tag element  atomicnumber
+		Al  13
+		As  33
+	}
+}
+
+charge_mixing {
+!	sw_mix_charge_with_ekindens = on
+	mixing_methods {
+	#tag method rmxs
+		pulay  0.40
+	}
+}
+
+postprocessing {
+	dos { sw_dos = on }
+}
