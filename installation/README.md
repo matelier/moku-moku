@@ -151,32 +151,31 @@ PS C:\Users\matelier> wsl -l --online
 The following is a list of valid distributions that can be installed.
 Install using 'wsl --install -d <Distro>'.
 
-NAME            FRIENDLY NAME
-Ubuntu          Ubuntu
-Debian          Debian GNU/Linux
-kali-linux      Kali Linux Rolling
-openSUSE-42     openSUSE Leap 42
-SLES-12         SUSE Linux Enterprise Server v12
-Ubuntu-16.04    Ubuntu 16.04 LTS
-Ubuntu-18.04    Ubuntu 18.04 LTS
-Ubuntu-20.04    Ubuntu 20.04 LTS
+NAME               FRIENDLY NAME
+Ubuntu             Ubuntu
+Debian             Debian GNU/Linux
+kali-linux         Kali Linux Rolling
+SLES-12            SUSE Linux Enterprise Server v12
+SLES-15            SUSE Linux Enterprise Server v15
+Ubuntu-18.04       Ubuntu 18.04 LTS
+Ubuntu-20.04       Ubuntu 20.04 LTS
+OracleLinux_8_5    Oracle Linux 8.5
+OracleLinux_7_9    Oracle Linux 7.9
 PS C:\Users\matelier>
 ```
 
-例えば`Ubuntu 18.04LTS`をオンラインインストールするためには下記コマンドを実行します。
+例えば`Ubuntu 20.04LTS`をオンラインインストールするためには下記コマンドを実行します。
 
 ```sh
-wsl --install -d Ubuntu-18.04
+wsl --install -d Ubuntu-20.04
 ```
 
 #### Microsoft Storeからのディストリビューション導入
 
 オンラインインストールできないけれども、Microsoft Storeから提供されているディストリビューションもあります。
-2022年8月中旬時点では、`Ubuntu 22.04LTS`がMicrosoft Storeから提供されていますが、オンラインインストールの対象外です。
-このインストールを例に説明します。
 
-Microsoft Storeにて、`wsl`で検索してください。
-いくつか候補が表示される中から`Ubuntu 22.04LTS`を選び、表示される画面で`入手`もしくは`インストール`をクリックするとインストールされます。
+例えば、Microsoft Storeにて、`wsl`で検索してください。
+ディストリビューションを選び、表示される画面で`入手`もしくは`インストール`をクリックするとインストールされます。
 
 ![store.png](./images/store.png)
 
