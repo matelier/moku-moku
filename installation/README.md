@@ -205,7 +205,7 @@ Retype new password:
 ```sh
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y make gnuplot-x11 gfortran libopenmpi-dev libfftw3-dev evince
+sudo apt install -y make gnuplot-x11 gfortran libopenmpi-dev libfftw3-dev liblapack-dev libopenblas-dev evince
 ```
 
 各コマンドの実行には時間を要します。
@@ -325,29 +325,29 @@ WSLのファイルシステムは、Windowsからはネットワークドライ�
 
 ### PHASE/0
 
-PHASE/0のソースコードを[ダウンロード](https://azuma.nims.go.jp/cms1/downloads/software/)（登録が必要です）し、`phase0_2021.02.tar.gz`をWindowsのデスクトップに配置します。
+PHASE/0のソースコードを[ダウンロード](https://azuma.nims.go.jp/cms1/downloads/software/)（登録が必要です）し、`phase0_2022.01.tar.gz`をWindowsのデスクトップに配置します。
 Ubuntuを起動し、ホームディレクトリにこれらのファイルをコピーします。
 
 ```sh
-cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2021.02.tar.gz ~
+cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2022.01.tar.gz ~
 ```
 
 ファイルを伸長します。
 
 ```sh
 cd
-tar zxf phase0_2021.02.tar.gz
-cd phase0_2021.02
+tar zxf phase0_2022.01.tar.gz
+cd phase0_2022.01
 ```
 
-付属する`Makefile.Linux_generic`でコンパイルできます。
+`Ubuntu 22.04LTS`を使っている場合は、付属する`Makefile.Linux_generic`でコンパイルできません。
+[こちら](https://github.com/Materials-Science-Software-Consortium/phase0_install/blob/main/Ubuntu22LTS/README.md)の指示に従ってインストールしてください。
+<!-- [こちら](https://github.com/Materials-Science-Software-Consortium/phase0_install/blob/main/Ubuntu22LTS/README.md)から`Makefile`を入手してください。
 
 ```sh
 cd src_phase
 make -f Makefile.Linux_generic install
-```
-
-ただし、`Ubuntu 22.04LTS`を使っている場合は、[こちら](https://github.com/Materials-Science-Software-Consortium/phase0_install/blob/main/Ubuntu22LTS/README.md)から`Makefile`を入手してください。
+``` -->
 
 ## 動作検証
 
