@@ -1,0 +1,67 @@
+control {
+	condition = initial
+}
+
+accuracy {
+	cutoff_wf = 25.0 Rydberg
+	cutoff_cd = 230.0 Rydberg
+	num_bands = 1
+	ksampling {
+		mesh { nx = 4, ny = 4, nz = 4 }
+	}
+	scf_convergence { delta_total_energy = 1e-9 }
+	force_convergence { max_force = 1.0e-4 }
+	initial_charge_density = atomic_charge_density
+	initial_wavefunctions = atomic_orbitals
+}
+
+structure {
+	unit_cell_type = Bravais
+	unit_cell {
+		a = 14.142324098
+	}
+	symmetry {
+		method = automatic
+		tspace { lattice_system = facecentered }
+	}
+	atom_list {
+		atoms {
+		#default mobile = on
+		#tag    element    rx    ry    rz
+			Si   0.0     0.0     0.0
+			Si   0.25    0.25    0.25
+			O    0.125   0.125   0.125
+			O    0.125  -0.125  -0.125
+			O   -0.125   0.125  -0.125
+			O   -0.125  -0.125   0.125
+		}
+	}
+	element_list {
+	#tag  element  atomicnumber
+		O     8
+		Si   14
+	}
+	strain {
+		sw_strained_cell = on
+		e23 = 0.05
+	}
+}
+
+wavefunction_solver {
+	solvers {
+	#tag  sol  till_n
+		mddavidson   2
+		rmm3        -1
+	}
+}
+
+charge_mixing {
+	mixing_methods {
+	#tag  method  rmxs
+		pulay   0.4
+	}
+}
+
+structure_evolution {
+	stress { sw_stress = on }
+}

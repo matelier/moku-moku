@@ -1,0 +1,77 @@
+control {
+	condition = initial
+}
+
+accuracy {
+	cutoff_wf = 25.0 Rydberg
+	cutoff_cd = 230.0 Rydberg
+	num_bands = 1
+	ksampling {
+		mesh { nx = 4, ny = 4, nz = 3 }
+		kshift { k1 = 0.5, k2 = 0.5, k3 = 0.0 }
+	}
+	scf_convergence { delta_total_energy = 1e-9 }
+	force_convergence { max_force = 1.0e-4 }
+	initial_charge_density = atomic_charge_density
+	initial_wavefunctions = atomic_orbitals
+}
+
+structure {
+	unit_cell_type = Bravais
+	unit_cell {
+	!	#units angstrom
+		a = 9.6889702445, b = 9.6889702445, c = 13.5543097542
+		alpha = 90.0, beta = 90.0, gamma = 90.0
+	}
+	symmetry { method = automatic }
+	atom_list {
+		atoms {
+		#default mobile = on
+		#tag    element    rx    ry    rz
+			Si   0.7097425001733039D+00   0.7097425001733039D+00   0.5000000000000000D+00
+			Si   0.7902574998266961D+00   0.2097425001733038D+00   0.7499999999999999D+00
+			Si   0.2097425001733038D+00   0.7902574998266961D+00   0.2500000000000000D+00
+			Si   0.2902574998266961D+00   0.2902574998266961D+00   0.4110591860221729D-17
+			O    0.9137997494086842D+00   0.7575193233809122D+00   0.3293538098497444D+00
+			O    0.8620025059131581D-01   0.2424806766190879D+00   0.8293538098497445D+00
+			O    0.7575193233809122D+00   0.9137997494086842D+00   0.6706461901502555D+00
+			O    0.2575193233809122D+00   0.5862002505913158D+00   0.7935380984974449D-01
+			O    0.2424806766190879D+00   0.8620025059131581D-01   0.1706461901502555D+00
+			O    0.4137997494086843D+00   0.7424806766190880D+00   0.4206461901502556D+00
+			O    0.5862002505913158D+00   0.2575193233809122D+00   0.9206461901502555D+00
+			O    0.7424806766190880D+00   0.4137997494086843D+00   0.5793538098497445D+00
+		}
+	}
+	element_list {
+	#tag  element  atomicnumber
+		O     8
+		Si   14
+	}
+!	strain {
+!	sw_strained_cell = on
+!	e11 = 0.01
+!	}
+}
+
+wavefunction_solver {
+	solvers {
+	#tag  sol  till_n
+		mddavidson   2
+		rmm3        -1
+	}
+}
+
+charge_mixing {
+	mixing_methods {
+	#tag  method  rmxs
+		pulay   0.4
+	}
+}
+
+structure_evolution {
+	stress {
+		sw_stress_correction = on
+		delta_ecut = 1.0 Rydberg
+	}
+	lattice { sw_optimize_lattice = on }
+}
