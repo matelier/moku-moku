@@ -68,7 +68,7 @@ ESM法を利用しない計算結果とほぼ同じです。
 スラブの分極を、電場を使って再現します。
 格子の長さ26.33Åにわたって2.6 Vの電位差（2.6 eVのエネルギー差）を生じる電場を求めます。
 
-$$ 2.6 (\mathrm{eV}) \div 26.33 (\mathrm{\AA}) \div 51.4 (\mathrm{eV}/\mathrm{\AA}/原子単位) \sim 0.002 (原子単位) $$
+$$ 2.6 (\mathrm{V}) \div 26.33 (\unicode{x212B}) \div 51.4 (\mathrm{V}/\mathrm{\unicode{x212B}/原子単位}) \sim 0.002 (\mathrm{原子単位}) $$
 
 ```C
         esm {
