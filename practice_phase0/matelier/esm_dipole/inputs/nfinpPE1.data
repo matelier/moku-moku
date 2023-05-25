@@ -1,0 +1,79 @@
+control {
+	condition = automatic
+}
+accuracy {
+	PAW = on
+	esm {
+		sw_esm = on
+		bc = pe1
+	}
+	cutoff_wf = 25.0 Rydberg
+	cutoff_cd = 230.0 Rydberg
+	num_bands = 64
+	ksampling {
+		method = mesh
+		mesh { nx = 6, ny = 6, nz = 1 }
+	}
+	scf_convergence { delta_total_energy = 1.0e-9 }
+	force_convergence { max_force = 1.0e-3 }
+	initial_charge_density = atomic_charge_density
+	initial_wavefunctions = atomic_orbitals
+}
+structure {
+	unit_cell_type = Bravais
+	unit_cell {
+!	#units angstrom
+!		a = 3.2342, b = 3.2342, c = 5.2657
+!		a = 6.1130815171, b = 6.1130815171, c = 9.9584969096
+		a = 6.1130815171, b = 6.1130815171, c = 49.792484548
+		alpha = 90.0, beta = 90.0, gamma = 120.0
+	}
+	symmetry {
+		method = automatic
+		tspace { lattice_system = hexagonal }
+	}
+	atom_list {
+		atoms {
+		#default mobile = off
+		#tag element rx ry rz mobile
+			Ga    0.3333333333333   0.6666666666667  -0.1246567272055
+			Ga    0.3333333333333   0.6666666666667   0.0753432727945
+			Ga    0.6666666666667   0.3333333333333  -0.2260666409377755D+00 on
+			Ga    0.6666666666667   0.3333333333333  -0.0246567272055
+			Ga    0.6666666666667   0.3333333333333   0.1787414341063932D+00 on
+			N     0.3333333333333   0.6666666666667  -0.2025359909214953D+00 on
+			N     0.3333333333333   0.6666666666667   0.0000000000000
+			N     0.3333333333333   0.6666666666667   0.1938213828936678D+00 on
+			N     0.6666666666667   0.3333333333333  -0.1000000000000
+			N     0.6666666666667   0.3333333333333   0.1000000000000
+		}
+	}
+	element_list {
+	#tag element atomicnumber
+		Ga   31
+		N     7
+	}
+}
+wavefunction_solver {
+	solvers {
+	#tag sol till_n
+		mddavidson   4
+		rmm3        -1
+	}
+	rmm { edelta_change_to_rmm = 1.0e-8 }
+}
+charge_mixing {
+	mixing_methods {
+	#tag method rmxs
+		pulay   0.2
+	}
+}
+
+structure_evolution {
+!	stress { sw_stress_correction = on }
+!	lattice { sw_optimize_lattice = on }
+}
+
+postprocessing {
+	workfunc { sw_workfunc = on }
+}
