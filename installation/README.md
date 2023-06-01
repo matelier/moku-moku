@@ -137,16 +137,19 @@ PS C:\Users\matelier> wsl -l --online
 The following is a list of valid distributions that can be installed.
 Install using 'wsl --install -d <Distro>'.
 
-NAME               FRIENDLY NAME
-Ubuntu             Ubuntu
-Debian             Debian GNU/Linux
-kali-linux         Kali Linux Rolling
-SLES-12            SUSE Linux Enterprise Server v12
-SLES-15            SUSE Linux Enterprise Server v15
-Ubuntu-18.04       Ubuntu 18.04 LTS
-Ubuntu-20.04       Ubuntu 20.04 LTS
-OracleLinux_8_5    Oracle Linux 8.5
-OracleLinux_7_9    Oracle Linux 7.9
+NAME                                   FRIENDLY NAME
+Ubuntu                                 Ubuntu
+Debian                                 Debian GNU/Linux
+kali-linux                             Kali Linux Rolling
+Ubuntu-18.04                           Ubuntu 18.04 LTS
+Ubuntu-20.04                           Ubuntu 20.04 LTS
+Ubuntu-22.04                           Ubuntu 22.04 LTS
+OracleLinux_7_9                        Oracle Linux 7.9
+OracleLinux_8_7                        Oracle Linux 8.7
+OracleLinux_9_1                        Oracle Linux 9.1
+SUSE-Linux-Enterprise-Server-15-SP4    SUSE Linux Enterprise Server 15 SP4
+openSUSE-Leap-15.4                     openSUSE Leap 15.4
+openSUSE-Tumbleweed                    openSUSE Tumbleweed
 PS C:\Users\matelier>
 ```
 
