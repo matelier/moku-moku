@@ -21,20 +21,6 @@ Windows PCは以下の要件を満たすことを前提とします。
 
 Macなど、Windows以外の計算機については、[付録A](#付録awindowswsl-ubuntu以外の計算機)にて簡潔に説明します。
 
-### PHASE/0利用講習会参加の前提条件
-
-<details>
-
-<summary>PHASE/0利用講習会に参加予定の方は、事前に以下の事柄を満たしてください。</summary>
-
-- Ubuntu環境 (WSL2推奨) がインストールされていること
-- sin関数のグラフが表示できること
-- VESTAを使って`samples/Si8`の電荷密度分布が描画できること
-- PHASE/0 2021.02のインストールに成功し、`samples/Si8`の2並列での計算実行が20秒程度以内に終了すること
-- テキストエディタの操作に不安がある方は`gedit`をインストールすること
-
-</details>
-
 ## 選択肢
 
 環境設定に際し、選択の自由度があります。どれを選ぶのか決めてから、作業に着手してください。
@@ -224,9 +210,6 @@ sudo apt install -y emacs
 sudo apt install -y gedit
 ```
 
-※PHASE/0利用講習会参加時の注意事項：
-いずれのエディタにも不慣れな方向けに、講習会では`gedit`の操作方法を簡潔に説明します。該当する方は`gedit`をインストールしてください。
-
 ### X Windows Systemの設定
 
 WSL環境からグラフィックスをWindowsの画面に表示するための設定です。
@@ -342,7 +325,6 @@ cd phase0_2022.01
 
 `Ubuntu 22.04LTS`を使っている場合は、付属する`Makefile.Linux_generic`でコンパイルできません。
 [こちら](https://github.com/Materials-Science-Software-Consortium/phase0_install/blob/main/Ubuntu22LTS/README.md)の指示に従ってインストールしてください。
-<!-- [こちら](https://github.com/Materials-Science-Software-Consortium/phase0_install/blob/main/Ubuntu22LTS/README.md)から`Makefile`を入手してください。
 
 ```sh
 cd src_phase
@@ -367,7 +349,7 @@ cd samples/basic/Si8
 
 ファイル`jobstatus000`（二回目以降の実行では001, 002, ...）に経過時間が出力されます。
 
-```
+```C
  status       =      FINISHED
  iteration    =             15
  iter_ionic   =              1
@@ -387,9 +369,6 @@ mpiexec -np 2 ../../../bin/phase
 
 実行時間が概ね半分になっていれば（半分より少し多くて）正常です。物理コア数以上の並列は実行時間の短縮になりません。
 
-※PHASE/0利用講習会参加時の注意事項：
-上記計算の実行時間が3分未満であることを想定したペースで進行します。極端に計算が遅い（実行に長い時間を要する）場合は、前もってご相談ください。
-
 ### 電荷密度分布の可視化（VESTA）
 
 上記実行サンプルでは電荷密度分布が出力されていますので、それを描画します。VESTAを起動して、上部メニューから`Files` - `Open...`を選択し、ファイル選択ダイアログからアドレス（フォルダ位置）を以下のように設定します。最初に`\\wsl$`を入力して、マウス操作で選択すると便利です。
@@ -402,7 +381,7 @@ mpiexec -np 2 ../../../bin/phase
 
 ![chargeSi8half.png](./images/chargeSi8half.png)
 
-この意味にご興味ある方は、PHASE利用講習会に参加してください。
+この意味にご興味ある方は、PHASE利用講習会や[材料シミュレーションもくもく会](https://m3aterial.connpass.com/)に参加してください。
 
 ## 付録A：Windows（WSL Ubuntu）以外の計算機
 
