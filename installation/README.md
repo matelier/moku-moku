@@ -327,7 +327,7 @@ cd phase0_2022.01
 ```
 
 `Ubuntu 22.04LTS`を使っている場合は、付属する`Makefile.Linux_generic`でコンパイルできません。
-[こちら](https://github.com/Materials-Science-Software-Consortium/phase0_install/blob/main/Ubuntu22LTS/README.md)の指示に従ってインストールしてください。
+[こちら](https://github.com/Materials-Science-Software-Consortium/phase0_install/tree/2022.01/Ubuntu22LTS)の指示に従ってインストールしてください。
 
 ```sh
 cd src_phase
