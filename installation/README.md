@@ -27,13 +27,12 @@ Macなど、Windows以外の計算機については、[付録A](#付録awindows
 
 ### WSLのバージョン
 
-- WSL1
-- WSL2
-
-WSLには、WSL1とWSL2があります。バージョン2は、バージョン1の完全上位版ではありません。また、インストール後に相互変換可能です。
+WSLには、WSL1とWSL2があります。
+現在の既定値はWSL2であり、この使用を強くお勧めします。
 
 [WSL 1 と WSL 2 の比較 \| Microsoft Docs](https://docs.microsoft.com/ja-jp/windows/wsl/compare-versions)
 
+なお、インストール後に相互変換可能です。
 <!-- なお、WSL2に対応した実行基盤上でWSL1を動作させることが可能ですので、実行基盤はWSL2対応のみを説明します。 -->
 <!--WSL2はHyper-Vと共存できません。-->
 
@@ -42,8 +41,14 @@ WSLには、WSL1とWSL2があります。バージョン2は、バージョン1�
 - [MobaXterm](https://mobaxterm.mobatek.net)
 - [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
 
-一般的にLinux環境では、グラフィックス描画にX Window Systemという仕組みを利用します。その仕組みを利用する（表示を担う）ためのソフトウェアが「Xサーバー」です。[VcXsrv](https://sourceforge.net/projects/vcxsrv/)は、代表的なWindows用のXサーバーソフトウェアです。インストールには管理者権限が必要です。
-一方[MobaXterm](https://mobaxterm.mobatek.net)は、Xサーバー付き（他にも盛沢山）の端末ソフトウェアです。WSLで材料シミュレーションを実行する目的にはオーバースペックですが、第一原理計算を本格活用すると手元のパソコンだけでは不十分で、他の（大規模な）計算機を利用するようになります。他の計算機にアクセスする際には、MobaXtermのような端末ソフトウェアが必要になりますので、決して無駄ではありません。MobaXtermには、「インストーラー版」と「ポータブル版」があります。
+一般的にLinux環境では、グラフィックス描画にX Window Systemという仕組みを利用します。
+その仕組みを利用する（表示を担う）ためのソフトウェアが「Xサーバー」です。
+[VcXsrv](https://sourceforge.net/projects/vcxsrv/)は、代表的なWindows用のXサーバーソフトウェアです。
+インストールには管理者権限が必要です。
+一方[MobaXterm](https://mobaxterm.mobatek.net)は、Xサーバー付き（他にも盛沢山）の端末ソフトウェアです。
+WSLで材料シミュレーションを実行する目的にはオーバースペックですが、第一原理計算を本格活用すると手元のパソコンだけでは不十分で、他の（大規模な）計算機を利用するようになります。
+他の計算機にアクセスする際には、MobaXtermのような端末ソフトウェアが必要になりますので、決して無駄ではありません。
+MobaXtermには、「インストーラー版」と「ポータブル版」があります。
 
 迷った方には、MobaXtermの「ポータブル版」をお勧めします。
 
