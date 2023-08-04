@@ -27,8 +27,8 @@ Macなど、Windows以外の計算機については、[付録A](#付録awindows
 
 ### WSLのバージョン
 
-WSLには、WSL1とWSL2があります。
-現在の既定値はWSL2であり、この使用を強くお勧めします。
+WSLには、WSL1とWSL2があり、現在の既定値はWSL2です。
+WSL2はWSL1の完全な上位バージョンではありませんが、WSL2の使用を強くお勧めします。
 
 [WSL 1 と WSL 2 の比較 \| Microsoft Docs](https://docs.microsoft.com/ja-jp/windows/wsl/compare-versions)
 
