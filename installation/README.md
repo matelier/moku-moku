@@ -45,6 +45,8 @@ WSL2はWSL1の完全な上位バージョンではありませんが、WSL2の�
 
 [Linux 用 Windows サブシステムで Linux GUI アプリを実行する](https://learn.microsoft.com/ja-jp/windows/wsl/tutorials/gui-apps)
 
+仮想GPU用のドライバーをインストールしてください。
+
 ## 環境設定
 
 ### WSL実行基盤の設定とUbuntuのインストール
