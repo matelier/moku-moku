@@ -119,10 +119,10 @@ source /opt/intel/oneapi/setvars.sh
 最新版`3.9.9`は、`3.9`に対するパッチ形式で配布されています。
 以下の二つファイルをダウンロードします。
 
-- [openmx3.9.tar.gz](http://t-ozaki.issp.u-tokyo.ac.jp/openmx3.9.tar.gz)
-- [patch3.9.9.tar.gz](http://www.openmx-square.org/bugfixed/21Oct17/patch3.9.9.tar.gz)
+- [openmx3.9.tar.gz](https://www.openmx-square.org/openmx3.9.tar.gz)
+- [patch3.9.9.tar.gz](https://www.openmx-square.org/bugfixed/21Oct17/patch3.9.9.tar.gz
 
-パッチの当て方は、[README.txt](http://www.openmx-square.org/bugfixed/21Oct17/README.txt)の冒頭に詳しい説明があります。
+パッチの当て方は、[README.txt](https://www.openmx-square.org/bugfixed/21Oct17/README.txt)の冒頭に詳しい説明があります。
 
 `source`ディレクトリに移動して、`makefile`を以下のように修正します。
 
