@@ -120,7 +120,7 @@ source /opt/intel/oneapi/setvars.sh
 以下の二つファイルをダウンロードします。
 
 - [openmx3.9.tar.gz](https://www.openmx-square.org/openmx3.9.tar.gz)
-- [patch3.9.9.tar.gz](https://www.openmx-square.org/bugfixed/21Oct17/patch3.9.9.tar.gz
+- [patch3.9.9.tar.gz](https://www.openmx-square.org/bugfixed/21Oct17/patch3.9.9.tar.gz)
 
 パッチの当て方は、[README.txt](https://www.openmx-square.org/bugfixed/21Oct17/README.txt)の冒頭に詳しい説明があります。
 
