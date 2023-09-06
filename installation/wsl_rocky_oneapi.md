@@ -55,40 +55,58 @@ Rocky9.exe config --default-user [user-name]
 例えば以下のコマンドでパッケージを更新します。
 
 ```sh
-sudo dnf -y update
+sudo dnf update -y
 ```
 
 追加ソフトウェアをインストールします。
 
 ```sh
-sudo dnf -y install gcc-c++ make
+sudo dnf install -y gcc-c++ make perl
 ```
+
+`gnuplot`は標準のパッケージ・リポジトリにはありません。
+拡張パッケージEPELからインストールします。
+
+```
+sudo dnf install -y epel-release
+sudo dnf install -y --enablerepo=epel gnuplot
+```
+
 
 ## oneAPI
 
 Intel社製高性能コンパイラ[Intel oneAPI Toolkits](https://www.intel.com/content/www/us/en/developer/articles/news/free-intel-software-developer-tools.html)、通称Intelコンパイラです。
 [Base Toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html)と[HPC Toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit.html)をそれぞれインストールします。
 
-それぞれダウンロードページから、
+各ツールキットのページから、`Download the Tooolkit`を選択し、
 
-- Operating System: `Linux`
-- Distribution: `Online & Offline` （`recommended`なので従います）
-- Installer Type: `Online` （`offline`でも良いです）
+- プルダウンメニュー`Select operating System`から`Linux`を選択し、
+- プルダウンメニュー`Select distribution`は`DNF Package Manager`を選択
 
-を選択して、ダウンロードします。
+すると、その下に説明が表示されます。
 
-![oneapidl.png](./images/oneapidl.png)
+まず、リポジトリの設定を行います。
+両ツールキット共通の操作です。
+`/etc/yum.repos.d`ディレクトリの下に、`oneAPI.repo`というファイルを作成します。
 
-Rocky Linuxのファイルシステムに移動した後、`sudo`コマンドを付けてインストーラーを起動します。
-
-```sh
-sudo sh ./l_BaseKit_p_2022.2.0262.sh
-sudo sh ./l_HPCKit_p_2022.2.0.191.sh
+```
+[oneAPI]
+name=Intel® oneAPI repository
+baseurl=https://yum.repos.intel.com/oneapi
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
 ```
 
-指示に従って操作すると、インストールできます。
+設定が完了すると、パッケージ管理コマンドでインストールできます。
 
-インストール先の既定値は`/opt/intel/oneapi/`です。
+```sh
+sudo dnf install intel-basekit
+sudo dnf install intel-hpckit
+```
+
+インストール先は`/opt/intel/oneapi/`です。
 次のコマンドで環境設定して利用します。
 `.bashrc`などに追加すると良いでしょう。
 
