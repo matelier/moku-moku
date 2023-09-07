@@ -61,7 +61,7 @@ sudo dnf update -y
 追加ソフトウェアをインストールします。
 
 ```sh
-sudo dnf install -y gcc-c++ make perl
+sudo dnf install -y gcc-c++ make xauth perl
 ```
 
 `gnuplot`は標準のパッケージ・リポジトリにはありません。
