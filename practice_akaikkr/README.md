@@ -16,7 +16,7 @@
 けれども実行時に、スレッド並列数を指定する方法がわかりません
 （コンパイル時にスレッド並列を無効にすることはできます）。
 
-スレッド並列化された多くのプログラムでは、実行時に環境変数 OMP_NUM_THREADS にスレッド数を指定して、並列数を調整します。
+スレッド並列化された多くのプログラムでは、実行時に環境変数`OMP_NUM_THREADS`にスレッド数を指定して、並列数を調整します。
 AkaiKKRではこの方法が使えません。
 
 私が使っている[MacBook Pro (13-inch, M1, 2020)](https://support.apple.com/kb/SP824?locale=ja_JP)は、高性能4コア＋高効率4コアの計8コアを搭載しています。
@@ -39,7 +39,7 @@ getconf _NPROCESSORS_ONLN
 スレッド並列数を（物理コア以下に）調整した実行をお勧めします。
 
 そこで、スレッド並列数を調整できるように改変します。
-OpenMPの設定は`setomp.f`で行われています。
+[OpenMPの設定は`setomp.f`で行われて](http://kkr.issp.u-tokyo.ac.jp/bbs/message.php?id=140)います。
 二箇所の
 
 ```fortran
@@ -49,7 +49,7 @@ call omp_set_num_threads(nthread)
 がスレッド数の（再）設定です。
 これらを無効化（コメントアウト）してから再コンパイルします。
 
-実行時に、環境変数OMP_NUM_THREADSを指定してください。
+実行時に、環境変数`OMP_NUM_THREADS`を指定してください。
 
 ```sh
 export OMP_NUM_THREADS=4
