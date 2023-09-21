@@ -17,7 +17,8 @@
 （コンパイル時にスレッド並列を無効にすることはできます）。
 
 スレッド並列化された多くのプログラムでは、実行時に環境変数`OMP_NUM_THREADS`にスレッド数を指定して、並列数を調整します。
-AkaiKKRではこの方法が使えません。
+AkaiKKRではこの方法が使えません
+（[過去のバージョンでは使えた](http://gomisai.blog75.fc2.com/blog-entry-671.html)そうです）。
 
 私が使っている[MacBook Pro (13-inch, M1, 2020)](https://support.apple.com/kb/SP824?locale=ja_JP)は、高性能4コア＋高効率4コアの計8コアを搭載しています。
 並列数を調整しなければ、AkaiKKRは8スレッド並列で実行します。
