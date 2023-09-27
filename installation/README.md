@@ -227,6 +227,16 @@ Windowsのエクスプローラーのナビゲーションウィンドウ内の`
 
 ホームディレクトリ以外のファイルをうかつに操作するとWSL環境を破壊しかねませんので、ご注意ください。
 
+### 端末ソフトウェア
+
+Windows11から、 [Windowsターミナル](https://learn.microsoft.com/ja-jp/windows/terminal/)が標準添付されています。
+WSL、Windows PowerShell、コマンドプロンプトのいずれもが、Windowsターミナルで動作します。
+Windows10でも、Microsoft Storeから追加インストールして利用できます。
+
+[MobaXterm](https://mobaxterm.mobatek.net)は、端末ソフトウェアとして利用できるのはもちろんのこと、Xサーバーやファイル転送GUIなど豊富な機能を備えており、とても便利です。
+有償版（Professional Edition）がありますが、無償枠（Home Edition）でも十分に実用的です。
+WSLのみを利用する場合も役立ちますので、ご利用をお勧めします。
+
 ## アプリケーションのコンパイル
 
 ### PHASE/0
@@ -531,12 +541,3 @@ export DISPLAY=`hostname`.mshome.net:0
 （参考）Qiita: [WSL2 での DISPLAY 設定](https://qiita.com/taichi-ishitani/items/b627e31a97fef24c6ee4)
 
 hostnameの部分は、コマンド実行結果に置き換えられます。
-
-## 付録E：端末ソフトウェア
-
-手元のPCから、大きな計算資源に接続する際には、端末ソフトウェアを利用します。
-Windows PowerShell（もしくはコマンドプロンプト）と`ssh`コマンドの組み合わせでも目的を達成することはできますが、別途端末ソフトウェアの利用をお勧めします。
-先に紹介した[MobaXterm](https://mobaxterm.mobatek.net)は、端末ソフトとして利用できるのはもちろんのこと、Xサーバーやファイル転送のGUIも備えており、大変便利です（無償枠でも十分に実用的です）。
-
-Windows11からは、 [Windowsターミナル](https://learn.microsoft.com/ja-jp/windows/terminal/)が標準添付されています。
-Windows10でも、Microsoft Storeから追加インストールして利用できます。
