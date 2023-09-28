@@ -237,6 +237,8 @@ Windows10でも、Microsoft Storeから追加インストールして利用で�
 有償版（Professional Edition）がありますが、無償枠（Home Edition）でも十分に実用的です。
 WSLのみを利用する場合も役立ちますので、ご利用をお勧めします。
 
+![MobaXterm](./images/mobaxterm.png)
+
 ## アプリケーションのコンパイル
 
 ### PHASE/0
