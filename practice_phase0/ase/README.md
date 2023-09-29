@@ -18,21 +18,21 @@ WSLで動作させる手順は、[こちら](../../installation/wsl_rocky_oneapi
 
 ASE以外では最新のライブラリ類を使う（意図的に古いバージョンを使わない）可能性に配慮して、Python仮想環境を用意します。
 
-```
+```sh
 python -m venv phase0ase
 ```
 
 `phase0ase`は名前なので、お好みの文字列を選んでください。
 下記コマンドで仮想環境を有効化します。
 
-```
+```sh
 . ~/phase0ase/bin/activate
 ```
 
 仮想環境下でインストールしたPythonライブラリ類は、当該仮想環境内でのみ有効です。
 ASEを、バージョンを指定してインストールします。
 
-```
+```sh
 pip install ase==3.18.1 numpy==1.19.5 scipy==1.10.1 matplotlib==3.6.3
 ```
 
