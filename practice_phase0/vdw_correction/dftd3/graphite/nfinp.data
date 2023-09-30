@@ -1,0 +1,50 @@
+! DFT-D2 with lattice-optimization
+control {
+	condition = initial
+	sw_vdw_correction = on
+}
+
+accuracy {
+	cutoff_wf = 36 Rydberg
+	cutoff_cd = 324 Rydberg
+	vdw_method = dft-d2
+	num_bands = 12
+	ksampling {
+		method = monk
+		mesh { nx = 8, ny = 8, nz = 2 }
+	}
+	scf_convergence { delta_total_energy = 1.0E-9 }
+	force_convergence { max_force = 5.0E-4 }
+}
+
+structure {
+	unit_cell_type = Bravais
+	unit_cell {
+	#units angstrom
+		a = 2.480, b = 2.480, c = 9.00
+		alpha = 90.0, beta = 90.0, gamma = 120.0
+	}
+	symmetry {
+		method = automatic
+		tspace { lattice_system = hexagonal }
+	}
+	atom_list {
+		atoms {
+		#units angstrom
+		#tag element rx ry rz vdw
+			C   0.00              0.00           0.25  C
+			C   0.00              0.00           0.75  C
+			C   0.3333333333333   0.6666666667   0.25  C
+			C   0.6666666666667   0.3333333333   0.75  C
+		}
+	}
+	element_list {
+	#tag element atomicnumber
+		C   6
+	}
+}
+
+structure_evolution {
+	stress { sw_stress_correction = on }
+	lattice { sw_optimize_lattice = on }
+}
