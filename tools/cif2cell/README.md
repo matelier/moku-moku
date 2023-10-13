@@ -169,7 +169,7 @@ O       0.2500000   0.9438545   0.5561455
 
 <details>
 
-<summary>PHASE/0向けの注意事項</summary>
+<summary>PHASE/0向けの注意事項１</summary>
 
 PHASE/0の入力ファイルでは、`coordinate_system = internal`（既定値）で指定する原子位置は、Bravais格子を基準にした相対的な値です。
 そのため上記数値そのままでは利用できません。
@@ -195,7 +195,19 @@ Al<sub>2</sub>O<sub>3</sub>では、30原子から成るBravais格子（六方�
 cif2cell Al2O3.cif --no-reduce
 ```
 
-この座標値は、Bravais格子ベクトルを基準にしており、PHASE/0でそのまま利用できます。
+<details>
+
+<summary>PHASE/0向けの注意事項２</summary>
+
+この座標値はBravais格子ベクトルを基準にしていますので、PHASE/0入力ファイルでそのまま利用できます。
+
+[Bravais格子30原子のPHASE/0入力ファイル](nfinpB.data)
+
+座標値はそのままに、基本格子では等価な位置の原子を削除（コメントアウト）すると、基本格子10原子用の原子位置となります。
+
+[基本格子10原子のPHASE/0入力ファイル](nfinpP.data)
+
+</details>
 
 不純物や欠陥を含む結晶を扱う場面で、スーパーセルを用いることがあります。
 その原子配置を生成することができます。
