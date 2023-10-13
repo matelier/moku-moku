@@ -20,6 +20,48 @@
 各原子位置に、それぞれ生成元を作用させることにより原子配置を展開すると、結晶構造が出来上がる仕組みです。
 この展開作業をcif2cellに手伝ってもらいましょう。
 
+例として、[Materials Project](https://materialsproject.org)からダウンロードしたPt (mp-126, symmetrized)とAl<sub>2</sub>O<sub>3</sub> (mp-1143, symmetrized)のCIF使って説明します。
+
+Materials Projectには、[next-gen](https://next-gen.materialsproject.org/)と[legacy](https://legacy.materialsproject.org/)があり、データ（計算結果）が若干異なります。
+ここでは前者`next-gen`（新しい方）のデータ（CIF）を用いた実行結果を示します。
+
+CIFはテキスト形式ですので、そのまま閲覧可能です。
+多くの場合格子は、Bravais格子で与えられています。
+長さの単位はÅです。
+
+```C
+_cell_length_a   3.94315036
+_cell_length_b   3.94315036
+_cell_length_c   3.94315036
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+```
+
+対称性に関する情報を含みます。
+
+```C
+_symmetry_space_group_name_H-M   Fm-3m
+（略）
+_symmetry_Int_Tables_number   225
+（略）
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, -z'
+  3  '-y, x, z'
+  4  'y, -x, -z'
+  5  '-x, -y, z'
+（略）
+```
+
+原子位置の情報です。
+
+```C
+  Pt  Pt0  4  0.00000000  0.00000000  0.00000000  1
+```
+
 ## cif2cellのインストール
 
 [Python2系は2020年でサポートが終了しています](https://www.python.org/doc/sunset-python-2/)ので、利用をお勧めしません。
@@ -60,11 +102,6 @@ conda install cif2cell
 ```
 
 ## cif2cellの使い方
-
-例として、[Materials Project](https://materialsproject.org)からダウンロードしたPt (mp-126, symmetrized)とAl<sub>2</sub>O<sub>3</sub> (mp-1143, symmetrized)のCIF使って説明します。
-
-Materials Projectには、[next-gen](https://next-gen.materialsproject.org/)と[legacy](https://legacy.materialsproject.org/)があり、データ（計算結果）が若干異なります。
-ここでは前者`next-gen`（新しい方）のデータ（CIF）を用いた実行結果を示します。
 
 ### 基本的な使い方：マニュアルに記載あり
 
