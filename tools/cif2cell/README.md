@@ -25,7 +25,10 @@
 Materials Projectには、[next-gen](https://next-gen.materialsproject.org/)と[legacy](https://legacy.materialsproject.org/)があり、データ（計算結果）が若干異なります。
 ここでは前者`next-gen`（新しい方）のデータ（CIF）を用いた実行結果を示します。
 
-CIFはテキスト形式ですので、そのまま閲覧可能です。
+<details>
+
+<summary>CIFはテキスト形式ですので、そのまま閲覧可能です。</summary>
+
 多くの場合格子は、Bravais格子で与えられています。
 長さの単位はÅです。
 
@@ -61,6 +64,8 @@ loop_
 ```C
   Pt  Pt0  4  0.00000000  0.00000000  0.00000000  1
 ```
+
+</details>
 
 ## cif2cellのインストール
 
