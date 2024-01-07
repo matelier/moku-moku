@@ -348,8 +348,6 @@ LinuxとWindows (busybox-w32)の両方で同じ動作をさせることが難し
 計算式を逆ポーランド記法で記述します。
 例えば次式
 
-![分数の例](images/frac.png)
-
 $$
 \frac{2.2-1}{2.2+1}
 $$
@@ -383,10 +381,9 @@ echo "scale=10; sqrt(3.2)" | bc
 echo "scale=10; e(l(8)/3)" | bc -l  # 8の立方根は「2」
 ```
 
-![立方根](images/cubicroot.png)
-<!-- $$
+$$
 \sqrt[3]{a}=e^{\frac{1}{3}\log(a)}
-$$ -->
+$$
 
 cygwinでは、Mathカテゴリーにbcパッケージがあります。
 
@@ -528,9 +525,9 @@ loopElemは結果出力ファイルを設定します。
 固体の全エネルギーEの体積V依存性は、マーナハンの式に従うことが知られています。
 
 ![マーナハンの式](images/murn.png)
-<!-- $$
+$$
 E(V) = \frac{BV}{B'(B'-1)}\left[B'\left(1-\frac{V_\text{opt}}{V}\right) + \left(\frac{V_\text{opt}}{V}\right)^{B'} - 1\right] + E_\text{opt}
-$$ -->
+$$
 
 ここでBは体積弾性率（B'はその圧力微分）、V<sub>opt</sub>とE<sub>opt</sub>は、最安定な格子体積とその全エネルギーです。
 gnuplotを使って、計算結果volumeCo.txtをマーナハンの式にフィッティングして、最安定な格子定数を求めましょう。
