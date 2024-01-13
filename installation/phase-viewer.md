@@ -1,10 +1,9 @@
 # PHASE-Viewer
 
 PHASE-Viewerは、PHASE/0利用を支援するGUIです。
-
 ここでは、WSLのUbuntu 22.04LTS環境におけるPHASE-Viewer利用を説明します。
 
-PHASE/0のコマンドライン利用については、[こちら](https://github.com/matelier/moku-moku/blob/master/installation/README.md)を参考にしてください。
+[コマンド操作でPHASE/0を利用できる状態](https://github.com/matelier/moku-moku/blob/master/installation/README.md)を前提とします。
 
 ## インストール
 
@@ -56,6 +55,20 @@ java -jar ~/phase-viewer/bin/phase-viewer.jar
 - `base directory`: PHASE-Viewerが管理するデータを配置する大元のディレクトリです。既定値はホームディレクトリ直下の`phase-viewer-projects`です。
 - `external editor`: テキストエディタを登録します。（後述）
 - `ghostscript`: Ghostscriptコマンドを登録します。変更しないでください。
+
+原子配置ビューアが動作することは、実用上とても重要です。
+真っ先に確認しましょう。
+ウィンドウ左側のディレクトリブラウザから、`basic` - `Si8` - `SCF`を選びます（青丸をダブルクリック）。
+`input`パネル（橙丸）から、`atomic configuration` - `atomic coordinates`タブ（緑丸）を選択し、`View`ボタン（赤丸）を押すと、原子配置ビューアが起動します。
+
+![パネル](./images/view.png)
+
+![原子配置ビューア](./images/acv.png)
+
+マウス操作で回転、拡大・縮小などできることをお試しください。
+
+原子配置ビューアが正常に動作しない場合は、[MobaXterm]()からWSLを起動して、MobaXtermのXサーバー利用をお試しください。
+改善することがあります。
 
 ここまでできたら、一旦、PHASE-Viewerを終了します。
 
