@@ -7,17 +7,41 @@
 
 ## インストール
 
-### WSL (Ubuntu-22.04LTS)
+BoltzTraP2はPythonスクリプト＆モジュールで構成されています。
+Anacondaもしくはpipでインストールします。
 
-Anaconda (Miniconda)利用が便利です。
+必要に応じて、Python仮想環境をご利用ください。
+
+### Anaconda (Miniconda)
+
+WSL (Ubuntu-22.04LTS)では、Anaconda (Miniconda)利用が便利です。
 
 ```sh
 conda install conda-forge::boltztrap2
 ```
 
-### macOS
+macOSでは、下記`pip`をご利用ください。
 
-`pip`でインストールします。
+### pip
+
+環境に応じて、事前に追加ソフトウェアをインストールします。
+その後、`pip`コマンドで`BoltzTrap2`をインストールします。
+
+#### 事前準備：WSL (Ubuntu-22.04LTS)
+
+```sh
+sudo apt install g++ python3-dev
+```
+
+#### 事前準備：macOS (homebrew)
+
+```sh
+brew install gcc
+```
+
+#### インストール本番
+
+残りは`pip`コマンドでインストールします。
 
 ```sh
 pip install numpy
