@@ -58,7 +58,7 @@ java -jar ~/phase-viewer/bin/phase-viewer.jar
 
 原子配置ビューアが動作することは、実用上とても重要です。
 真っ先に確認しましょう。
-ウィンドウ左側のディレクトリブラウザから、`basic` - `Si8` - `SCF`を選びます（青丸をダブルクリック）。
+ウィンドウ左側のディレクトリブラウザから、`samples` - `basic` - `Si8` - `SCF`を選びます（青丸をダブルクリック）。
 `input`パネル（橙丸）から、`atomic configuration` - `atomic coordinates`タブ（緑丸）を選択し、`View`ボタン（赤丸）を押すと、原子配置ビューアが起動します。
 
 ![パネル](./images/view.png)
