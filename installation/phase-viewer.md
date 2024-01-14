@@ -132,10 +132,10 @@ PHASE-Viewerの上部メニューから、`Preferences` - `program paths`を選�
 などがあります。
 
 ここではあえて、[Visual Studio Code](https://code.visualstudio.com/)（以下VSCodeと記す）の使用をご紹介します。
-Linux (Ubuntu)環境にインストールすることもできますが、WindowsにインストールされたVSCodeを、Linux（PHASE-Viewerを含みます）から、シームレスに呼び出すことができます。
+WSL (Ubuntu)環境にインストールすることもできますが、WindowsにインストールされたVSCodeを、WSL（PHASE-Viewerを含みます）から、シームレスに呼び出すことができます。
 
 Windowsアプリケーションの作法に則ってインストールします。
-Linux (WSL)のターミナルから、
+WSL (Ubuntu)のターミナルから、
 
 ```sh
 code
