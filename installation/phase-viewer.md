@@ -67,7 +67,7 @@ java -jar ~/phase-viewer/bin/phase-viewer.jar
 
 マウス操作で回転、拡大・縮小などできることをお試しください。
 
-原子配置ビューアが正常に動作しない場合は、[MobaXterm]()からWSLを起動して、MobaXtermのXサーバー利用をお試しください。
+原子配置ビューアが正常に動作しない場合は、[MobaXterm](https://mobaxterm.mobatek.net/)からWSLを起動して、MobaXtermのXサーバー利用をお試しください。
 改善することがあります。
 
 ここまでできたら、一旦、PHASE-Viewerを終了します。
