@@ -124,18 +124,25 @@ PHASE-Viewerの上部メニューから、`Preferences` - `program paths`を選�
 ![テキストエディタ選択](./images/externalprog.png)
 
 新規ウィンドウを開くテキストエディタであれば指定できます。
+WSL (Ubuntu)から、Windowsアプリケーションをシームレスに呼び出すことができますので、Windowsのテキストエディタも指定できます。
 
 - Emacs（要GUIサポート; emacs-noxは不可）
 - vim（要GUIサポート）
 - gedit
+- メモ帳（Windowsアプリ）
+- [Visual Studio Code](https://code.visualstudio.com/)（以下、VSCodeと記す）
 
 などがあります。
 
-ここではあえて、[Visual Studio Code](https://code.visualstudio.com/)（以下VSCodeと記す）の使用をご紹介します。
-WSL (Ubuntu)環境にインストールすることもできますが、WindowsにインストールされたVSCodeを、WSL（PHASE-Viewerを含みます）から、シームレスに呼び出すことができます。
+WSL (Ubuntu)のターミナルからは、下記コマンドで（Windowsの）メモ帳が起動します。
 
-Windowsアプリケーションの作法に則ってインストールします。
-WSL (Ubuntu)のターミナルから、
+```sh
+notepad.exe
+```
+
+上記ウィンドウの`external editor`に`notepad.exe`を指定すると、WSLのPHASE-Viewerから、Windowsのメモ帳が起動します。
+
+VSCodeはWSL (Ubuntu)環境にもインストールできますが、WindowsにインストールしてPHASE-Viewerから呼び出すこともできます。
 
 ```sh
 code
