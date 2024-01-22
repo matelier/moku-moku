@@ -1,0 +1,44 @@
+Control{
+    condition = initial
+}
+accuracy{
+    cutoff_wf = 25 Rydberg
+    cutoff_cd = 225 Rydberg
+    ksampling{
+        method = gamma
+    }
+    force_convergence{ max_force = 1.0E-4 }
+}
+structure{
+  atom_list{
+    atoms{
+	#default mobile = on
+      #tag    element    rx    ry    rz
+            C    0.0000000000000000D+00 -0.3514179896791424D-01  0.0
+            C    0.0000000000000000D+00  0.3514179896791424D-01  0.0
+            H    0.4900124983786556D-01  0.6537446718326960D-01  0.0
+            H    0.4900124983786553D-01 -0.6537446718326967D-01  0.0
+            H   -0.4900124983786553D-01  0.6537446718326967D-01  0.0
+            H   -0.4900124983786553D-01 -0.6537446718326967D-01  0.0
+    }
+  }
+  unit_cell{
+    a_vector = 36.0 0.0 0.0
+    b_vector = 0.0 36.0 0.0
+    c_vector = 0.0 0.0 36.0
+  }
+  element_list{
+    #tag    element    atomicnumber    mass
+          C    6    21894.5796446
+          H    1    1837.35097885
+  }
+	symmetry {
+		method = automatic
+		sw_inversion = on
+	}
+}
+phonon{
+  sw_phonon = on
+  sw_calc_force = on
+  sw_vibrational_modes = on
+}
