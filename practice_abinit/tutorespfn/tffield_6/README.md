@@ -1,4 +1,12 @@
-# 有限電場計算
+# 有限電場計算（9.6以前向け）
+
+9.8以降、同じ趣旨の例題が
+`tests/tutorespfn/Input/tpolarization_6.abi`
+に変更されました。
+
+[公式チュートリアル](https://docs.abinit.org/tutorial/polarization/#3-finite-electric-field-calculations)も更新されています。
+
+以下、9.6以前向けの古い情報を記録として残します。
 
 ## 概要
 
@@ -6,8 +14,6 @@
 ABINITには、閃亜鉛鉱型AlPを題材にした例題が付属しています。
 
 `tests/tutorespfn/Input/tffield_6.abi`
-
-[公式チュートリアル](https://docs.abinit.org/tutorial/ffield/#3-finite-electric-field-calculations)
 
 ## 入力ファイル説明
 
