@@ -255,7 +255,7 @@ mpiexec -n 2 abinit tbasepar_2.abi
 +Overall time at end (sec) : cpu=         47.6  wall=         48.3
 ```
 
-3並列で実行すると、スピン自由度×k点数の8を、$3 + 3 + 2$に三分割して、並列計算します。
+3並列で実行すると、スピン自由度×k点数の8を、 $3 + 3 + 2$ に三分割して、並列計算します。
 
 ```C
 -    mband =          40        mffmem =           1         mkmem =           3
