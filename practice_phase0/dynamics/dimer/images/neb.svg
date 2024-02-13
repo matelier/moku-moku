@@ -1,1255 +1,866 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="226.483mm" height="170.039mm"
- viewBox="0 0 642 482"
- xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny">
-<title>Qt SVG Document</title>
-<desc>Generated with Qt</desc>
-<defs>
-</defs>
-<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="43.5,446.5 47.5,446.5 " />
-<polyline fill="none" vector-effect="none" points="624.5,446.5 620.5,446.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.25698,455.215)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.25698,455.215)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.25698,455.215)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.25698,455.215)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.25698,455.215)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.25698,455.215)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >-0.5</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.25698,455.215)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="43.5,384.5 47.5,384.5 " />
-<polyline fill="none" vector-effect="none" points="624.5,384.5 620.5,384.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,6.88081,393.021)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,6.88081,393.021)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,6.88081,393.021)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,6.88081,393.021)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,6.88081,393.021)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,6.88081,393.021)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >-0.4</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,6.88081,393.021)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="43.5,322.5 47.5,322.5 " />
-<polyline fill="none" vector-effect="none" points="624.5,322.5 620.5,322.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.38237,329.824)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.38237,329.824)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.38237,329.824)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.38237,329.824)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.38237,329.824)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.38237,329.824)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >-0.3</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.38237,329.824)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="43.5,260.5 47.5,260.5 " />
-<polyline fill="none" vector-effect="none" points="624.5,260.5 620.5,260.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.82124,267.631)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.82124,267.631)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.82124,267.631)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.82124,267.631)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.82124,267.631)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.82124,267.631)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >-0.2</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,7.82124,267.631)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="43.5,197.5 47.5,197.5 " />
-<polyline fill="none" vector-effect="none" points="624.5,197.5 620.5,197.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,12.0532,205.437)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,12.0532,205.437)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,12.0532,205.437)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,12.0532,205.437)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,12.0532,205.437)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,12.0532,205.437)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >-0.1</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,12.0532,205.437)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="43.5,135.5 47.5,135.5 " />
-<polyline fill="none" vector-effect="none" points="624.5,135.5 620.5,135.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,14.8745,143.243)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,14.8745,143.243)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,14.8745,143.243)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,14.8745,143.243)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,14.8745,143.243)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,14.8745,143.243)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >0.0</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,14.8745,143.243)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="43.5,73.5 47.5,73.5 " />
-<polyline fill="none" vector-effect="none" points="624.5,73.5 620.5,73.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,19.6393,80.0462)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,19.6393,80.0462)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,19.6393,80.0462)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,19.6393,80.0462)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,19.6393,80.0462)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,19.6393,80.0462)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >0.1</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,19.6393,80.0462)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="43.5,11.5 47.5,11.5 " />
-<polyline fill="none" vector-effect="none" points="624.5,11.5 620.5,11.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,15.4074,17.8525)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,15.4074,17.8525)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,15.4074,17.8525)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,15.4074,17.8525)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,15.4074,17.8525)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,15.4074,17.8525)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >0.2</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,15.4074,17.8525)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="43.5,446.5 43.5,442.5 " />
-<polyline fill="none" vector-effect="none" points="43.5,11.5 43.5,15.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,31.4339,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,31.4339,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,31.4339,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,31.4339,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,31.4339,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,31.4339,466.249)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >0.0</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,31.4339,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="101.5,446.5 101.5,442.5 " />
-<polyline fill="none" vector-effect="none" points="101.5,11.5 101.5,15.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,89.8816,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,89.8816,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,89.8816,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,89.8816,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,89.8816,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,89.8816,466.249)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >0.2</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,89.8816,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="159.5,446.5 159.5,442.5 " />
-<polyline fill="none" vector-effect="none" points="159.5,11.5 159.5,15.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,147.593,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,147.593,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,147.593,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,147.593,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,147.593,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,147.593,466.249)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >0.4</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,147.593,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="217.5,446.5 217.5,442.5 " />
-<polyline fill="none" vector-effect="none" points="217.5,11.5 217.5,15.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,205.884,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,205.884,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,205.884,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,205.884,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,205.884,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,205.884,466.249)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >0.6</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,205.884,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="276.5,446.5 276.5,442.5 " />
-<polyline fill="none" vector-effect="none" points="276.5,11.5 276.5,15.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,264.049,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,264.049,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,264.049,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,264.049,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,264.049,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,264.049,466.249)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >0.8</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,264.049,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="334.5,446.5 334.5,442.5 " />
-<polyline fill="none" vector-effect="none" points="334.5,11.5 334.5,15.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,323.9,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,323.9,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,323.9,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,323.9,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,323.9,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,323.9,466.249)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >1.0</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,323.9,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="392.5,446.5 392.5,442.5 " />
-<polyline fill="none" vector-effect="none" points="392.5,11.5 392.5,15.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,382.347,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,382.347,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,382.347,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,382.347,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,382.347,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,382.347,466.249)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >1.2</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,382.347,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="450.5,446.5 450.5,442.5 " />
-<polyline fill="none" vector-effect="none" points="450.5,11.5 450.5,15.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,441.062,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,441.062,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,441.062,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,441.062,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,441.062,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,441.062,466.249)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >1.4</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,441.062,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="508.5,446.5 508.5,442.5 " />
-<polyline fill="none" vector-effect="none" points="508.5,11.5 508.5,15.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,499.352,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,499.352,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,499.352,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,499.352,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,499.352,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,499.352,466.249)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >1.6</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,499.352,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="566.5,446.5 566.5,442.5 " />
-<polyline fill="none" vector-effect="none" points="566.5,11.5 566.5,15.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,557.518,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,557.518,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,557.518,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,557.518,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,557.518,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,557.518,466.249)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >1.8</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,557.518,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="624.5,446.5 624.5,442.5 " />
-<polyline fill="none" vector-effect="none" points="624.5,11.5 624.5,15.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,614.249,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,614.249,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,614.249,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,614.249,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,614.249,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,614.249,466.249)"
-font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="18" font-weight="400" font-style="normal" 
- >2.0</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,614.249,466.249)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="43.5,11.5 43.5,446.5 624.5,446.5 624.5,11.5 43.5,11.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0,-1.00313,1.00313,0,15.3604,282.873)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0,-1.00313,1.00313,0,15.3604,282.873)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0,-1.00313,1.00313,0,15.3604,282.873)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0,-1.00313,1.00313,0,15.3604,282.873)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0,-1.00313,1.00313,0,15.3604,282.873)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0,-1.00313,1.00313,0,15.3604,282.873)"
-font-family="Sans" font-size="22" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="22" font-weight="400" font-style="normal" 
- >energy (eV)</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0,-1.00313,1.00313,0,15.3604,282.873)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,229.575,481.813)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,229.575,481.813)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,229.575,481.813)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,229.575,481.813)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,229.575,481.813)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,229.575,481.813)"
-font-family="Sans" font-size="22" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="22" font-weight="400" font-style="normal" 
- >reaction coordinate (</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,229.575,481.813)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,419.98,481.813)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,419.98,481.813)"
-font-family="Sans" font-size="22" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="22" font-weight="400" font-style="normal" 
- >Å</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,419.98,481.813)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,433.883,481.813)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,433.883,481.813)"
-font-family="Sans" font-size="22" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Sans" font-size="22" font-weight="400" font-style="normal" 
- >)</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,433.883,481.813)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#9400d3" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="43.5,135.5 43.5,135.5 121.5,84.5 193.8,53 276.2,78.2 366.3,145.4 458,302.2 588.6,415.8 " />
-</g>
-
-<g fill="#9400d3" fill-opacity="1" stroke="#9400d3" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<rect x="40.5" y="132.5" width="6" height="6"/>
-</g>
-
-<g fill="#9400d3" fill-opacity="1" stroke="#9400d3" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<rect x="118.5" y="81.5" width="6" height="6"/>
-</g>
-
-<g fill="#9400d3" fill-opacity="1" stroke="#9400d3" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<rect x="190.5" y="50.5" width="6" height="6"/>
-</g>
-
-<g fill="#9400d3" fill-opacity="1" stroke="#9400d3" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<rect x="273.5" y="75.5" width="6" height="6"/>
-</g>
-
-<g fill="#9400d3" fill-opacity="1" stroke="#9400d3" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<rect x="363.5" y="142.5" width="6" height="6"/>
-</g>
-
-<g fill="#9400d3" fill-opacity="1" stroke="#9400d3" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<rect x="455.5" y="299.5" width="6" height="6"/>
-</g>
-
-<g fill="#9400d3" fill-opacity="1" stroke="#9400d3" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<rect x="585.5" y="412.5" width="6" height="6"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="43.5,11.5 43.5,446.5 624.5,446.5 624.5,11.5 43.5,11.5 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.00313,0,0,1.00313,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
->
-</g>
-</g>
+<svg
+   width="600"
+   height="480"
+   viewBox="0 0 600 480"
+   version="1.1"
+   id="svg59"
+   sodipodi:docname="neb.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs59" />
+  <sodipodi:namedview
+     id="namedview59"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.44375"
+     inkscape:cx="300.15345"
+     inkscape:cy="240"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg59" />
+  <title
+     id="title1">Gnuplot</title>
+  <desc
+     id="desc1">Produced by GNUPLOT 5.4 patchlevel 10 </desc>
+  <g
+     id="gnuplot_canvas">
+    <rect
+       x="0"
+       y="0"
+       width="600"
+       height="480"
+       fill="none"
+       id="rect1" />
+    <defs
+       id="defs2">
+      <circle
+         id="gpDot"
+         r="0.5"
+         stroke-width="0.5"
+         stroke="currentColor" />
+      <path
+         id="gpPt0"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M-1,0 h2 M0,-1 v2" />
+      <path
+         id="gpPt1"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M-1,-1 L1,1 M1,-1 L-1,1" />
+      <path
+         id="gpPt2"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1" />
+      <rect
+         id="gpPt3"
+         stroke-width="0.222"
+         stroke="currentColor"
+         x="-1"
+         y="-1"
+         width="2"
+         height="2" />
+      <rect
+         id="gpPt4"
+         stroke-width="0.222"
+         stroke="currentColor"
+         fill="currentColor"
+         x="-1"
+         y="-1"
+         width="2"
+         height="2" />
+      <circle
+         id="gpPt5"
+         stroke-width="0.222"
+         stroke="currentColor"
+         cx="0"
+         cy="0"
+         r="1" />
+      <use
+         xlink:href="#gpPt5"
+         id="gpPt6"
+         fill="currentColor"
+         stroke="none" />
+      <path
+         id="gpPt7"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M0,-1.33 L-1.33,0.67 L1.33,0.67 z" />
+      <use
+         xlink:href="#gpPt7"
+         id="gpPt8"
+         fill="currentColor"
+         stroke="none" />
+      <use
+         xlink:href="#gpPt7"
+         id="gpPt9"
+         stroke="currentColor"
+         transform="rotate(180)" />
+      <use
+         xlink:href="#gpPt9"
+         id="gpPt10"
+         fill="currentColor"
+         stroke="none" />
+      <use
+         xlink:href="#gpPt3"
+         id="gpPt11"
+         stroke="currentColor"
+         transform="rotate(45)" />
+      <use
+         xlink:href="#gpPt11"
+         id="gpPt12"
+         fill="currentColor"
+         stroke="none" />
+      <path
+         id="gpPt13"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z" />
+      <use
+         xlink:href="#gpPt13"
+         id="gpPt14"
+         fill="currentColor"
+         stroke="none" />
+      <filter
+         id="textbox"
+         filterUnits="objectBoundingBox"
+         x="0"
+         y="0"
+         height="1"
+         width="1">
+        <feFlood
+           flood-color="white"
+           flood-opacity="1"
+           result="bgnd"
+           id="feFlood1" />
+        <feComposite
+           in="SourceGraphic"
+           in2="bgnd"
+           operator="atop"
+           id="feComposite1" />
+      </filter>
+      <filter
+         id="greybox"
+         filterUnits="objectBoundingBox"
+         x="0"
+         y="0"
+         height="1"
+         width="1">
+        <feFlood
+           flood-color="lightgrey"
+           flood-opacity="1"
+           result="grey"
+           id="feFlood2" />
+        <feComposite
+           in="SourceGraphic"
+           in2="grey"
+           operator="atop"
+           id="feComposite2" />
+      </filter>
+    </defs>
+    <g
+       fill="none"
+       color="white"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g2" />
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g4">
+      <path
+         stroke="black"
+         d="M72.53,426.00 L81.53,426.00 M574.82,426.00 L565.82,426.00  "
+         id="path2" />
+      <g
+         transform="translate(64.14,431.85)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="end"
+         id="g3">
+        <text
+           id="text2"><tspan
+             font-family="Arial"
+             id="tspan2">-0.5</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g6">
+      <path
+         stroke="black"
+         d="M72.53,367.72 L81.53,367.72 M574.82,367.72 L565.82,367.72  "
+         id="path4" />
+      <g
+         transform="translate(64.14,373.57)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="end"
+         id="g5">
+        <text
+           id="text4"><tspan
+             font-family="Arial"
+             id="tspan4">-0.4</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g8">
+      <path
+         stroke="black"
+         d="M72.53,309.43 L81.53,309.43 M574.82,309.43 L565.82,309.43  "
+         id="path6" />
+      <g
+         transform="translate(64.14,315.28)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="end"
+         id="g7">
+        <text
+           id="text6"><tspan
+             font-family="Arial"
+             id="tspan6">-0.3</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g10">
+      <path
+         stroke="black"
+         d="M72.53,251.15 L81.53,251.15 M574.82,251.15 L565.82,251.15  "
+         id="path8" />
+      <g
+         transform="translate(64.14,257.00)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="end"
+         id="g9">
+        <text
+           id="text8"><tspan
+             font-family="Arial"
+             id="tspan8">-0.2</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g12">
+      <path
+         stroke="black"
+         d="M72.53,192.86 L81.53,192.86 M574.82,192.86 L565.82,192.86  "
+         id="path10" />
+      <g
+         transform="translate(64.14,198.71)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="end"
+         id="g11">
+        <text
+           id="text10"><tspan
+             font-family="Arial"
+             id="tspan10">-0.1</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g14">
+      <path
+         stroke="black"
+         d="M72.53,134.58 L81.53,134.58 M574.82,134.58 L565.82,134.58  "
+         id="path12" />
+      <g
+         transform="translate(64.14,140.43)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="end"
+         id="g13">
+        <text
+           id="text12"><tspan
+             font-family="Arial"
+             id="tspan12">0.0</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g16">
+      <path
+         stroke="black"
+         d="M72.53,76.29 L81.53,76.29 M574.82,76.29 L565.82,76.29  "
+         id="path14" />
+      <g
+         transform="translate(64.14,82.14)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="end"
+         id="g15">
+        <text
+           id="text14"><tspan
+             font-family="Arial"
+             id="tspan14">0.1</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g18">
+      <path
+         stroke="black"
+         d="M72.53,18.01 L81.53,18.01 M574.82,18.01 L565.82,18.01  "
+         id="path16" />
+      <g
+         transform="translate(64.14,23.86)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="end"
+         id="g17">
+        <text
+           id="text16"><tspan
+             font-family="Arial"
+             id="tspan16">0.2</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g20">
+      <path
+         stroke="black"
+         d="M72.53,426.00 L72.53,417.00 M72.53,18.01 L72.53,27.01  "
+         id="path18" />
+      <g
+         transform="translate(72.53,449.85)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="middle"
+         id="g19">
+        <text
+           id="text18"><tspan
+             font-family="Arial"
+             id="tspan18">0.0</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g22">
+      <path
+         stroke="black"
+         d="M122.76,426.00 L122.76,417.00 M122.76,18.01 L122.76,27.01  "
+         id="path20" />
+      <g
+         transform="translate(122.76,449.85)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="middle"
+         id="g21">
+        <text
+           id="text20"><tspan
+             font-family="Arial"
+             id="tspan20">0.2</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g24">
+      <path
+         stroke="black"
+         d="M172.99,426.00 L172.99,417.00 M172.99,18.01 L172.99,27.01  "
+         id="path22" />
+      <g
+         transform="translate(172.99,449.85)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="middle"
+         id="g23">
+        <text
+           id="text22"><tspan
+             font-family="Arial"
+             id="tspan22">0.4</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g26">
+      <path
+         stroke="black"
+         d="M223.22,426.00 L223.22,417.00 M223.22,18.01 L223.22,27.01  "
+         id="path24" />
+      <g
+         transform="translate(223.22,449.85)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="middle"
+         id="g25">
+        <text
+           id="text24"><tspan
+             font-family="Arial"
+             id="tspan24">0.6</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g28">
+      <path
+         stroke="black"
+         d="M273.45,426.00 L273.45,417.00 M273.45,18.01 L273.45,27.01  "
+         id="path26" />
+      <g
+         transform="translate(273.45,449.85)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="middle"
+         id="g27">
+        <text
+           id="text26"><tspan
+             font-family="Arial"
+             id="tspan26">0.8</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g30">
+      <path
+         stroke="black"
+         d="M323.68,426.00 L323.68,417.00 M323.68,18.01 L323.68,27.01  "
+         id="path28" />
+      <g
+         transform="translate(323.68,449.85)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="middle"
+         id="g29">
+        <text
+           id="text28"><tspan
+             font-family="Arial"
+             id="tspan28">1.0</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g32">
+      <path
+         stroke="black"
+         d="M373.90,426.00 L373.90,417.00 M373.90,18.01 L373.90,27.01  "
+         id="path30" />
+      <g
+         transform="translate(373.90,449.85)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="middle"
+         id="g31">
+        <text
+           id="text30"><tspan
+             font-family="Arial"
+             id="tspan30">1.2</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g34">
+      <path
+         stroke="black"
+         d="M424.13,426.00 L424.13,417.00 M424.13,18.01 L424.13,27.01  "
+         id="path32" />
+      <g
+         transform="translate(424.13,449.85)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="middle"
+         id="g33">
+        <text
+           id="text32"><tspan
+             font-family="Arial"
+             id="tspan32">1.4</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g36">
+      <path
+         stroke="black"
+         d="M474.36,426.00 L474.36,417.00 M474.36,18.01 L474.36,27.01  "
+         id="path34" />
+      <g
+         transform="translate(474.36,449.85)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="middle"
+         id="g35">
+        <text
+           id="text34"><tspan
+             font-family="Arial"
+             id="tspan34">1.6</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g38">
+      <path
+         stroke="black"
+         d="M524.59,426.00 L524.59,417.00 M524.59,18.01 L524.59,27.01  "
+         id="path36" />
+      <g
+         transform="translate(524.59,449.85)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="middle"
+         id="g37">
+        <text
+           id="text36"><tspan
+             font-family="Arial"
+             id="tspan36">1.8</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g40">
+      <path
+         stroke="black"
+         d="M574.82,426.00 L574.82,417.00 M574.82,18.01 L574.82,27.01  "
+         id="path38" />
+      <g
+         transform="translate(574.82,449.85)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="18.00"
+         text-anchor="middle"
+         id="g39">
+        <text
+           id="text38"><tspan
+             font-family="Arial"
+             id="tspan38">2.0</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g41" />
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g42">
+      <path
+         stroke="black"
+         d="M72.53,18.01 L72.53,426.00 L574.82,426.00 L574.82,18.01 L72.53,18.01 Z  "
+         id="path41" />
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g44">
+      <g
+         transform="translate(19.08,222.01) rotate(270)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="22.00"
+         text-anchor="middle"
+         id="g43">
+        <text
+           id="text42"><tspan
+             font-family="Arial"
+             id="tspan42">energy (eV)</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g47">
+      <g
+         transform="translate(323.67,474.55)"
+         stroke="none"
+         fill="black"
+         font-family="Arial"
+         font-size="22.00"
+         text-anchor="middle"
+         id="g46">
+        <text
+           id="text46"><tspan
+             font-family="Arial"
+             id="tspan44">reaction coordinate (</tspan><tspan
+             font-family="Arial"
+             id="tspan45">Å</tspan><tspan
+             font-family="Arial"
+             id="tspan46">)</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g48" />
+    <g
+       id="gnuplot_plot_1">
+      <title
+         id="title48">'nfefnNEB.data' u ($3*0.529177210903):($4+0.1308219037E+04)*27.211386245988</title>
+      <g
+         fill="none"
+         color="black"
+         stroke="currentColor"
+         stroke-width="1.00"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         id="g54">
+        <path
+           stroke="rgb(148,   0, 211)"
+           d="M72.53,134.58 L139.89,86.76 L202.35,57.34 L273.55,80.94 L351.36,143.79 L430.64,290.56 L543.49,396.89  "
+           id="path48" />
+        <use
+           xlink:href="#gpPt4"
+           transform="translate(72.53,134.58) scale(4.50)"
+           color="rgb(148,   0, 211)"
+           id="use48" />
+        <use
+           xlink:href="#gpPt4"
+           transform="translate(139.89,86.76) scale(4.50)"
+           color="rgb(148,   0, 211)"
+           id="use49" />
+        <use
+           xlink:href="#gpPt4"
+           transform="translate(202.35,57.34) scale(4.50)"
+           color="rgb(148,   0, 211)"
+           id="use50" />
+        <use
+           xlink:href="#gpPt4"
+           transform="translate(273.55,80.94) scale(4.50)"
+           color="rgb(148,   0, 211)"
+           id="use51" />
+        <use
+           xlink:href="#gpPt4"
+           transform="translate(351.36,143.79) scale(4.50)"
+           color="rgb(148,   0, 211)"
+           id="use52" />
+        <use
+           xlink:href="#gpPt4"
+           transform="translate(430.64,290.56) scale(4.50)"
+           color="rgb(148,   0, 211)"
+           id="use53" />
+        <use
+           xlink:href="#gpPt4"
+           transform="translate(543.49,396.89) scale(4.50)"
+           color="rgb(148,   0, 211)"
+           id="use54" />
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="white"
+       stroke="rgb(148,   0, 211)"
+       stroke-width="2.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g55" />
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="2.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g56" />
+    <g
+       fill="none"
+       color="black"
+       stroke="black"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g57" />
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g58">
+      <path
+         stroke="black"
+         d="M72.53,18.01 L72.53,426.00 L574.82,426.00 L574.82,18.01 L72.53,18.01 Z  "
+         id="path57" />
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g59" />
+  </g>
+  <metadata
+     id="metadata59">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Gnuplot</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>
