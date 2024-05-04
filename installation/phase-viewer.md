@@ -14,6 +14,8 @@ PHASE-Viewerの動作には、Java実行環境(JRE)が必要です。
 sudo apt install default-jre
 ```
 
+Ubuntu 24.04LTSでは、Java 21がインストールされます。
+
 ```sh
 $ java --version
 openjdk 21.0.3 2024-04-16
@@ -33,7 +35,7 @@ OpenJDK 64-Bit Server VM (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1, mixed mod
 PHASE/0付属のスクリプト群は、状態密度図やバンド構造図をEPS形式で生成します。
 そしてPHASE-Viewerは、EPSをビットマップ画像に変換して表示します。
 その変換にGhostscriptの助けを借りるので、これも追加インストールします。
-さらに、PHASE-Viwerの配布物がZIP圧縮されています。これを伸長するためのunzipコマンドを併せて追加インストールします。
+さらに、PHASE-Viwerの配布物がZIP圧縮されていますので、これを伸長するためのunzipコマンドを併せてインストールします。
 
 ```sh
 sudo apt install ghostscript unzip
