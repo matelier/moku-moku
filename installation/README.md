@@ -167,7 +167,6 @@ $ free
                total        used        free      shared  buff/cache   available
 Mem:         4014156      410952     3277884        2980      325320     3384068
 Swap:        1048576           0     1048576
-$
 ```
 
 上記例では、WSLで約`4GB`のメモリが利用可能です。
