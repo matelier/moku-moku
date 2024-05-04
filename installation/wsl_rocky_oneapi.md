@@ -67,11 +67,10 @@ sudo dnf install -y gcc-c++ make xauth perl
 `gnuplot`は標準のパッケージ・リポジトリにはありません。
 拡張パッケージEPELからインストールします。
 
-```
+```sh
 sudo dnf install -y epel-release
 sudo dnf install -y --enablerepo=epel gnuplot
 ```
-
 
 ## oneAPI
 
