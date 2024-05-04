@@ -73,9 +73,7 @@ wsl --install
 前者「実行環境を整える」には管理者権限が必要ですが、後者のディストリビューションのインストールに管理者権限は不要です。
 前者のみを実行するコマンドは無いようですので、インストールされるディストリビューションが不要な場合はインストール後に削除するか、[手動で実行環境を整えて](https://github.com/matelier/moku-moku/blob/f373f46d1a4a65810831cd8394f5451433429040/installation/README.md)ください。
 また、`WSL`がすでにインストールされている場合、上記コマンドはヘルプメッセージを表示して終了します。
-次節以降を参照して、[ディストリビューションを指定したオンラインインストール](#規定値以外のディストリビューションのオンラインインストール
-)、もしくは、[Microsoft Storeからインストール](#microsoft-storeからのディストリビューション導入)してください。
-
+次節以降を参照して、[ディストリビューションを指定したオンラインインストール](#既定値以外のディストリビューションのオンラインインストール)、もしくは、[Microsoft Storeからインストール](#microsoft-storeからのディストリビューション導入)してください。
 普段、管理者権限を持たない一般ユーザーとしてサインインしている方は、管理者としてサインインしてコマンド実行することをお勧めします。
 一般ユーザーとしてサインインして、管理者権限のWidows PowerShell（もしくはコマンドプロンプト）から上記コマンドを入力した場合は、`Ubuntu`は管理者アカウントにインストールされますのでご注意ください。
 
@@ -112,19 +110,21 @@ kali-linux                             Kali Linux Rolling
 Ubuntu-18.04                           Ubuntu 18.04 LTS
 Ubuntu-20.04                           Ubuntu 20.04 LTS
 Ubuntu-22.04                           Ubuntu 22.04 LTS
+Ubuntu-24.04                           Ubuntu 24.04 LTS
 OracleLinux_7_9                        Oracle Linux 7.9
 OracleLinux_8_7                        Oracle Linux 8.7
 OracleLinux_9_1                        Oracle Linux 9.1
+openSUSE-Leap-15.5                     openSUSE Leap 15.5
 SUSE-Linux-Enterprise-Server-15-SP4    SUSE Linux Enterprise Server 15 SP4
-openSUSE-Leap-15.4                     openSUSE Leap 15.4
+SUSE-Linux-Enterprise-15-SP5           SUSE Linux Enterprise 15 SP5
 openSUSE-Tumbleweed                    openSUSE Tumbleweed
 PS C:\Users\matelier>
 ```
 
-例えば`Ubuntu 20.04LTS`をオンラインインストールするためには下記コマンドを実行します。
+例えば`Ubuntu 24.04LTS`をオンラインインストールするためには下記コマンドを実行します。
 
 ```sh
-wsl --install -d Ubuntu-20.04
+wsl --install -d Ubuntu-24.04
 ```
 
 #### Microsoft Storeからのディストリビューション導入
@@ -153,6 +153,41 @@ Retype new password:
 ```
 
 次回以降起動の際は、スタートメニューに`Ubuntu`などの項目が現れるので、それを選択してください（メニュー項目の詳細はインストールしたディストリビューションに依存します）。
+
+#### メモリ使用量制限
+
+たくさんのメモリを搭載したPCでWSLを動かすこともあるでしょう。
+大規模な計算では、多くのメモリを必要とすることがあります。
+ところが既定値では、WSLが利用できるメモリ量は、PCに搭載されているメモリ量の半分に制限されるようです。
+
+メモリ量は、WSL環境にて以下のコマンドで確認します。
+
+```sh
+$ free
+               total        used        free      shared  buff/cache   available
+Mem:         4014156      410952     3277884        2980      325320     3384068
+Swap:        1048576           0     1048576
+$
+```
+
+上記例では、WSLで約`4GB`のメモリが利用可能です。
+
+WSLが利用できるメモリ量を変更するためには、設定ファイル
+`C:\Users\[ユーザー名]\.wslconfig`
+に、以下の記述を追加します。
+（ファイルが存在しない場合は、新規作成してください。）
+
+```bash
+[wsl2]
+memory=8GB
+```
+
+（設定を直ちに反映させるためには、`wsl --shutdown`コマンドを実行します。）
+
+例えば64GB搭載したPCでは、50GB程度をWSLに割り当てても良いのではないでしょうか。
+
+ただし、メモリの大部分をWSLが使用すると、Windowsの動作に支障が出る恐れがあります。
+WSLが利用するメモリ量を拡大する場合は注意してください。
 
 ### Linux開発環境設定
 
@@ -215,6 +250,20 @@ ls Desktop
 
 `[ユーザー名]`は、Windowsのユーザー名です。
 
+#### WSLから、Windowsのエクスプローラーを起動する
+
+WSLから、Windowsのコマンド（*.exe）を実行できます。
+Windowsのエクスプローラーを実行するコマンドは、`explorer.exe`です。
+同コマンドの引数にディレクトリを与えることができます。
+
+WSLのカレントディレクトリを、Windowsのエクスプローラーで開くコマンドは
+
+```sh
+explorer.exe .
+```
+
+です。
+
 #### Windowsから、WSLのファイルを読み書きする
 
 Windowsのエクスプローラーのナビゲーションウィンドウ内の`Linux`から、WSLのファイルシステムにアクセスできます。
@@ -254,7 +303,7 @@ cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2022.01.tar.gz ~
 
 ```sh
 cd
-tar zxf phase0_2022.01.tar.gz
+tar xf phase0_2022.01.tar.gz
 cd phase0_2022.01
 ```
 

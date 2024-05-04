@@ -1,7 +1,7 @@
 # PHASE-Viewer
 
 PHASE-Viewerは、PHASE/0利用を支援するGUIです。
-ここでは、WSLのUbuntu 22.04LTS環境におけるPHASE-Viewer利用を説明します。
+ここでは、WSLのUbuntu 24.04LTS環境におけるPHASE-Viewer利用を説明します。
 
 [コマンド操作でPHASE/0を利用できる状態](https://github.com/matelier/moku-moku/blob/master/installation/README.md)を前提とします。
 
@@ -16,17 +16,27 @@ sudo apt install default-jre
 
 ```sh
 $ java --version
-openjdk 11.0.21 2023-10-17
-OpenJDK Runtime Environment (build 11.0.21+9-post-Ubuntu-0ubuntu122.04)
-OpenJDK 64-Bit Server VM (build 11.0.21+9-post-Ubuntu-0ubuntu122.04, mixed mode, sharing)
+openjdk 21.0.3 2024-04-16
+OpenJDK Runtime Environment (build 21.0.3+9-Ubuntu-1ubuntu1)
+OpenJDK 64-Bit Server VM (build 21.0.3+9-Ubuntu-1ubuntu1, mixed mode, sharing)
+```
+
+（参考）Ubuntu 22.04LTSでは、Java 11がインストールされます。
+
+```sh
+$ java --version
+openjdk 11.0.22 2024-01-16
+OpenJDK Runtime Environment (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1)
+OpenJDK 64-Bit Server VM (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1, mixed mode, sharing)
 ```
 
 PHASE/0付属のスクリプト群は、状態密度図やバンド構造図をEPS形式で生成します。
 そしてPHASE-Viewerは、EPSをビットマップ画像に変換して表示します。
 その変換にGhostscriptの助けを借りるので、これも追加インストールします。
+さらに、PHASE-Viwerの配布物がZIP圧縮されています。これを伸長するためのunzipコマンドを併せて追加インストールします。
 
 ```sh
-sudo apt install ghostscript
+sudo apt install ghostscript unzip
 ```
 
 PHASE-Viewerの本体は、ダウンロードして入手します。
@@ -41,8 +51,10 @@ unzip phase-viewer_2020.zip
 下記コマンドを実行して、PHASE-Viewerを起動します。
 
 ```sh
-java -jar ~/phase-viewer/bin/phase-viewer.jar
+java --add-exports java.base/java.lang=ALL-UNNAMED --add-exports java.desktop/sun.awt=ALL-UNNAMED --add-exports java.desktop/sun.java2d=ALL-UNNAMED -jar ~/phase-viewer/bin/phase-viewer.jar
 ```
+
+（参考）Ubuntu 22.04LTSなどでJava 11を利用する場合は、`--addo-exports ...`オプション群は不要です。
 
 ### 初回起動
 
@@ -95,7 +107,7 @@ export PATH=~/phase0_2023.01/bin:$PATH
 ```
 
 ログインの（新しいターミナルを起動する）度に実行する必要があります。
-毎回実行するのが面倒な方は、`.bashrc`ファイルに書き込んでください。
+毎回実行するのは面倒なので、`.bashrc`ファイルに書き込むことを推奨します。
 
 ### Host情報
 
@@ -130,7 +142,7 @@ WSL (Ubuntu)から、Windowsアプリケーションをシームレスに呼び�
 - vim（要GUIサポート）
 - gedit
 - メモ帳（Windowsアプリ）
-- [Visual Studio Code](https://code.visualstudio.com/)（以下、VSCodeと記す）
+- [Visual Studio Code](https://code.visualstudio.com/)（以下、VS Codeと記す）
 
 などがあります。
 
@@ -142,21 +154,15 @@ notepad.exe
 
 上記ウィンドウの`external editor`に`notepad.exe`を指定すると、WSLのPHASE-Viewerから、Windowsのメモ帳が起動します。
 
-VSCodeはWSL (Ubuntu)環境にもインストールできますが、WindowsにインストールしてPHASE-Viewerから呼び出すこともできます。
+VS CodeはWSL (Ubuntu)環境にもインストールできますが、WindowsにインストールしてPHASE-Viewerから呼び出すこともできます。
 
 ```sh
 code
 ```
 
-コマンドで、VSCodeが起動します。
+コマンドで、VS Codeが起動します。
 PHASE-Viewerの`external editor`にも、`code`を指定します。
 
-## PHASE-Viewerの使い方
+## PHASE-Viewerの操作
 
-GUIの操作方法は、別途説明を計画中です。
-
-## 付録
-
-### 環境をリセットする
-
-### バージョンアップに際して
+別途説明を計画中です。
