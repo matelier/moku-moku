@@ -165,6 +165,8 @@ code
 コマンドで、VS Codeが起動します。
 PHASE-Viewerの`external editor`にも、`code`を指定します。
 
+（参考）[VS Code設定紹介](https://www.docswell.com/s/matelier/ZQ8VWJ-2024-04-18-105738/6)
+
 ## PHASE-Viewerの操作
 
-別途説明を計画中です。
+PHASE-Viewerを利用したPHASE/0計算実習は[コチラ](../practice_phaseViewer/README.md)です。

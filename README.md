@@ -16,6 +16,7 @@ Windowsをお使いの場合は、WSL (Windows Subsystem for Linux)の利用に�
 
 - [WSLの基本的な設定とPHASE/0インストール](./installation/README.md)
 - [Rocky LinuxにoneAPIをインストールしてOpenMXをコンパイル](./installation/wsl_rocky_oneapi.md)
+- [PHASE-Viewerのインストールと環境設定](./installation/phase-viewer.md)
 
 macOSはそのままUNIX的（≒Linux的）に利用できます。
 身近に利用可能なLinux (PCクラスター)があれば、それを使いましょう。
