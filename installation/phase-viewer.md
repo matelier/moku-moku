@@ -111,6 +111,13 @@ export PATH=~/phase0_2023.01/bin:$PATH
 ログインの（新しいターミナルを起動する）度に実行する必要があります。
 毎回実行するのは面倒なので、`.bashrc`ファイルに書き込むことを推奨します。
 
+バンド構造図作成のk点生成に利用する`band_kpoint.pl`スクリプトは、パスから探すのではなく、`phase-viwer/bin`ディレクトリに置く必要があります。
+コピーします。
+
+```sh
+cp ~/phase0_2023.01/bin/band_kpoint.pl ~/phase-viewer/bin
+```
+
 ### Host情報
 
 PHASE-Viewerの上部メニューから、`Module` - `configure host info`を選びます。
