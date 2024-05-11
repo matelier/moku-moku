@@ -4,7 +4,7 @@
 
 ## 窒化ホウ素（立方晶）の状態密度とバンド構造図
 
-[サンプルproject](./pvsamples.tar.xz)
+[サンプルproject](https://github.com/matelier/moku-moku/raw/master/practice_phaseViewer/pvsamples.tar.xz)
 
 閃亜鉛鉱型窒化ホウ素（cBN）の電子状態を調べます。
 結晶（繰り返し）構造の最小単位は、2原子（B, N各1原子）で構成される面心基本格子です。
