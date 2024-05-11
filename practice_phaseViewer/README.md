@@ -51,9 +51,9 @@ PHASE-Viewerを操作してcBNのスーパーセルを作成し、一つのB原�
 
 CIFを入手するためには、Materials Projectへのログインが必要です。
 
-[mp-984](https://next-gen.materialsproject.org/materials/mp-984)
+[mp-984](https://materialsproject.org/materials/mp-984)
 
-[mp-7991](https://next-gen.materialsproject.org/materials/mp-7991)
+[mp-7991](https://materialsproject.org/materials/mp-7991)
 
 どちらも、B-Nが蜂の巣構造を形成していることは同じですが、原子層の重なり方が異なります。
 
