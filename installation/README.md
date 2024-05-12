@@ -203,7 +203,7 @@ sudo apt install -y make gnuplot-x11 gfortran libopenmpi-dev libfftw3-dev liblap
 ただし、セキュリティに厳しい組織内で実行すると、ファイヤーウォールで通信が遮断される場合があるそうです。
 
 ここでインストールされるLAPACK, BLASはスレッド並列化されています。
-スレッド並列は効果的でない場合が多いので、下記コマンドで無効化する（`.bashrc`に書き込む）ことをお勧めします。
+スレッド並列は効果的でない場合が多いので、下記コマンドで無効化すること（`.bashrc`に書き込むこと）をお勧めします。
 
 ```sh
 export OMP_NUM_THREADS=1
