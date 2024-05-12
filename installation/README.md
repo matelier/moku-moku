@@ -199,9 +199,15 @@ sudo apt upgrade -y
 sudo apt install -y make gnuplot-x11 gfortran libopenmpi-dev libfftw3-dev liblapack-dev libopenblas-dev evince
 ```
 
-各コマンドの実行には時間を要します。
-ネットワーク環境が良いところで実行してください。
+各コマンドは、ネットワーク環境が良いところで実行してください。
 ただし、セキュリティに厳しい組織内で実行すると、ファイヤーウォールで通信が遮断される場合があるそうです。
+
+ここでインストールされるLAPACK, BLASはスレッド並列化されています。
+スレッド並列は効果的でない場合が多いので、下記コマンドで無効化する（`.bashrc`に書き込む）ことをお勧めします。
+
+```sh
+export OMP_NUM_THREADS=1
+```
 
 Linux上での作業には、テキストエディタを使用します。
 標準で`vim`や`nano`はインストールされています。
