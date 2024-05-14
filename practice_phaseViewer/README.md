@@ -4,6 +4,8 @@
 
 ## 窒化ホウ素（立方晶）の状態密度とバンド構造図
 
+[動画 Part1](https://vimeo.com/946141605/77c7a22010)
+
 [サンプルproject](https://github.com/matelier/moku-moku/raw/master/practice_phaseViewer/pvsamples.tar.xz)
 
 閃亜鉛鉱型窒化ホウ素（cBN）の電子状態を調べます。
