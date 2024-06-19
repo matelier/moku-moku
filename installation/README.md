@@ -297,28 +297,26 @@ WSLのみを利用する場合も役立ちますので、ご利用をお勧め�
 
 ### PHASE/0
 
-PHASE/0のソースコードを[ダウンロード](https://azuma.nims.go.jp/cms1/downloads/software/)（登録が必要です）し、`phase0_2022.01.tar.gz`をWindowsのデスクトップに配置します。
+PHASE/0のソースコードを[ダウンロード](https://azuma.nims.go.jp/cms1/downloads/software/)（登録が必要です）し、`phase0_2024.01.tar.gz`をWindowsのデスクトップに配置します。
 Ubuntuを起動し、ホームディレクトリにこれらのファイルをコピーします。
 
 ```sh
-cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2022.01.tar.gz ~
+cp /mnt/c/Users/[ユーザー名]/Desktop/phase0_2024.01.tar.gz ~
 ```
 
 ファイルを伸長します。
 
 ```sh
 cd
-tar xf phase0_2022.01.tar.gz
-cd phase0_2022.01
+tar xf phase0_2024.01.tar.gz
+cd phase0_2024.01
 ```
 
-`Ubuntu 22.04LTS`を使っている場合は、付属する`Makefile.Linux_generic`でコンパイルできません。
-[こちら](https://github.com/Materials-Science-Software-Consortium/phase0_install/tree/2022.01/Ubuntu22LTS)の指示に従ってインストールしてください。
-(`Makefile.Linux_generic`をテキストエディタで編集する必要があります)
+`Ubuntu 24.04LTS`を使っている場合は、付属する`Makefile.Linux_generic`でコンパイルする際にオプションを追加してください。
 
 ```sh
 cd src_phase
-make -f Makefile.Linux_generic install
+F90="mpifort -fallow-argument-mismatch" make -f Makefile.Linux_generic install
 ```
 
 ## 動作検証
