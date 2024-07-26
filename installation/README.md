@@ -442,7 +442,7 @@ Macのターミナルは、UNIX的に利用できます。仮想計算機では�
 ### Linux：Rocky Linux, AlmaLinux
 
 PCクラスターなど常時稼働している科学技術計算用の実機には、Red Hat Enterprise Linux（以下RHELと記す）もしくはその互換OSが利用されることが多いです。
-具体的にはCentOSがその筆頭でしたが、 CentOS 8は2021年末にEOLを迎えました（CentOS 7のEOLは2024年6月です）。
+具体的にはCentOSがその筆頭でしたが、CentOS 8は2021年末に、CentOS 7は2024年6月にそれぞれEOLを迎えました。
 [Rocky Linux](https://rockylinux.org/)と[AlmaLinux](https://almalinux.org)は2022年以降も引き続き利用可能なRHEL互換OSの有力候補です。
 
 RHEL互換OSでは、`dnf`コマンドでソフトウェア（ライブラリ）を導入します。
