@@ -29,6 +29,8 @@ macOSはそのままUNIX的（≒Linux的）に利用できます。
 サンプルが多数付属していますが、各サンプルから重点的に学ぶべきポイントが何なのか、わかりやすい説明が豊富にはあるとは言えません。
 これを補うことを意図して、特徴的ないくつかのサンプルについて、[チュートリアル的な解説](./practice_phase0/)を用意しました。
 
+PHASE/0専用GUIである[PHASE-Viewerを使った実習例題](https://github.com/matelier/moku-moku/blob/master/practice_phaseViewer/README.md)（初心者向け）を用意しました。
+
 ### [ABINIT](https://www.abinit.org/)
 
 計算の原理原則は、PHASE/0と同じです（周期境界条件、平面波基底、擬ポテンシャル）。
