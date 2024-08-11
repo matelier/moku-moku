@@ -4,7 +4,7 @@
 
 ## 窒化ホウ素（立方晶）の状態密度とバンド構造図
 
-動画 [Part1](https://vimeo.com/946141605/77c7a22010)
+動画 [Part1](https://vimeo.com/946141605)
 
 [サンプルproject](https://github.com/matelier/moku-moku/raw/master/practice_phaseViewer/pvsamples.tar.xz)
 
@@ -57,6 +57,8 @@ PHASE-Viewerを操作してcBNのスーパーセルを作成し、一つのB原�
 [補足説明](https://www.docswell.com/s/matelier/KN1M9V-2024-07-17-192122)
 
 ## CIFからの計算；窒化ホウ素（六方晶）のエネルギー比較
+
+動画 [Part3](https://vimeo.com/997279627)
 
 [Materials Project](https://next-gen.materialsproject.org/)から二つの結晶構造（CIF）を入手して、それぞれ全エネルギーを求めます。
 両者の安定性を比較します。
