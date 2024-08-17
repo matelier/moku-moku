@@ -126,8 +126,8 @@ source /opt/intel/oneapi/setvars.sh
 `source`ディレクトリに移動して、`makefile`を以下のように修正します。
 
 ```diff
---- makefile.org	2021-09-15 08:57:59.000000000 +0900
-+++ makefile	2022-09-06 17:38:01.026732600 +0900
+--- makefile.org	2024-08-17 13:21:23.964546682 +0900
++++ makefile	2024-08-17 13:21:41.424545221 +0900
 @@ -5,10 +5,10 @@
  #                                                                 #
  ###################################################################
@@ -137,8 +137,8 @@ source /opt/intel/oneapi/setvars.sh
 -FC = mpif90 -O3 -xHOST -ip -no-prec-div -qopenmp
 -LIB= -L${MKLROOT}/lib/intel64 -lmkl_scalapack_lp64 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_blacs_openmpi_lp64 -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -liomp5 -lpthread -lm -ldl
 +MKLROOT = /opt/intel/oneapi/mkl/latest
-+CC = mpiicc -O3 -xHOST -ip -no-prec-div -qopenmp -I${MKLROOT}/include/fftw
-+FC = mpiifort -O3 -xHOST -ip -no-prec-div -qopenmp
++CC = mpiicx -O3 -qopenmp -fcommon -I${MKLROOT}/include/fftw -Wno-error=implicit-function-declaration
++FC = mpiifx -O3 -no-prec-div -qopenmp
 +LIB= -L${MKLROOT}/lib/intel64 -lmkl_scalapack_lp64 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_blacs_intelmpi_lp64 -lifcore -liomp5 -lpthread -lm -ldl
 
 
@@ -152,3 +152,21 @@ make install
 ```
 
 実行形式ファイル`openmx`は`work`ディレクトリにコピーされます。
+
+### コンパイルオプションについての補足
+
+`OpenMX`に標準添付の`makefile`では、オプション`-xHOST`が指定されていましたが、上記修正では削除しました。
+同ポプションを指定すると、生成される実行形式ファイル`openmx`が実行できない（下記メッセージを出力して直ちに終了する）場合があったためです。
+
+```sh
+Please verify that both the operating system and the processor support Intel(R) X87, CMOV, MMX, SSE, SSE2, SSE3, SSSE3, SSE4_1, SSE4_2, MOVBE, POPCNT, AVX, F16C, FMA, BMI, LZCNT, AVX2, AVX512F, AVX512DQ, ADX, AVX512CD, AVX512BW, AVX512VL, AVX512VBMI, AVX512_VPOPCNTDQ, AVX512_BITALG, AVX512_VBMI2, AVX512_VNNI and SHSTK instructions.
+```
+
+`-xHOST`は最適化に関するオプションですので、計算結果には影響を及ぼしません。
+動作するのであれば、同オプション付きでコンパイルするのも良いと思います。
+
+- 動作しなかった環境の例
+  - AMD Ryzen9 7900X
+  - Rocky Linux 9.4
+  - Windows 11で動作するWSL2
+  - oneAPI 2024.2

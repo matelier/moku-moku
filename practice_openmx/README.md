@@ -2,7 +2,7 @@
 
 ## インストール
 
-Linuxに[Intel oneAPI](https://www.intel.com/content/www/us/en/developer/tools/oneapi/toolkits.html)をインストールしてコンパイルするのが最も確実な手順です。
+Linuxに[Intel oneAPI](https://www.intel.com/content/www/us/en/developer/tools/oneapi/toolkits.html)をインストールしてコンパイルするのが[最も確実な手順](https://github.com/matelier/moku-moku/blob/master/installation/wsl_rocky_oneapi.md#openmx)です。
 
 ## 基本的な操作
 
