@@ -319,6 +319,15 @@ cd src_phase
 F90="mpifort -fallow-argument-mismatch" make -f Makefile.Linux_generic install
 ```
 
+講習会で利用されることも多い、仕事関数解析プログラム`workfunc`を併せてコンパイルします。
+
+```sh
+cd ../src_workfunc
+F90="gfortran -fallow-argument-mismatch" make install
+```
+
+実行形式ファイル`phase`, `ekcal`, `epsmain`, `workfunc`は、`phase0_2024.01/bin/`ディレクトリにあります。
+
 ## 動作検証
 
 続けて、付属サンプル`samples/basic/Si8`で動作を検証します。
