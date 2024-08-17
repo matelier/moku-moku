@@ -326,7 +326,7 @@ cd ../src_workfunc
 F90="gfortran -fallow-argument-mismatch" make install
 ```
 
-実行形式ファイル`phase`, `ekcal`, `epsmain`, `workfunc`は、`phase0_2024.01/bin/`ディレクトリにあります。
+実行形式ファイル`phase`, `ekcal`, `epsmain`と`workfunc`は、`phase0_2024.01/bin/`ディレクトリにあります。
 
 ## 動作検証
 
