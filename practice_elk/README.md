@@ -42,11 +42,11 @@ libxc.a  libxcf03.a  libxcf03.la  libxcf90.a  libxcf90.la  libxc.la  pkgconfig
 続けてElk本体をコンパイルします。
 
 [公式サイト](https://elk.sourceforge.io/)からソースコードをダウンロードします。
-執筆時点の最新版は9.6.8です。
+執筆時点の最新版は10.0.15です。
 
 ```sh
-tar xf elk-9.6.8.tgz
-cd elk-9.6.8
+tar xf elk-10.0.15.tgz
+cd elk-10.0.15
 ```
 
 `make.inc`を編集します。
