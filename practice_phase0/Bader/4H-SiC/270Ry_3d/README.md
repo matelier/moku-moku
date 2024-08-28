@@ -31,7 +31,7 @@ PHASE/0で**実空間電荷密度分布**といえば、通常はこれを指し
 SCF計算を実行します。
 
 ```sh
-mpiexec -np 4 ../../../../bin/phase ne=1 nk=4
+mpiexec -n 4 ../../../../bin/phase ne=1 nk=4
 ```
 
 実空間の電荷密度分布（CUBE形式）`nfchr.data`と`nfchr_ae.data`が出力されていることを確認してください。

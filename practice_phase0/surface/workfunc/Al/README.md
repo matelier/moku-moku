@@ -44,7 +44,7 @@ PHASE/0配布物に含まれるサンプルを一部改変しました。
 ## 計算実行と解析
 
 ```sh
-mpiexec -np 2 ../../../../bin/phase ne=1 nk=2
+mpiexec -n 2 ../../../../bin/phase ne=1 nk=2
 ../../../../bin/workfunc
 ../../../../bin/workfunc.pl nfvlcr_av.data
 ```

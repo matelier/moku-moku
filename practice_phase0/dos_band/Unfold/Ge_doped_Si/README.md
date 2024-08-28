@@ -33,7 +33,7 @@
 ```
 
 ```sh
-mpiexec -np 2 ../../../../../bin/phase ne=1 nk=2
+mpiexec -n 2 ../../../../../bin/phase ne=1 nk=2
 ```
 
 ## バンドアンフォールディング (band)
@@ -77,7 +77,7 @@ SCF計算でカットオフエネルギーを変更した場合は、電荷密�
 電荷密度固定計算を実行します。
 
 ```sh
-mpiexec -np 2 ../../../../../bin/ekcal ne=2 nk=1
+mpiexec -n 2 ../../../../../bin/ekcal ne=2 nk=1
 ```
 
 通常のバンド計算の出力ファイルに加えて、`nfband_spectr_wght.data`が出力されることを確認してください。
