@@ -333,7 +333,7 @@ F90="gfortran -fallow-argument-mismatch" make install
 続けて、付属サンプル`samples/basic/Si8`で動作を検証します。
 
 ```sh
-cd samples/basic/Si8
+cd ../samples/basic/Si8
 ```
 
 ### PHASE/0：電子状態計算
