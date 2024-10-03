@@ -1,0 +1,66 @@
+control {
+	condition = initial
+}
+
+accuracy {
+	PAW = on
+	cutoff_wf = 25.0 rydberg
+	cutoff_cd = 230.0 rydberg
+	num_bands = 20
+	ksampling {
+		method = mesh
+		mesh { nx = 12, ny = 12, nz = 12 }
+	}
+	smearing { method = tetrahedral }
+	scf_convergence { delta_total_energy = 1.e-9 }
+	initial_charge_density = atomic_charge_density
+}
+
+structure {
+	unit_cell_type = Bravais
+	unit_cell {
+		a = 5.3621129355, b = 5.3621129355, c = 5.3621129355,
+		alpha = 90, beta = 90, gamma = 90
+	}
+	symmetry {
+		method = automatic
+		sw_inversion = on
+	}
+	atom_list {
+		atoms {
+		#tag  rx       ry         rz      element
+			 0.000   0.000   0.000  Fe
+			 0.500   0.500   0.500  Fe
+		}
+	}
+	magnetic_state = ferro
+	element_list {
+	#tag element  atomicnumber  zeta  dev
+		Fe   26   0.275   1.5
+	}
+
+}
+
+wavefunction_solver {
+	solvers {
+	#tag     sol  till_n
+		pkosugi   2
+		rmm3     -1
+	}
+	rmm { edelta_change_to_rmm = 5.0e-3 }
+}
+
+charge_mixing {
+	mixing_methods {
+	#tag   method   rmxs
+		pulay   0.40
+	}
+}
+
+structure_evolution {
+	stress {
+		sw_stress_correction = on
+		delta_ecut = 1.0 Rydberg
+	}
+	lattice { sw_optimize_lattice = on }
+}
