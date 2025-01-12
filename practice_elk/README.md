@@ -74,7 +74,6 @@ LIB_LIBXC = libxcf03.a libxc.a
 SRC_LIBXC = libxcf03.f90 libxcifc.f90
 ```
 
-
 インストール済みLibxcから、`$HOME/local/lib`にある`libxcf03.a`と`libxc.a`の二つを、Elkの`src`ディレクトリにコピーします。
 
 ```sh
