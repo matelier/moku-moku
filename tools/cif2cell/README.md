@@ -258,7 +258,7 @@ Ptの(111)面を切り出すには、複数のオプションを組み合わせ�
 - 変換後の、生成された格子のa-b面 (x-y面)は、Ptの(111)面です。
 
 ```sh
-cif2cell Pt.cif --cubic-diagonal-z --supercell=[[1,-1,0], [0,1,-1], [1,1,1]]
+cif2cell Pt.cif --cubic-diagonal-z --supercell="[[1,-1,0], [0,1,-1], [1,1,1]]"
 ```
 
 さらに、表面（スラブ）作成に役立つオプションが用意されています。
@@ -290,7 +290,7 @@ $ cif2cell Pt.cif --surface-wizard=[1,1,1]
 六方晶の格子を、直方体に取り直したい場合も、行列を与えるだけで変換できます。
 
 ```sh
-cif2cell Al2O3.cif --no-reduce --surface-wizard=[[1,-1,0], [1,1,0], [0,0,1]]
+cif2cell Al2O3.cif --no-reduce --supercell="[[1,-1,0], [1,1,0], [0,0,1]]"
 ```
 
 30原子のBravais格子の体積を二倍にした、60原子の直方体の格子が生成されます。
