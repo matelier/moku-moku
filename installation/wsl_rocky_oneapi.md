@@ -156,7 +156,7 @@ make install
 ### コンパイルオプションについての補足
 
 `OpenMX`に標準添付の`makefile`では、オプション`-xHOST`が指定されていましたが、上記修正では削除しました。
-同ポプションを指定すると、生成される実行形式ファイル`openmx`が実行できない（下記メッセージを出力して直ちに終了する）場合があったためです。
+同オプションを指定すると、生成される実行形式ファイル`openmx`が実行できない（下記メッセージを出力して直ちに終了する）場合があったためです。
 
 ```sh
 Please verify that both the operating system and the processor support Intel(R) X87, CMOV, MMX, SSE, SSE2, SSE3, SSSE3, SSE4_1, SSE4_2, MOVBE, POPCNT, AVX, F16C, FMA, BMI, LZCNT, AVX2, AVX512F, AVX512DQ, ADX, AVX512CD, AVX512BW, AVX512VL, AVX512VBMI, AVX512_VPOPCNTDQ, AVX512_BITALG, AVX512_VBMI2, AVX512_VNNI and SHSTK instructions.
