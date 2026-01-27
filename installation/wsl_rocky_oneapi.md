@@ -3,7 +3,7 @@
 ## 概要
 
 WSL上で動作するLinuxディストリビューションは、オンラインインストールやMicrosoftストアから入手できるものだけではありません。
-ここでは[Rocky Linux](https://rockylinux.org/ja)をインストールする手順を説明します。
+ここでは[Rocky Linux](https://rockylinux.org/)をインストールする手順を説明します。
 
 さらに、高性能開発環境としてoneAPIをインストールし、それを利用して材料シミュレーション用のアプリケーションソフトウェア[OpenMX](http://www.openmx-square.org/)をコンパイルするまで、を説明します。
 
@@ -15,48 +15,38 @@ WSL環境は構築済みとして説明します。
 RedHat Enterprise Linux (RHEL)互換ディストリビューションとして、長らく[CentOS](https://www.centos.org/)が君臨してきましたが、最新のStreamは、もはや我々が期待する互換ディストリビューション（ダウンストリーム）ではありません。
 新たに複数のRHEL互換ディストリビューションが立ち上げられた中、**Rocky Linux**は、[AlmaLinux](https://almalinux.org/ja/)と共にその中心的な役割を担うことが期待されています。
 
-WSL用のRocky Linuxは[こちら](https://github.com/mishamosher/RL-WSL)で配布されています。
-`RL9.zip`をダウンロードしてください。
-ファイルを展開し、フォルダ内の`Rocky9.exe`を実行すると、その場にRocky Linuxがインストール（ファイルが展開）されます。
-Ubuntuなどの（標準的な）ディストリビューションは`c:\Users\ユーザー名\AppData\Local\Packages\`以下にインストールされますので、それを真似て、RL9フォルダを`c:\Users\ユーザー名\AppData\Local\Packages\RL9`に移動します。
-そのフォルダ内の`Rocky9.exe`を実行すれば、インストール完了です。
-`Rocky9.exe`の名前を変えると複数のRocky Linux環境を保持できます。
-
-ちなみにアンインストールの際は、以下のコマンドを実行します。
-
-```cmd
-Rocky9.exe clean
-```
-
-ログインには[Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?gl=jp)の利用をお勧めしますが、コマンドプロンプトからコマンド実行でも可能です。
-
-```cmd
-wsl -d Rocky9
-```
-
-初回ログインすると、管理者(`root`)になっています。
-通常作業は一般ユーザーで行うことが推奨されますので、新たにユーザーを作成します。
-`sudo`コマンドで管理作業ができるように、`wheel`グループに追加することをおすすめします。
+公式サイト[Download](https://rockylinux.org/ja-JP/download)から、WSL用のイメージをダウンロードします。
+最新版は`10`系列ですが、追加インストールするソフトウェアの整備状況を考慮して、`9`系列の利用をおすすめします。`Rocky-9-WSL-Base.latest.x86_64.wsl`
+それをダブルクリックすると、自動的に`ターミナル`が起動し、インストールが始まります。
+ユーザー名の入力を促されるので、入力してください。
 
 ```sh
-adduser [user-name]
-passwd [user-name]
-usermod -G wheel [user-name]
+Enter new UNIX username:
 ```
 
-一旦ログアウトし、コマンドプロンプトから以下のコマンドを実行して、ログイン時のユーザーを変更します。
+メッセージが表示されます。
 
-```cmd
-Rocky9.exe config --default-user [user-name]
+```
+Your user has been created, is included in the wheel group, and can use sudo without a password.
+To set a password for your user, run 'sudo passwd matelier'
 ```
 
-次回以降Rocky Linuxを起動すると、追加作成した一般ユーザーとしてログインします。
-（一般ユーサーが実行できない）管理作業には`sudo`コマンドを使います。
-例えば以下のコマンドでパッケージを更新します。
+大雑把に言えば、以下の意味です。（一行目のみ）
+
+    作られたユーザーは管理者グループ(`wheel`)に追加されたので、パスワードなしに`sudo`実行できます。
+
+以上でインストール完了です。
+
+最初に各種ソフトウェアをアップデートすることをお勧めします。
+（早速`sudo`コマンドが登場します。）
 
 ```sh
 sudo dnf update -y
 ```
+
+二回目以降の起動は、「ターミナル」を使います。
+スタートメニューから選択して「ターミナル」を起動します。
+ウィンドウ上部のタブの左の「v」をクリックして、プルダウンメニューから「rocky」を選択します。
 
 追加ソフトウェアをインストールします。
 
@@ -79,10 +69,11 @@ Intel社製高性能コンパイラ[Intel oneAPI Toolkits](https://www.intel.com
 
 各ツールキットのページから、`Download the Tooolkit`を選択し、
 
-- プルダウンメニュー`Select operating System`から`Linux`を選択し、
-- プルダウンメニュー`Select distribution`は`DNF Package Manager`を選択
+- `Operating System`から`Linux`を選択し、
+- `Installer Type`は`YUM or Zypper` (HPC Toolkitでは`YUM/DNF`)を選択
 
-すると、その下に説明が表示されます。
+すると、右側に説明が表示されます。
+`YUM/DNF Prerequisites | Set Up the Repository`をクリックすると詳細手順が表示されます。
 
 まず、リポジトリの設定を行います。
 両ツールキット共通の操作です。
@@ -101,8 +92,8 @@ gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.
 設定が完了すると、パッケージ管理コマンドでインストールできます。
 
 ```sh
-sudo dnf install intel-basekit
-sudo dnf install intel-hpckit
+sudo dnf install intel-oneapi-base-toolkit
+sudo dnf install intel-oneapi-hpc-toolkit
 ```
 
 インストール先は`/opt/intel/oneapi/`です。
@@ -126,8 +117,8 @@ source /opt/intel/oneapi/setvars.sh
 `source`ディレクトリに移動して、`makefile`を以下のように修正します。
 
 ```diff
---- makefile.org	2024-08-17 13:21:23.964546682 +0900
-+++ makefile	2024-08-17 13:21:41.424545221 +0900
+--- makefile.org 2024-08-17 13:21:23.964546682 +0900
++++ makefile 2024-08-17 13:21:41.424545221 +0900
 @@ -5,10 +5,10 @@
  #                                                                 #
  ###################################################################
