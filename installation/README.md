@@ -438,6 +438,7 @@ Linux > Ubuntu > home > [ユーザー名] > phase0_2021.02 > samples > basic > S
 - Microsoft Store
   - Microsoft Storeを起動し、`wsl`で検索してください。
 - その他
+  - [Import Rocky Linux to WSL or WSL2](https://docs.rockylinux.org/guides/interoperability/import_rocky_to_wsl/)
   - [Project List Using wsldl \| Wsldl official documentation](https://wsldl-pg.github.io/docs/Using-wsldl/#distros)
 
 ### Mac
