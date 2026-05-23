@@ -219,14 +219,14 @@ export OMP_NUM_THREADS=1
 
 Linux上での作業には、テキストエディタを使用します。
 標準で`vim`や`nano`はインストールされています。
-`Emacs`や`gedit`を使いたい人は、追加インストールしてください。
+`Emacs`や(Microsoft) [Edit](https://github.com/microsoft/edit)を使いたい人は、それぞれ追加インストールしてください。
 
 ```sh
 sudo apt install -y emacs
 ```
 
 ```sh
-sudo apt install -y gedit
+sudo snap install msedit
 ```
 
 グラフィック表示を確認します。
