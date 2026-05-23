@@ -14,7 +14,7 @@ Windows PCに
 
 Windows PCは以下の要件を満たすことを前提とします。
 
-- Intel系プロセッサを搭載したWindows10もしくは11の64bit版(HomeもしくはPro)
+- Intel系プロセッサを搭載したWindows 11の64bit版(HomeもしくはPro)
 - CPUが、仮想化支援機能に対応していること（Intel VT／AMD-V）
 
 一部の操作では管理者権限が必要です。特に、会社所有のPCをご使用の場合はご注意ください。
@@ -293,7 +293,6 @@ Windowsのエクスプローラーのナビゲーションウィンドウ内の`
 
 Windows11から、 [Windowsターミナル](https://learn.microsoft.com/ja-jp/windows/terminal/)が標準添付されています。
 WSL、Windows PowerShell、コマンドプロンプトのいずれもが、Windowsターミナルで動作します。
-Windows10でも、Microsoft Storeから追加インストールして利用できます。
 
 [MobaXterm](https://mobaxterm.mobatek.net)は、端末ソフトウェアとして利用できるのはもちろんのこと、Xサーバーやファイル転送GUIなど豊富な機能を備えており、とても便利です。
 有償版（Professional Edition）がありますが、無償枠（Home Edition）でも十分に実用的です。
