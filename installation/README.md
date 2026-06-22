@@ -14,7 +14,7 @@ Windows PCに
 
 Windows PCは以下の要件を満たすことを前提とします。
 
-- Intel系プロセッサを搭載したWindows 11の64bit版(HomeもしくはPro)
+- Intel系プロセッサを搭載したWindows 11 (HomeもしくはPro)
 - CPUが、仮想化支援機能に対応していること（Intel VT／AMD-V）
 
 一部の操作では管理者権限が必要です。特に、会社所有のPCをご使用の場合はご注意ください。
