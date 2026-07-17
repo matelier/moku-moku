@@ -49,12 +49,6 @@ sudo dnf update -y
 スタートメニューから選択して「ターミナル」を起動します。
 ウィンドウ上部のタブの左の「v」をクリックして、プルダウンメニューから「rocky」を選択します。
 
-追加ソフトウェアをインストールします。
-
-```sh
-sudo dnf install -y gcc-c++ make xauth perl
-```
-
 `gnuplot`は標準のパッケージ・リポジトリにはありません。
 拡張パッケージEPELからインストールします。
 
@@ -65,20 +59,20 @@ sudo dnf install -y --enablerepo=epel gnuplot
 
 ## oneAPI
 
-Intel社製高性能コンパイラ[Intel oneAPI Toolkits](https://www.intel.com/content/www/us/en/developer/articles/news/free-intel-software-developer-tools.html)、通称Intelコンパイラです。
-[Base Toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html)と[HPC Toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit.html)をそれぞれインストールします。
+Intel社製高性能コンパイラ[Intel oneAPI Toolkits]( https://www.intel.com/content/www/us/en/developer/tools/oneapi/oneapi-toolkit.html)、通称Intelコンパイラです。
+（かつて分かれていた`Base Toolkit`と`HPC Toolkit`は、2026.0リリースから`oneAPI Toolkit`に統合されました。）
 
-各ツールキットのページから、`Download the Tooolkit`を選択し、
+タブから`Download`を選択し、
 
+- `Packages`から`Intel oneAPI Toolkit`を選択し、
 - `Operating System`から`Linux`を選択し、
-- `Installer Type`は`YUM or Zypper` (HPC Toolkitでは`YUM/DNF`)を選択
+- `Installer Type`は`YUM/DNF`を選択
 
 すると、右側に説明が表示されます。
 `YUM/DNF Prerequisites | Set Up the Repository`をクリックすると詳細手順が表示されます。
 
 まず、リポジトリの設定を行います。
-両ツールキット共通の操作です。
-`/etc/yum.repos.d`ディレクトリの下に、`oneAPI.repo`というファイルを作成します。
+`/etc/yum.repos.d/`ディレクトリの下に、`oneAPI.repo`というファイルを作成します。
 
 ```
 [oneAPI]
@@ -93,12 +87,19 @@ gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.
 設定が完了すると、パッケージ管理コマンドでインストールできます。
 
 ```sh
-sudo dnf install intel-oneapi-base-toolkit
-sudo dnf install intel-oneapi-hpc-toolkit
+sudo dnf install intel-oneapi-toolkit
 ```
 
-インストール先は`/opt/intel/oneapi/`です。
-次のコマンドで環境設定して利用します。
+インストール終了後、`Configure a YUM/DNF System After Installation`の指示に沿って、下記コマンドを実行します。
+
+```sh
+sudo yum update
+sudo yum -y install cmake pkgconfig
+sudo yum groupinstall "Development Tools"
+```
+
+oneAPIのインストール先は`/opt/intel/oneapi/`です。
+使用前に、次のコマンドで環境設定します。
 `.bashrc`などに追加すると良いでしょう。
 
 ```sh
