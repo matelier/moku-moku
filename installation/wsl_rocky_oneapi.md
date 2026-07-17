@@ -108,35 +108,33 @@ source /opt/intel/oneapi/setvars.sh
 
 ## OpenMX
 
-最新版`3.9.9`は、`3.9`に対するパッチ形式で配布されています。
+最新版`4.0.1`は、`4.0`に対するパッチ形式で配布されています。
 以下の二つファイルをダウンロードします。
 
-- [openmx3.9.tar.gz](https://www.openmx-square.org/openmx3.9.tar.gz)
-- [patch3.9.9.tar.gz](https://www.openmx-square.org/bugfixed/21Oct17/patch3.9.9.tar.gz)
+- [openmx4.0.tar.gz](https://www.openmx-square.org/openmx4.0.tar.gz)
+- [patch4.0.1.tar.gz](https://www.openmx-square.org/bugfixed/26May08/patch4.0.1.tar.gz)
 
-パッチの当て方は、[README.txt](https://www.openmx-square.org/bugfixed/21Oct17/README.txt)の冒頭に詳しい説明があります。
+パッチの当て方は、[README.txt](https://www.openmx-square.org/bugfixed/26May08/README.txt)の冒頭に詳しい説明があります。
 
 `source`ディレクトリに移動して、`makefile`を以下のように修正します。
 
 ```diff
---- makefile.org 2024-08-17 13:21:23.964546682 +0900
-+++ makefile 2024-08-17 13:21:41.424545221 +0900
-@@ -5,10 +5,10 @@
+--- makefile.org        2026-04-26 08:16:00.000000000 +0900
++++ makefile    2026-07-17 18:08:41.877988404 +0900
+@@ -5,9 +5,9 @@
  #                                                                 #
  ###################################################################
 
--MKLROOT = /opt/intel/mkl
--CC = mpicc -O3 -xHOST -ip -no-prec-div -qopenmp -I/opt/intel/mkl/include/fftw
--FC = mpif90 -O3 -xHOST -ip -no-prec-div -qopenmp
--LIB= -L${MKLROOT}/lib/intel64 -lmkl_scalapack_lp64 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_blacs_openmpi_lp64 -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -liomp5 -lpthread -lm -ldl
-+MKLROOT = /opt/intel/oneapi/mkl/latest
-+CC = mpiicx -O3 -qopenmp -fcommon -I${MKLROOT}/include/fftw -Wno-error=implicit-function-declaration
-+FC = mpiifx -O3 -no-prec-div -qopenmp
-+LIB= -L${MKLROOT}/lib/intel64 -lmkl_scalapack_lp64 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_blacs_intelmpi_lp64 -lifcore -liomp5 -lpthread -lm -ldl
-
-
- #
+-MKLROOT = /opt/intel/oneapi/mkl/2025.3
+-CC = mpiicx -O3 -xHOST -fcommon -Wno-implicit-function-declaration -ipo -qopenmp -I${MKLROOT}/include -I${MKLROOT}/include/fftw
+-FC = mpiifx -O3 -xHOST -qopenmp -ipo
++# MKLROOT = /opt/intel/oneapi/mkl/2025.3
++CC = mpiicx -O3 -fcommon -Wno-implicit-function-declaration -ipo -qopenmp -I${MKLROOT}/include -I${MKLROOT}/include/fftw
++FC = mpiifx -O3 -qopenmp -ipo
+ LIB= -L${MKLROOT}/lib/intel64 -lmkl_scalapack_lp64 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lifcore -lmkl_blacs_intelmpi_lp64 -liomp5 -lpthread -lm -ldl
 ```
+
+`MKLROOT`は、oneAPIの環境設定の一部として自動的に設定されます。
 
 `make`コマンドでコンパイルします。
 
@@ -149,17 +147,11 @@ make install
 ### コンパイルオプションについての補足
 
 `OpenMX`に標準添付の`makefile`では、オプション`-xHOST`が指定されていましたが、上記修正では削除しました。
-同オプションを指定すると、生成される実行形式ファイル`openmx`が実行できない（下記メッセージを出力して直ちに終了する）場合があったためです。
+同オプションを指定すると、生成される実行形式ファイル`openmx`が実行できない（AMDのCPUを搭載した計算機で、下記メッセージを出力して直ちに終了する）場合があったためです。
 
 ```sh
-Please verify that both the operating system and the processor support Intel(R) X87, CMOV, MMX, SSE, SSE2, SSE3, SSSE3, SSE4_1, SSE4_2, MOVBE, POPCNT, AVX, F16C, FMA, BMI, LZCNT, AVX2, AVX512F, AVX512DQ, ADX, AVX512CD, AVX512BW, AVX512VL, AVX512VBMI, AVX512_VPOPCNTDQ, AVX512_BITALG, AVX512_VBMI2, AVX512_VNNI and SHSTK instructions.
+This executable is built with target processor feature specified, it can only be run on Intel(R) processors.
 ```
 
 `-xHOST`は最適化に関するオプションですので、計算結果には影響を及ぼしません。
 動作するのであれば、同オプション付きでコンパイルするのも良いと思います。
-
-- 動作しなかった環境の例
-  - AMD Ryzen9 7900X
-  - Rocky Linux 9.4
-  - Windows 11で動作するWSL2
-  - oneAPI 2024.2
