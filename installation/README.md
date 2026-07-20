@@ -204,7 +204,7 @@ WSLが利用するメモリ量を拡大する場合は注意してください�
 ```sh
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y make gnuplot-x11 gfortran libopenmpi-dev libfftw3-dev liblapack-dev libopenblas-dev evince
+sudo apt install -y make gnuplot-qt gfortran libopenmpi-dev libfftw3-dev liblapack-dev libopenblas-dev evince
 ```
 
 各コマンドは、ネットワーク環境が良いところで実行してください。
