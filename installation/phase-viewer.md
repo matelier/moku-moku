@@ -1,7 +1,10 @@
 # PHASE-Viewer
 
 PHASE-Viewerは、PHASE/0利用を支援するGUIです。
-ここでは、WSLのUbuntu 24.04LTS環境におけるPHASE-Viewer利用を説明します。
+ここでは、WSLのUbuntu 26.04LTS環境におけるPHASE-Viewer利用を説明します。
+（私の環境で「こうすれば動いた」記録です。）
+
+[Ubuntu 24.04LTS環境におけるPHASE-Viewer利用](./phase-viewer_u24LTS.md)はこちらを参照してください。
 
 [コマンド操作でPHASE/0を利用できる状態](https://github.com/matelier/moku-moku/blob/master/installation/README.md)を前提とします。
 
@@ -14,22 +17,13 @@ PHASE-Viewerの動作には、Java実行環境(JRE)が必要です。
 sudo apt install default-jre
 ```
 
-Ubuntu 24.04LTSでは、Java 21がインストールされます。
+Ubuntu 26.04LTSでは、Java 25がインストールされます。
 
 ```sh
 $ java --version
-openjdk 21.0.3 2024-04-16
-OpenJDK Runtime Environment (build 21.0.3+9-Ubuntu-1ubuntu1)
-OpenJDK 64-Bit Server VM (build 21.0.3+9-Ubuntu-1ubuntu1, mixed mode, sharing)
-```
-
-（参考）Ubuntu 22.04LTSでは、Java 11がインストールされます。
-
-```sh
-$ java --version
-openjdk 11.0.22 2024-01-16
-OpenJDK Runtime Environment (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1)
-OpenJDK 64-Bit Server VM (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1, mixed mode, sharing)
+openjdk 25.0.3 2026-04-21
+OpenJDK Runtime Environment (build 25.0.3+9-2-26.04.2-Ubuntu)
+OpenJDK 64-Bit Server VM (build 25.0.3+9-2-26.04.2-Ubuntu, mixed mode, sharing)
 ```
 
 PHASE/0付属のスクリプト群は、状態密度図やバンド構造図をEPS形式で生成します。
@@ -49,14 +43,16 @@ PHASE-Viewerの本体は、ダウンロードして入手します。
 unzip phase-viewer_2020.zip
 ```
 
+`phase-viewer/bin/phase-viewer_lib/jogamp-fat.jar`を更新します。
+[jogamp-fat.jar](https://jogamp.org/deployment/jogamp-current/fat/jogamp-fat.jar)をダウンロードして上書きしてください。
+
+
 以上で準備が整いました。
 下記コマンドを実行して、PHASE-Viewerを起動します。
 
 ```sh
 java --add-exports java.base/java.lang=ALL-UNNAMED --add-exports java.desktop/sun.awt=ALL-UNNAMED --add-exports java.desktop/sun.java2d=ALL-UNNAMED -jar ~/phase-viewer/bin/phase-viewer.jar
 ```
-
-（参考）Ubuntu 22.04LTSなどでJava 11を利用する場合は、`--addo-exports ...`オプション群は不要です。
 
 ### 初回起動
 
@@ -81,8 +77,9 @@ java --add-exports java.base/java.lang=ALL-UNNAMED --add-exports java.desktop/su
 
 マウス操作で回転、拡大・縮小などできることをお試しください。
 
-原子配置ビューアが正常に動作しない場合は、[MobaXterm](https://mobaxterm.mobatek.net/)からWSLを起動して、MobaXtermのXサーバー利用をお試しください。
-改善することがあります。
+私の環境では、
+- ターミナルから起動したUbuntuでは、原子配置ビューアまで動作しました。
+- [MobaXterm](https://mobaxterm.mobatek.net/)からWSLを起動して、MobaXtermのXサーバーを利用すると、原子配置ビューア起動時にPHASE-Viewer全体が異常終了してしまいました。
 
 ここまでできたら、一旦、PHASE-Viewerを終了します。
 
@@ -105,7 +102,7 @@ PHASE-Viewerを正常に利用するためには、追加設定が必要です�
 他方、コンパイル済みPHASE/0ソルバー`phase`, `ekcal`コマンドや、各種スクリプトにはパスが通っていませんので、ターミナルから下記コマンドを実行してパスを通します。
 
 ```sh
-export PATH=~/phase0_2023.01/bin:$PATH
+export PATH=~/phase0_2025/bin:$PATH
 ```
 
 ログインの（新しいターミナルを起動する）度に実行する必要があります。
@@ -115,8 +112,8 @@ export PATH=~/phase0_2023.01/bin:$PATH
 コピーします。
 
 ```sh
-cp ~/phase0_2023.01/bin/band_kpoint.pl ~/phase-viewer/bin
-cp ~/phase0_2023.01/bin/band.pl ~/phase-viewer/bin
+cp ~/phase0_2025/bin/band_kpoint.pl ~/phase-viewer/bin
+cp ~/phase0_2025/bin/band.pl ~/phase-viewer/bin
 ```
 
 ### Host情報
@@ -125,7 +122,7 @@ PHASE-Viewerの上部メニューから、`Module` - `configure host info`を選
 
 ![Host情報メニュー](./images/confighost.png)
 
-表示されるウィンドウで、`dir`タブを選択して、`bin directory`（赤丸）をPHASE/0コンパイル済みバイナリがあるディレクトリ（`~/phase0_2023.01/bin`）に設定してください。
+表示されるウィンドウで、`dir`タブを選択して、`bin directory`（赤丸）をPHASE/0コンパイル済みバイナリがあるディレクトリ（`~/phase0_2025/bin`; 下記画像は`2023.01`ですが）に設定してください。
 
 ![ディレクトリ設定](./images/bin2023r.png)
 
@@ -171,6 +168,7 @@ code
 ```
 
 コマンドで、VS Codeが起動します。
+（初回起動時に`VS Code Server for Linux x64`がインストールされます。）
 PHASE-Viewerの`external editor`にも、`code`を指定します。
 
 （参考）[VS Code設定紹介](https://www.docswell.com/s/matelier/ZQ8VWJ-2024-04-18-105738/6)
