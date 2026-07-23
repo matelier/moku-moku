@@ -73,7 +73,7 @@ cat /proc/sys/fs/binfmt_misc/WSLInterop 2>/dev/null || echo "NOT REGISTERED"
 
 interopを有効にするには、`/etc/wsl.conf`に以下の記述を追加します。
 
-```text
+```toml
 [interop]
 enabled = true
 appendWindowsPath = true
