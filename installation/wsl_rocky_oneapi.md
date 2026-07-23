@@ -57,6 +57,30 @@ sudo dnf install -y epel-release
 sudo dnf install -y --enablerepo=epel gnuplot
 ```
 
+Rocky (WSL)から、Windowsコマンドが実行できると便利な場合があります。
+実行できない場合は、`interop`機能が無効になっています。
+
+```sh
+$ explorer.exe
+-bash: /mnt/c/Windows/explorer.exe: cannot execute binary file: Exec format error
+```
+
+下記コマンドの実行結果が`NOT REGISTERED`であれば、interopは無効です。
+
+```sh
+cat /proc/sys/fs/binfmt_misc/WSLInterop 2>/dev/null || echo "NOT REGISTERED"
+```
+
+interopを有効にするには、`/etc/wsl.conf`に以下の記述を追加します。
+
+```text
+[interop]
+enabled = true
+appendWindowsPath = true
+```
+
+Rocky (WSL)を再起動すると、有効になります。
+
 ## oneAPI
 
 Intel社製高性能コンパイラ[Intel oneAPI Toolkits]( https://www.intel.com/content/www/us/en/developer/tools/oneapi/oneapi-toolkit.html)、通称Intelコンパイラです。
@@ -155,3 +179,4 @@ This executable is built with target processor feature specified, it can only be
 
 `-xHOST`は最適化に関するオプションですので、計算結果には影響を及ぼしません。
 動作するのであれば、同オプション付きでコンパイルするのも良いと思います。
+
