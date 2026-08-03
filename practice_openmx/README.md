@@ -8,9 +8,9 @@ Linuxに[Intel oneAPI](https://www.intel.com/content/www/us/en/developer/tools/o
 
 ### 入力ファイル書式
 
-[マニュアル英語](http://www.openmx-square.org/openmx_man3.9/node19.html)
+[マニュアル英語](https://www.openmx-square.org/openmx_man4.0/s8_input-file.html)
 
-[マニュアル日本語](http://www.openmx-square.org/openmx_man3.9jp/node19.html)
+[マニュアル日本語](https://www.openmx-square.org/openmx_man4.0jp/s8_input-file.html)
 
 `#`以降はコメントです。
 
@@ -40,28 +40,28 @@ DATA.PATH           /opt/OpenMX/DFT_DATA19
 
 要求される計算精度（許容される計算負荷）に応じて、推奨される基底関数を選択します。
 
-[マニュアル英語](http://www.openmx-square.org/openmx_man3.9/node27.html)
+[マニュアル英語](https://www.openmx-square.org/openmx_man4.0/s12_3_basis-db2019.html)
 
-[マニュアル日本語](http://www.openmx-square.org/openmx_man3.9jp/node27.html)
+[マニュアル日本語](https://www.openmx-square.org/openmx_man4.0jp/s12_3_basis-db2019.html)
 
 ### 電荷密度混合法の選択
 
-> 多くの場合で、「RMM-DIISK」と「RMM-DIISV」が最良の選択となります。
+> 小さなギャップを持つ系や金属系ではcharge sloshingが深刻になりやすく、 Kerker, RMM-DIISK, RMM-DIISVが有効です。
 
-> 我々の経験上、plus $U$法と拘束法には「RMM-DIISH」が適切です。
+> plus $U$ 法や拘束法ではRMM-DIISHがより自然な選択になることがあります。
 
-[マニュアル英語](http://www.openmx-square.org/openmx_man3.9/node40.html)
+[マニュアル英語](https://www.openmx-square.org/openmx_man4.0/s16_1_scf-convergence-overview.html)
 
-[マニュアル日本語](http://www.openmx-square.org/openmx_man3.9jp/node40.html)
+[マニュアル日本語](https://www.openmx-square.org/openmx_man4.0jp/s16_1_scf-convergence-overview.html)
 
 ### 一部の原子のみを構造最適化の対象とする方法
 
-[マニュアル英語](http://www.openmx-square.org/openmx_man3.9/node51.html)
+[マニュアル英語](https://www.openmx-square.org/openmx_man4.0/s18_4_constraints.html)
 
-[マニュアル日本語](http://www.openmx-square.org/openmx_man3.9jp/node51.html)
+[マニュアル日本語](https://www.openmx-square.org/openmx_man4.0jp/s18_4_constraints.html)
 
 ### 途中で計算を安全に停止させる
 
-[マニュアル英語](http://www.openmx-square.org/openmx_man3.9/node42.html)
+[マニュアル英語](https://www.openmx-square.org/openmx_man4.0/s16_3_otf-scf.html)
 
-[マニュアル日本語](http://www.openmx-square.org/openmx_man3.9jp/node42.html)
+[マニュアル日本語](https://www.openmx-square.org/openmx_man4.0jp/s16_3_otf-scf.html)
