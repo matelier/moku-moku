@@ -54,6 +54,7 @@ sudo dnf update -y
 
 ```sh
 sudo dnf install -y epel-release
+sudo dnf config-manager --set-enabled crb
 sudo dnf install -y --enablerepo=epel gnuplot
 ```
 
