@@ -58,6 +58,22 @@ sudo dnf config-manager --set-enabled crb
 sudo dnf install -y --enablerepo=epel gnuplot
 ```
 
+スタック領域が制限されていることがあります。
+
+```sh
+$ ulimit -s
+8192
+```
+
+シミュレーションの実行に際しては、スタック領域が不足することがあります。
+制限を外した方が良いでしょう。
+
+```sh
+ulimit -s unlimited
+```
+
+毎回実行するのは面倒なので、`.bashrc`に追記すると良いでしょう。
+
 Rocky (WSL)から、Windowsコマンドが実行できると便利な場合があります。
 実行できない場合は、`interop`機能が無効になっています。
 
