@@ -6,7 +6,7 @@
 
 以下の環境におけるインストール手順です。
 
-- Rocky9
+- Rocky10
 - oneAPI
 
 ## Libxcのコンパイル
@@ -15,9 +15,7 @@ Elkを使う動機の一つに、様々な交換相関汎函数を利用する�
 その実現のために[Libxc](https://libxc.gitlab.io/)を利用します。
 
 [公式サイト](https://libxc.gitlab.io/download/)から最新版ソースコード一式をダウンロードします。
-執筆時点の最新版は7.0.0です。
-<!-- セキュリティ設定の問題からか、ブラウザやウィルス対策ソフトウェアの組み合わせによってはダウンロードできない場合があるようです。 -->
-<!-- ダウンロードできない場合は、ブラウザを変えるなどお試しください。 -->
+執筆時点の最新版は7.1.2です。
 
 Linuxの標準的な手順でインストールします。
 `aclocal`コマンドがない場合は、`libtool`を追加インストールしてください。
@@ -25,11 +23,11 @@ oneAPIを利用する場合は、Cコンパイラのコマンドを指定しま�
 インストール先は、ホームディレクトリ直下の`local`としてみます。
 
 ```sh
-tar xf libxc-7.0.0.tar.gz
-cd libxc-7.0.0
+tar xf libxc-7.1.2.tar.gz
+cd libxc-7.1.2
 aclocal
 autoreconf -f -i
-./configure CC=icx FC=ifx --prefix=$HOME/local
+./configure CC=icx FC=ifx --prefix=$HOME/local --enable-static
 make install
 ```
 
@@ -37,7 +35,7 @@ make install
 
 ```sh
 $ ls $HOME/local/lib
-libxc.a  libxcf03.a  libxcf03.la  libxcf90.a  libxcf90.la  libxc.la  pkgconfig
+libxc.a  libxcf03.a  ...
 ```
 
 ## Elkのコンパイル
@@ -45,11 +43,11 @@ libxc.a  libxcf03.a  libxcf03.la  libxcf90.a  libxcf90.la  libxc.la  pkgconfig
 続けてElk本体をコンパイルします。
 
 [公式サイト](https://elk.sourceforge.io/)からソースコードをダウンロードします。
-執筆時点の最新版は10.2.4です。
+執筆時点の最新版は11.0.2です。
 
 ```sh
-tar xf elk-10.2.4.tgz
-cd elk-10.2.4
+tar xf elk-11.0.2.tgz
+cd elk-11.0.2
 ```
 
 `make.inc`を編集します。
@@ -65,7 +63,7 @@ SRC_MKL =
 AR = xiar
 ```
 
-（oneAPI 2025では、ifortが廃止されました。）
+（oneAPI 2025から、ifortは廃止されています。）
 
 次に、Libxcを有効にするために、以下の様に行先頭`#`を消去してください。
 
@@ -79,6 +77,25 @@ SRC_LIBXC = libxcf03.f90 libxcifc.f90
 ```sh
 cp $HOME/local/lib/libxcf03.a src
 cp $HOME/local/lib/libxc.a src
+```
+
+（前者は無くても動作します；使わない場合は、`make.inc`の`LIB_LIBXC`から削除します。）
+
+Elk 11.0.2リリース時点でのlibxc最新版は7.0.0でした。
+そのままでは、libxc 7.1.2は使えないので、ELKのソースコードを以下のように修正します。
+
+```diff
+--- libxcf03.f90.org    2026-08-21 16:10:10.534636330 +0900
++++ libxcf03.f90        2026-08-21 16:10:50.487787371 +0900
+@@ -296,7 +296,7 @@ module xc_f03_lib_m
+       type(c_ptr), value :: p
+     end subroutine xc_func_free
+
+-    subroutine libxc_free(p) bind(c)
++    subroutine libxc_free(p) bind(c, name="free")
+       import
+       type(c_ptr), value :: p
+     end subroutine libxc_free
 ```
 
 以上で準備が整いました。
